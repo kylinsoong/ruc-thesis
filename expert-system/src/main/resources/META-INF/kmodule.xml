@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+<kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.drools.org/xsd/kmodule">
     <kbase name="loantables" packages="loan">
-        <ksession name="ksession-loantables"/>
+        <ksession name="ksession-loantables"  type="stateless"/>
     </kbase>
+    <kbase name="DecisionTableKB" packages="com.bytedance.risk.expert_system">
+        <ksession name="DecisionTableKS" type="stateless"/>
+    </kbase>
+    
 </kmodule>
