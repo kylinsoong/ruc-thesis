@@ -1,0 +1,12 @@
+= BGE: one-stop retrieval toolkit for search and RAG
+:toc: manual
+
+image:img/bge_rag_pipeline.png[]
+
+== Semantics Information Retrieval
+
+* Similarity between 'watch a play' and 'play with a watch': 0.6953
+* Similarity between 'I’m deeply in love with you' and 'You mean the world to me': 0.6362 
+* Similarity between 'I love you' and 'I hate you': 0.6318
+* Similarity between 'The cat is sleeping under the sofa' and 'Quantum entanglement affects subatomic particles in a vacuum': 0.2561
+* Similarity between 'I enjoy watching movies on weekends' and 'Photosynthesis is the process by which plants make food': 0.3394
