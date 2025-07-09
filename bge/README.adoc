@@ -1,7 +1,8 @@
 = BGE
 :toc: manual
 
-BGE(BAAI General Embeddings) provide one-stop retrieval toolkit for search and RAG.
+* BGE(BAAI General Embeddings) provide one-stop retrieval toolkit for search and RAG.
+* https://www.baai.ac.cn/
 
 image:img/bge_rag_pipeline.png[]
 
@@ -128,4 +129,28 @@ Score of 0.353: "Taylor Swift is a Grammy-winning singer-songwriter known for he
 Score of 0.327: "Brad Pitt is a versatile actor and producer known for his roles in films like 'Fight Club' and 'Once Upon a Time in Hollywood.'"
 ----
 
+== Download Model From Hugging Face
 
+[source, bash]
+.*Set Token*
+----
+export HUGGINGFACE_HUB_TOKEN=your_token_here
+----
+
+* Set Token: https://huggingface.co/settings/tokens
+
+[source, bash]
+.*Set HF mirror*
+----
+export HF_ENDPOINT=https://hf-mirror.com
+----
+
+[source, bash]
+.*Download Model*
+----
+huggingface-cli download BAAI/bge-base-en-v1.5 --local-dir ./bge_model
+----
+
+== Embedder
+
+link:embedder/README.adoc[]
