@@ -1,0 +1,878 @@
+[
+  {
+    "id": "http://arxiv.org/abs/2602.24237v1",
+    "title": "nvidia-pcm: A D-Bus-Driven Platform Configuration Manager for OpenBMC Environments",
+    "summary": "GPU-accelerated server platforms that share most of their hardware architecture often require separate firmware images due to minor hardware differences--different component identifiers, thermal profiles, or interconnect topologies. I built nvidia-pcm to eliminate that overhead. nvidia-pcm is a platform configuration manager for NVBMC, NVIDIA's OpenBMC-based firmware distribution, that enables a single firmware image to serve multiple platform variants. At boot, nvidia-pcm queries hardware identity data over D-Bus and exports the correct platform-specific configuration as environment variables. Downstream services read those variables without knowing or caring which hardware variant they are running on. The result is that platform differences are captured entirely in declarative JSON files, not in separate build artifacts. This paper describes the architecture, implementation, and deployment impact of nvidia-pcm, and shares lessons learned from solving the platform-identity problem at a deliberately minimal level of abstraction--prioritizing adoption simplicity over comprehensive hardware modeling.",
+    "published": "2026-02-27T18:08:22Z",
+    "authors": [
+      "Harinder Singh"
+    ],
+    "link": "https://arxiv.org/abs/2602.24237v1",
+    "categories": [
+      "cs.DC"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24235v1",
+    "title": "SafeGen-LLM: Enhancing Safety Generalization in Task Planning for Robotic Systems",
+    "summary": "Safety-critical task planning in robotic systems remains challenging: classical planners suffer from poor scalability, Reinforcement Learning (RL)-based methods generalize poorly, and base Large Language Models (LLMs) cannot guarantee safety. To address this gap, we propose safety-generalizable large language models, named SafeGen-LLM. SafeGen-LLM can not only enhance the safety satisfaction of task plans but also generalize well to novel safety properties in various domains. We first construct a multi-domain Planning Domain Definition Language 3 (PDDL3) benchmark with explicit safety constraints. Then, we introduce a two-stage post-training framework: Supervised Fine-Tuning (SFT) on a constraint-compliant planning dataset to learn planning syntax and semantics, and Group Relative Policy Optimization (GRPO) guided by fine-grained reward machines derived from formal verification to enforce safety alignment and by curriculum learning to better handle complex tasks. Extensive experiments show that SafeGen-LLM achieves strong safety generalization and outperforms frontier proprietary baselines across multi-domain planning tasks and multiple input formats (e.g., PDDLs and natural language).",
+    "published": "2026-02-27T18:06:10Z",
+    "authors": [
+      "Jialiang Fan",
+      "Weizhe Xu",
+      "Mengyu Liu",
+      "Oleg Sokolsky",
+      "Insup Lee",
+      "Fangxin Kong"
+    ],
+    "link": "https://arxiv.org/abs/2602.24235v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24233v1",
+    "title": "Enhancing Spatial Understanding in Image Generation via Reward Modeling",
+    "summary": "Recent progress in text-to-image generation has greatly advanced visual fidelity and creativity, but it has also imposed higher demands on prompt complexity-particularly in encoding intricate spatial relationships. In such cases, achieving satisfactory results often requires multiple sampling attempts. To address this challenge, we introduce a novel method that strengthens the spatial understanding of current image generation models. We first construct the SpatialReward-Dataset with over 80k preference pairs. Building on this dataset, we build SpatialScore, a reward model designed to evaluate the accuracy of spatial relationships in text-to-image generation, achieving performance that even surpasses leading proprietary models on spatial evaluation. We further demonstrate that this reward model effectively enables online reinforcement learning for the complex spatial generation. Extensive experiments across multiple benchmarks show that our specialized reward model yields significant and consistent gains in spatial understanding for image generation.",
+    "published": "2026-02-27T17:59:57Z",
+    "authors": [
+      "Zhenyu Tang",
+      "Chaoran Feng",
+      "Yufan Deng",
+      "Jie Wu",
+      "Xiaojie Li",
+      "Rui Wang",
+      "Yunpeng Chen",
+      "Daquan Zhou"
+    ],
+    "link": "https://arxiv.org/abs/2602.24233v1",
+    "categories": [
+      "cs.CV"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24232v1",
+    "title": "Better Learning-Augmented Spanning Tree Algorithms via Metric Forest Completion",
+    "summary": "We present improved learning-augmented algorithms for finding an approximate minimum spanning tree (MST) for points in an arbitrary metric space. Our work follows a recent framework called metric forest completion (MFC), where the learned input is a forest that must be given additional edges to form a full spanning tree. Veldt et al. (2025) showed that optimally completing the forest takes $Ω(n^2)$ time, but designed a 2.62-approximation for MFC with subquadratic complexity. The same method is a $(2γ+ 1)$-approximation for the original MST problem, where $γ\\geq 1$ is a quality parameter for the initial forest. We introduce a generalized method that interpolates between this prior algorithm and an optimal $Ω(n^2)$-time MFC algorithm. Our approach considers only edges incident to a growing number of strategically chosen ``representative'' points. One corollary of our analysis is to improve the approximation factor of the previous algorithm from 2.62 for MFC and $(2γ+1)$ for metric MST to 2 and $2γ$ respectively. We prove this is tight for worst-case instances, but we still obtain better instance-specific approximations using our generalized method. We complement our theoretical results with a thorough experimental evaluation.",
+    "published": "2026-02-27T17:58:45Z",
+    "authors": [
+      "Nate Veldt",
+      "Thomas Stanley",
+      "Benjamin W. Priest",
+      "Trevor Steil",
+      "Keita Iwabuchi",
+      "T. S. Jayram",
+      "Grace J. Li",
+      "Geoffrey Sanders"
+    ],
+    "link": "https://arxiv.org/abs/2602.24232v1",
+    "categories": [
+      "cs.DS",
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24229v1",
+    "title": "Science Fiction and Fantasy in Wikipedia: Exploring Structural and Semantic Cues",
+    "summary": "Identifying which Wikipedia articles are related to science fiction, fantasy, or their hybrids is challenging because genre boundaries are porous and frequently overlap. Wikipedia nonetheless offers machine-readable structure beyond text, including categories, internal links (wikilinks), and statements if corresponding Wikidata items. However, each of these signals reflects community conventions and can be biased or incomplete. This study examines structural and semantic features of Wikipedia articles that can be used to identify content related to science fiction and fantasy (SF/F).",
+    "published": "2026-02-27T17:56:25Z",
+    "authors": [
+      "Włodzimierz Lewoniewski",
+      "Milena Stróżyna",
+      "Izabela Czumałowska",
+      "Elżbieta Lewańska"
+    ],
+    "link": "https://arxiv.org/abs/2602.24229v1",
+    "categories": [
+      "cs.IR",
+      "cs.DL"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24228v1",
+    "title": "BLISSNet: Deep Operator Learning for Fast and Accurate Flow Reconstruction from Sparse Sensor Measurements",
+    "summary": "Reconstructing fluid flows from sparse sensor measurements is a fundamental challenge in science and engineering. Widely separated measurements and complex, multiscale dynamics make accurate recovery of fine-scale structures difficult. In addition, existing methods face a persistent tradeoff: high-accuracy models are often computationally expensive, whereas faster approaches typically compromise fidelity. In this work, we introduce BLISSNet, a model that strikes a strong balance between reconstruction accuracy and computational efficiency for both flow reconstruction and nudging-based data assimilation. The model follows a DeepONet-like architecture, enabling zero-shot inference on domains of arbitrary size. After the first model call on a given domain, certain network components can be precomputed, leading to low inference cost for subsequent evaluations on large domains. Consequently, the model can achieve faster inference than classical interpolation methods such as radial basis function or bicubic interpolation. This combination of high accuracy, low cost, and zero-shot generalization makes BLISSNet well-suited for large-scale real-time flow reconstruction and data assimilation tasks.",
+    "published": "2026-02-27T17:55:43Z",
+    "authors": [
+      "Maksym Veremchuk",
+      "K. Andrea Scott",
+      "Zhao Pan"
+    ],
+    "link": "https://arxiv.org/abs/2602.24228v1",
+    "categories": [
+      "physics.flu-dyn",
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24227v1",
+    "title": "Imprints of $U_A(1)$ chiral anomaly and disorder in the Dirac eigenspectrum of QCD at finite temperature",
+    "summary": "We perform a comprehensive study of the properties of Dirac eigenvalue spectrum in QCD as a function of temperature on the lattice. In addition to effects due to interplay between interactions and disorder inherently present in a many-body system, the Dirac spectrum also contains crucial information about the effective restoration of different subgroups of almost exact two flavor chiral symmetry in QCD. We calculate the infrared eigenvalues of the overlap Dirac operator on 2+1 flavor QCD ensembles generated using domain wall fermion discretization, on a large volume lattice. From the normalized level spacing ratios we identify those eigenvalues which have intermediate level statistics, distinctly different from the majority in the bulk spectrum that follow universal level fluctuations similar to a random matrix of Gaussian unitary type. We provide an explanation of these intermediate level ratios in terms of a specific random matrix model and quantify correlation between these eigenstates and disorder in the gauge fields manifested in the renormalized Polyakov loop values. Whereas existence of these intermediate eigenmodes are intimately connected to the effective restoration of different subgroups of chiral symmetry close to chiral crossover transition, these arise due to effects of random uncorrelated disorder at higher temperatures when the $U_A(1)$ is effectively restored. We also, for the first time, calculate the Thouless conductance for the Dirac spectrum that quantifies the structural rigidity of the eigenvectors, and use it as a diagnostic tool to understand the restoration of the anomalous $U_A(1)$ subgroup of chiral symmetry and localization driven due to disorder.",
+    "published": "2026-02-27T17:55:32Z",
+    "authors": [
+      "Ravi Shanker",
+      "Harshit Pandey",
+      "Sayantan Sharma"
+    ],
+    "link": "https://arxiv.org/abs/2602.24227v1",
+    "categories": [
+      "hep-lat",
+      "cond-mat.str-el",
+      "hep-ph",
+      "hep-th"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24226v1",
+    "title": "Effective Three-Boson Interactions using a Separable Potential",
+    "summary": "Effective field theories (EFTs) are widely used to study many-body systems by describing two-body interactions using zero-ranged contact potentials. However, when extended to three-body processes, these contact interactions lead to divergences due to the absence of an intrinsic length scale. In EFT, this is typically resolved by introducing a zero-ranged three-body interaction, which can be renormalized to make the low-energy physics independent of the short-distance physics. However, when the two-body potential has a finite range, such as in separable potentials, there is no need for such renormalization. In this work, we derive the integral equation for the three-body scattering amplitude for separable potentials, and solve it in the strongly-interacting regime. With our model, we retrieve the known analytic form of the scattering amplitude for inelastic scattering processes and formulate a new scaling law for elastic three-body scattering processes.",
+    "published": "2026-02-27T17:52:27Z",
+    "authors": [
+      "Corinne Beckers",
+      "Jacques Tempere",
+      "Jeff Maki",
+      "Denise Ahmed-Braun"
+    ],
+    "link": "https://arxiv.org/abs/2602.24226v1",
+    "categories": [
+      "cond-mat.quant-gas"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24225v1",
+    "title": "Weighted Unequal Error Protection over a Rayleigh Fading Channel",
+    "summary": "We study a variant of unequal error protection in channel coding, where the message bit string is divided into a finite number of blocks and the maximization objective is a weighted sum of per-block decoding success probabilities. The channel model is quasi-static Rayleigh fading with channel state information available to the receiver but unavailable to the transmitter. We analyze the asymptotic and finite blocklength performance of two achievability schemes, one based on power-domain superposition (PDS) and another based on orthogonal resource allocation (ORA), also known as time-sharing. Upper bounds on the optimal number of blocks to transmit are derived. Algorithms to compute the optimal power and time splits for the two schemes are given. Simplified algorithms to compute locally optimal power and time splits are also given, and their outputs match those of the previous algorithms across all tested parameters. Our results show that PDS outperforms ORA, but the performance differential is less than 2% in both the asymptotic and finite blocklength regimes (Figures 4 - 6). For both PDS and ORA, numerical results also upper bound the gap between the asymptotic and finite blocklength performance by approximately 10% for n = 1000 and 3% for n = 5000 (Figures 7 - 10).",
+    "published": "2026-02-27T17:51:48Z",
+    "authors": [
+      "Adeel Mahmood"
+    ],
+    "link": "https://arxiv.org/abs/2602.24225v1",
+    "categories": [
+      "cs.IT"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24224v1",
+    "title": "Random-Forest-Induced Graph Neural Networks for Tabular Learning",
+    "summary": "Graphs are essential for modeling complex relationships and capturing structured interactions in data. Graph Neural Networks (GNNs) are particularly effective when such relational structure is explicitly available, but many real-world datasets, most notably tabular data, lack an inherent graph representation. To address this limitation, we propose RF-GNN, a framework that constructs instance-level graphs from tabular data using proximity measures induced by random forests. These proximities capture nonlinear feature interactions and data-adaptive similarity without imposing restrictive assumptions on feature geometry. The resulting graphs enable the direct application of GNNs to tabular learning problems. Extensive experiments on 36 benchmark datasets demonstrate that RF-GNN consistently outperforms strong classical baselines and recent graph-construction methods in terms of weighted F1-score. Additional ablation studies highlight the impact of proximity design choices and graph construction settings.",
+    "published": "2026-02-27T17:51:18Z",
+    "authors": [
+      "Haozhe Chen",
+      "Soheila Farokhi",
+      "Kelvyn Bladen",
+      "Hamid Karimi",
+      "Kevin R. Moon"
+    ],
+    "link": "https://arxiv.org/abs/2602.24224v1",
+    "categories": [
+      "cs.GR"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24223v1",
+    "title": "Anansi: Scalable Characterization of Message-Based Job Scams",
+    "summary": "Job-based smishing scams, where victims are recruited under the guise of remote job opportunities, represent a rapidly growing and understudied threat within the broader landscape of online fraud. In this paper, we present Anansi, the first scalable, end-to-end measurement pipeline designed to systematically engage with, analyze, and characterize job scams in the wild. Anansi combines large language models (LLMs), automated browser agents, and infrastructure fingerprinting tools to collect over 29,000 scam messages, interact with more than 1900 scammers, and extract behavioral, financial, and infrastructural signals at scale. We detail the operational workflows of scammers, uncover extensive reuse of message templates, domains, and cryptocurrency wallets, and identify the social engineering tactics used to defraud victims. Our analysis reveals millions of dollars in cryptocurrency losses, highlighting the use of deceptive techniques such as domain fronting and impersonation of well-known brands. Anansi demonstrates the feasibility and value of automating the engagement with scammers and the analysis of infrastructure, offering a new methodological foundation for studying large-scale fraud ecosystems.",
+    "published": "2026-02-27T17:49:56Z",
+    "authors": [
+      "Abisheka Pitumpe",
+      "Amir Rahmati"
+    ],
+    "link": "https://arxiv.org/abs/2602.24223v1",
+    "categories": [
+      "cs.CR"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24222v1",
+    "title": "MuViT: Multi-Resolution Vision Transformers for Learning Across Scales in Microscopy",
+    "summary": "Modern microscopy routinely produces gigapixel images that contain structures across multiple spatial scales, from fine cellular morphology to broader tissue organization. Many analysis tasks require combining these scales, yet most vision models operate at a single resolution or derive multi-scale features from one view, limiting their ability to exploit the inherently multi-resolution nature of microscopy data. We introduce MuViT, a transformer architecture built to fuse true multi-resolution observations from the same underlying image. MuViT embeds all patches into a shared world-coordinate system and extends rotary positional embeddings to these coordinates, enabling attention to integrate wide-field context with high-resolution detail within a single encoder. Across synthetic benchmarks, kidney histopathology, and high-resolution mouse-brain microscopy, MuViT delivers consistent improvements over strong ViT and CNN baselines. Multi-resolution MAE pretraining further produces scale-consistent representations that enhance downstream tasks. These results demonstrate that explicit world-coordinate modelling provides a simple yet powerful mechanism for leveraging multi-resolution information in large-scale microscopy analysis.",
+    "published": "2026-02-27T17:48:54Z",
+    "authors": [
+      "Albert Dominguez Mantes",
+      "Gioele La Manno",
+      "Martin Weigert"
+    ],
+    "link": "https://arxiv.org/abs/2602.24222v1",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24218v1",
+    "title": "First spectroscopic identification of the main sequence in Westerlund 1",
+    "summary": "Being the most massive known young stellar cluster in the Milky Way, Westerlund 1 (Wd1) constitutes an ideal benchmark for understanding the evolution of massive stars. However, the cluster age remains highly controversial (~4-10 Myr), hindering the use of Wd1 as a reference for massive star evolution. One of the main issues is high foreground extinction, which has so far prevented the detection of the main sequence. Using infrared spectroscopy we seek to detect the cluster's main sequence for the first time, to characterise the Hertzsprung-Russell diagram, and to use the cluster's turn-off to obtain a robust age estimate. We obtained multi-epoch, near-infrared VLT/KMOS spectroscopic observations of Wd1 to map its population of massive stars. The spectra of ~110 members were analysed with CMFGEN models to derive stellar parameters, populate the cluster Hertzsprung-Russell diagram, and compare it with isochrones from evolutionary models. Our observations returned 47 new spectroscopically identified cluster members, with spectral types O9-B1 III-V. The cluster turn-off indicates an age of 5.5+/-1.0 Myr at a distance of 4.23+0.23-0.21 kpc, displaying a moderate degree of coevality. We demonstrate that our estimate of the age of Wd1 is robust against reasonable changes in the distance and extinction law, and the adopted rotational velocity and metallicity of the stellar isochrones. We further find that ~65% of the OB stars with multi-epoch coverage exhibit radial-velocity variability. Infrared observations of the unevolved stellar population support a single episode of star formation with an age of ~5.5 Myr, reinforcing its potential as a benchmark for massive star evolution and providing a reference sample for future binary population studies.",
+    "published": "2026-02-27T17:45:17Z",
+    "authors": [
+      "R. Castellanos",
+      "F. Najarro",
+      "M. Garcia",
+      "I. Negueruela",
+      "L. R. Patrick",
+      "B. Ritchie",
+      "M. G. Guarcello",
+      "T. Shenar",
+      "C. Evans",
+      "R. Prinja",
+      "D. Fenech"
+    ],
+    "link": "https://arxiv.org/abs/2602.24218v1",
+    "categories": [
+      "astro-ph.GA"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24214v1",
+    "title": "Two-zero textures of the Majorana neutrino mass matrix from $\\mathbb{Z}_3$ gauging of $\\mathbb{Z}_N$ non-invertible symmetry",
+    "summary": "Texture-zero ansatze offer an economical description of neutrino masses, with current data allowing only seven inequivalent two-zero Majorana textures in the charged-lepton mass basis. We investigate how such textures can arise from non-invertible symmetries realized through $\\mathbb{Z}_3$ gauging of $\\mathbb{Z}_N$. In contrast to $\\mathbb{Z}_2$ gauging, which necessarily induces diagonal neutrino mass terms via the Weinberg operator, $\\mathbb{Z}_3$ gauging admits complex representations and allows a richer class of neutrino mass textures. If the light neutrino mass is described by the Weinberg operator, we find that the textures $\\mathbf{A}_{1,2}$, $\\mathbf{B}_{3,4}$, and $\\mathbf{C}$ can be realized from the $\\mathbb{Z}_{3}$ gauging of $\\mathbb{Z}_{13}$ symmetry, while all the seven phenomenologically viable two-zero textures can emerge from $\\mathbb{Z}_{3}$ gauging of $\\mathbb{Z}_{19}$ symmetry without requiring supersymmetry. When the neutrino mass is generated by the type-I seesaw mechanism, the structure of the non-invertible symmetry is more restrictive, yielding only texture $\\mathbf{C}$ for $N\\neq7$. These results demonstrate the strong predictive power of non-invertible symmetries for neutrino mass textures. Furthermore, the more general $\\mathbb{Z}_{n}$ gauging of the $\\mathbb{Z}_{N}$ symmetry with $n>3$ is analyzed, which results in novel fusion rules.",
+    "published": "2026-02-27T17:42:24Z",
+    "authors": [
+      "Bu-Yao Qu",
+      "Zheng Jiang",
+      "Gui-Jun Ding"
+    ],
+    "link": "https://arxiv.org/abs/2602.24214v1",
+    "categories": [
+      "hep-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24210v1",
+    "title": "Controllable Reasoning Models Are Private Thinkers",
+    "summary": "AI agents powered by reasoning models require access to sensitive user data. However, their reasoning traces are difficult to control, which can result in the unintended leakage of private information to external parties. We propose training models to follow instructions not only in the final answer, but also in reasoning traces, potentially under different constraints. We hypothesize that improving their instruction following abilities in the reasoning traces can improve their privacy-preservation skills. To demonstrate this, we fine-tune models on a new instruction-following dataset with explicit restrictions on reasoning traces. We further introduce a generation strategy that decouples reasoning and answer generation using separate LoRA adapters. We evaluate our approach on six models from two model families, ranging from 1.7B to 14B parameters, across two instruction-following benchmarks and two privacy benchmarks. Our method yields substantial improvements, achieving gains of up to 20.9 points in instruction-following performance and up to 51.9 percentage points on privacy benchmarks. These improvements, however, can come at the cost of task utility, due to the trade-off between reasoning performance and instruction-following abilities. Overall, our results show that improving instruction-following behavior in reasoning models can significantly enhance privacy, suggesting a promising direction for the development of future privacy-aware agents. Our code and data are available at https://github.com/UKPLab/arxiv2026-controllable-reasoning-models",
+    "published": "2026-02-27T17:39:10Z",
+    "authors": [
+      "Haritz Puerto",
+      "Haonan Li",
+      "Xudong Han",
+      "Timothy Baldwin",
+      "Iryna Gurevych"
+    ],
+    "link": "https://arxiv.org/abs/2602.24210v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24209v1",
+    "title": "An Efficient Unsupervised Federated Learning Approach for Anomaly Detection in Heterogeneous IoT Networks",
+    "summary": "Federated learning (FL) is an effective paradigm for distributed environments such as the Internet of Things (IoT), where data from diverse devices with varying functionalities remains localized while contributing to a shared global model. By eliminating the need to transmit raw data, FL inherently preserves privacy. However, the heterogeneous nature of IoT data, stemming from differences in device capabilities, data formats, and communication constraints, poses significant challenges to maintaining both global model performance and privacy. In the context of IoT-based anomaly detection, unsupervised FL offers a promising means to identify abnormal behavior without centralized data aggregation. Nevertheless, feature heterogeneity across devices complicates model training and optimization, hindering effective implementation. In this study we propose an efficient unsupervised FL framework that enhances anomaly detection by leveraging shared features from two distinct IoT datasets: one focused on anomaly detection and the other on device identification, while preserving dataset-specific features. To improve transparency and interpretability, we employ explainable AI techniques, such as SHAP, to identify key features influencing local model decisions. Experiments conducted on real-world IoT datasets demonstrate that the proposed method significantly outperforms conventional FL approaches in anomaly detection accuracy. This work underscores the potential of using shared features from complementary datasets to optimize unsupervised federated learning and achieve superior anomaly detection results in decentralized IoT environments.",
+    "published": "2026-02-27T17:39:04Z",
+    "authors": [
+      "Mohsen Tajgardan",
+      "Atena Shiranzaei",
+      "Mahdi Rabbani",
+      "Reza Khoshkangini",
+      "Mahtab Jamali"
+    ],
+    "link": "https://arxiv.org/abs/2602.24209v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24206v1",
+    "title": "Discovery of a nearby radio relic in the low-mass, merging cluster Abell 4067",
+    "summary": "Shock waves generated during cluster mergers offer a powerful probe of how large-scale structure grows and evolves in the Universe. As part of the MeerKAT-South Pole Telescope (SPT) survey, we report the discovery of a single arc-like radio relic in the galaxy cluster Abell 4067 ($z=0.099$), one of the lowest-mass clusters known to host such a structure. MeerKAT UHF-band (0.58--1.09 GHz) observations reveal a relic with a largest linear size of $\\sim 1.48 \\pm 0.02$ Mpc, located at a projected distance of 0.95 Mpc from the cluster centre. XMM-Newton X-ray data show that the relic's position and orientation relative to the intracluster medium (ICM) elongation are consistent with a merger-driven shock-wave scenario. The relic has an estimated radio power of $3.10 \\pm 0.03 \\times 10^{24}$ W Hz$^{-1}$ at 150 MHz. When placed in the $P_{150\\,\\mathrm{MHz}}$--$M_{500}$ scaling relation, the Abell 4067 relic appears less luminous compared to relics in more massive clusters, suggesting an association with weak merger shocks. This finding supports the idea that relics in low-mass clusters may form through less energetic merger events, leading to weak merger shocks. This is further supported by the absence of a detectable central radio halo in Abell 4067, reinforcing the idea that luminous radio halos are not a universal outcome of cluster mergers and highlighting the role of cluster mass, merger energetics, and evolutionary stage in shaping diffuse radio emission in the intracluster medium.",
+    "published": "2026-02-27T17:32:32Z",
+    "authors": [
+      "Isaac Magolego",
+      "Roger P. Deane",
+      "Kshitij Thorat",
+      "Ian Heywood",
+      "Justin Spilker",
+      "Taweewat Somboonpanyakul",
+      "Dazhi Zhou",
+      "Manuel Aravena",
+      "Joaquin D. Vieira",
+      "Kedar A. Phadke",
+      "Lindsey E. Bleem",
+      "Scott C. Chapman"
+    ],
+    "link": "https://arxiv.org/abs/2602.24206v1",
+    "categories": [
+      "astro-ph.CO",
+      "astro-ph.GA"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24204v1",
+    "title": "Forecasting the cross correlation of Terahertz Intensity Mapper [CII] line intensity maps with Euclid galaxies",
+    "summary": "We forecast that the Terahertz Intensity Mapper (TIM) cross-correlated with Euclid's Fornax deep field (EDF-F), TIM$\\times$EDF-F, will detect the [CII]-galaxy cross-power spectrum at a median redshift of 1.1 with $\\gtrsim 7 σ$ confidence. The Poisson component of the cross-power spectrum at $0.1 \\leq k \\leq 10$ hMpc$^{-1}$ (i.e. cross-shot noise) will be detected at $\\gtrsim 3 σ$ in 4 bins spanning $0.5 < z< 1.7$. This measurement will constrain the mean [CII] specific intensity over half of cosmic history and assess the degree to which Euclid-selected galaxies account for the [CII] intensity observed by TIM. We find that TIM can detect the cross-power spectrum across a wide range of [CII] intensity models.",
+    "published": "2026-02-27T17:30:16Z",
+    "authors": [
+      "Justin S. Bracks",
+      "Ryan P. Keenan",
+      "Shubh Agrawal",
+      "Garrett K. Keating",
+      "James E. Aguirre",
+      "Adam Lidz",
+      "Charles M. Bradford",
+      "Brockton Brendal",
+      "Jeffrey Filippini",
+      "Jianyang Fu",
+      "Karolina Garcia",
+      "Christopher Groppi",
+      "Steven Hailey-Dunsheath",
+      "Reinier M. J. Janssen",
+      "Wooseok Kang",
+      "Lun-Jun Liu",
+      "Ian Lowe",
+      "Alex Manduca",
+      "Daniel P. Marrone",
+      "Philip Mauskopf",
+      "Evan C. Mayer",
+      "Sydnee O'Donnell",
+      "Talia Saeid",
+      "Simon Tartakovsky",
+      "Mathilde Cuyck",
+      "Joaquin D. Vieira",
+      "Jessica A. Zebrowski"
+    ],
+    "link": "https://arxiv.org/abs/2602.24204v1",
+    "categories": [
+      "astro-ph.GA"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24195v1",
+    "title": "Uncertainty Quantification for Multimodal Large Language Models with Incoherence-adjusted Semantic Volume",
+    "summary": "Despite their capabilities, Multimodal Large Language Models (MLLMs) may produce plausible but erroneous outputs, hindering reliable deployment. Accurate uncertainty metrics could enable escalation of unreliable queries to human experts or larger models for improved performance. However, existing uncertainty metrics have practical constraints, such as being designed only for specific modalities, reliant on external tools, or computationally expensive. We introduce UMPIRE, a training-free uncertainty quantification framework for MLLMs that works efficiently across various input and output modalities without external tools, relying only on the models' own internal modality features. UMPIRE computes the incoherence-adjusted semantic volume of sampled MLLM responses for a given task instance, effectively capturing both the global semantic diversity of samples and the local incoherence of responses based on internal model confidence. We propose uncertainty desiderata for MLLMs and provide theoretical analysis motivating UMPIRE's design. Extensive experiments show that UMPIRE consistently outperforms baseline metrics in error detection and uncertainty calibration across image, audio, and video-text benchmarks, including adversarial and out-of-distribution settings. We also demonstrate UMPIRE's generalization to non-text output tasks, including image and audio generation.",
+    "published": "2026-02-27T17:18:42Z",
+    "authors": [
+      "Gregory Kang Ruey Lau",
+      "Hieu Dao",
+      "Nicole Kan Hui Lin",
+      "Bryan Kian Hsiang Low"
+    ],
+    "link": "https://arxiv.org/abs/2602.24195v1",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.CV",
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24194v1",
+    "title": "Betting under Common Beliefs: The Effect of Probability Weighting",
+    "summary": "This paper examines the impact of introducing a Rank-Dependent Utility (RDU) agent into a von Neumann-Morgenstern (vNM) pure-exchange economy with no aggregate uncertainty. In the absence of the RDU agent, the classical theory predicts that Pareto-optimal allocations are full-insurance, or no-betting, allocations. We show how the probability weighting function of the RDU agent, seen as a proxy for probabilistic risk aversion that is not captured by marginal utility of wealth, can lead to Pareto optima characterized by endogenous betting, despite common baseline beliefs. Such endogenous betting at an optimum leads to uncertainty-generating trade arising purely from heterogeneity in the perception of risk, rather than in beliefs. Our results formalize the intuitive understanding that probability weighting can act as an endogenous source of belief heterogeneity, and provide a new behavioral foundation for the coexistence of common beliefs and speculative behavior, in an environment with no initial aggregate uncertainty. Interpreting the RDU agent's nonlinear weighting function as an ``internality'' prompts the question of whether a social planner should intervene. We show how a benevolent social planner can nudge the RDU agent to behave closer to a vNM agent, through costly statistical or financial education, thereby (partially) restoring the optimality of full-insurance allocations.",
+    "published": "2026-02-27T17:17:52Z",
+    "authors": [
+      "Patrick Beissner",
+      "Tim Boonen",
+      "Mario Ghossoub"
+    ],
+    "link": "https://arxiv.org/abs/2602.24194v1",
+    "categories": [
+      "econ.TH",
+      "q-fin.RM"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24188v1",
+    "title": "MT-PingEval: Evaluating Multi-Turn Collaboration with Private Information Games",
+    "summary": "We present a scalable methodology for evaluating language models in multi-turn interactions, using a suite of collaborative games that require effective communication about private information. This enables an interactive scaling analysis, in which a fixed token budget is divided over a variable number of turns. We find that in many cases, language models are unable to use interactive collaboration to improve over the non-interactive baseline scenario in which one agent attempts to summarize its information and the other agent immediately acts -- despite substantial headroom. This suggests that state-of-the-art models still suffer from significant weaknesses in planning and executing multi-turn collaborative conversations. We analyze the linguistic features of these dialogues, assessing the roles of sycophancy, information density, and discourse coherence. While there is no single linguistic explanation for the collaborative weaknesses of contemporary language models, we note that humans achieve comparable task success at superior token efficiency by producing dialogues that are more coherent than those produced by most language models. The proactive management of private information is a defining feature of real-world communication, and we hope that MT-PingEval will drive further work towards improving this capability.",
+    "published": "2026-02-27T17:13:20Z",
+    "authors": [
+      "Jacob Eisenstein",
+      "Fantine Huot",
+      "Adam Fisch",
+      "Jonathan Berant",
+      "Mirella Lapata"
+    ],
+    "link": "https://arxiv.org/abs/2602.24188v1",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24183v1",
+    "title": "A multimodal slice discovery framework for systematic failure detection and explanation in medical image classification",
+    "summary": "Despite advances in machine learning-based medical image classifiers, the safety and reliability of these systems remain major concerns in practical settings. Existing auditing approaches mainly rely on unimodal features or metadata-based subgroup analyses, which are limited in interpretability and often fail to capture hidden systematic failures. To address these limitations, we introduce the first automated auditing framework that extends slice discovery methods to multimodal representations specifically for medical applications. Comprehensive experiments were conducted under common failure scenarios using the MIMIC-CXR-JPG dataset, demonstrating the framework's strong capability in both failure discovery and explanation generation. Our results also show that multimodal information generally allows more comprehensive and effective auditing of classifiers, while unimodal variants beyond image-only inputs exhibit strong potential in scenarios where resources are constrained.",
+    "published": "2026-02-27T17:06:37Z",
+    "authors": [
+      "Yixuan Liu",
+      "Kanwal K. Bhatia",
+      "Ahmed E. Fetit"
+    ],
+    "link": "https://arxiv.org/abs/2602.24183v1",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24176v1",
+    "title": "Beyond Explainable AI (XAI): An Overdue Paradigm Shift and Post-XAI Research Directions",
+    "summary": "This study provides a cross-disciplinary examination of Explainable Artificial Intelligence (XAI) approaches-focusing on deep neural networks (DNNs) and large language models (LLMs)-and identifies empirical and conceptual limitations in current XAI. We discuss critical symptoms that stem from deeper root causes (i.e., two paradoxes, two conceptual confusions, and five false assumptions). These fundamental problems within the current XAI research field reveal three insights: experimentally, XAI exhibits significant flaws; conceptually, it is paradoxical; and pragmatically, further attempts to reform the paradoxical XAI might exacerbate its confusion-demanding fundamental shifts and new research directions. To move beyond XAI's limitations, we propose a four-pronged synthesized paradigm shift toward reliable and certified AI development. These four components include: verification-focused Interactive AI (IAI) to establish scientific community protocols for certifying AI system performance rather than attempting post-hoc explanations, AI Epistemology for rigorous scientific foundations, User-Sensible AI to create context-aware systems tailored to specific user communities, and Model-Centered Interpretability for faithful technical analysis-together offering comprehensive post-XAI research directions.",
+    "published": "2026-02-27T16:58:27Z",
+    "authors": [
+      "Saleh Afroogh",
+      "Seyd Ishtiaque Ahmed",
+      "Petra Ahrweiler",
+      "David Alvarez-Melis",
+      "Mansur Maturidi Arief",
+      "Emilia Barakova",
+      "Falco J. Bargagli-Stoffi",
+      "Erdem Biyik",
+      "Hanjie Chen",
+      "Xiang 'Anthony' Chen",
+      "Robert Clements",
+      "Keeley Crockett",
+      "Amit Dhurandhar",
+      "Fethiye Irmak Dogan",
+      "Mollie Dollinger",
+      "Motahhare Eslami",
+      "Aldo A Faisal",
+      "Arya Farahi",
+      "Melanie Fernandez Pradie",
+      "Saadia Gabrie",
+      "Diego Garcia-Olano",
+      "Marzyeh Ghassemi",
+      "Shaona Ghosh",
+      "Hatice Gunes",
+      "Ehsan Hajiramezanali",
+      "Stefan Haufe",
+      "Biwei Huang",
+      "Angel Hwang",
+      "Md Tauhidul Islam",
+      "Junfeng Jiao",
+      "Amir-Hossein Karimi",
+      "Saber Kazeminasab",
+      "Anastasia Kuzminykh",
+      "William La Cava",
+      "Brian Y. Lim",
+      "Xiaofeng Liu",
+      "Mohammad R. K. Mofrad",
+      "Alicia Parrish",
+      "Maria Perez-Ortiz",
+      "Shriti Raj",
+      "Swabha Swayamdipta",
+      "Salmon Talebi",
+      "Kush R. Varshney",
+      "Mihaela Vorvoreanu",
+      "Lily Weng",
+      "Alice Xiang",
+      "Yiming Xu",
+      "Ding Zhao",
+      "Jieyu Zhao"
+    ],
+    "link": "https://arxiv.org/abs/2602.24176v1",
+    "categories": [
+      "cs.CY"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24173v1",
+    "title": "LemmaBench: A Live, Research-Level Benchmark to Evaluate LLM Capabilities in Mathematics",
+    "summary": "We present a new approach for benchmarking Large Language Model (LLM) capabilities on research-level mathematics. Existing benchmarks largely rely on static, hand-curated sets of contest or textbook-style problems as proxies for mathematical research. Instead, we establish an updatable benchmark evaluating models directly on the latest research results in mathematics. This consists of an automatic pipeline that extracts lemmas from arXiv and rewrites them into self-contained statements by making all assumptions and required definitions explicit. It results in a benchmark that can be updated regularly with new problems taken directly from human mathematical research, while previous instances can be used for training without compromising future evaluations. We benchmark current state-of-the-art LLMs, which obtain around 10-15$\\%$ accuracy in theorem proving (pass@1) depending on the model, showing that there is currently a large margin of progression for LLMs to reach human-level proving capabilities in a research context.",
+    "published": "2026-02-27T16:52:52Z",
+    "authors": [
+      "Antoine Peyronnet",
+      "Fabian Gloeckle",
+      "Amaury Hayat"
+    ],
+    "link": "https://arxiv.org/abs/2602.24173v1",
+    "categories": [
+      "cs.AI"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24172v1",
+    "title": "ArgLLM-App: An Interactive System for Argumentative Reasoning with Large Language Models",
+    "summary": "Argumentative LLMs (ArgLLMs) are an existing approach leveraging Large Language Models (LLMs) and computational argumentation for decision-making, with the aim of making the resulting decisions faithfully explainable to and contestable by humans. Here we propose a web-based system implementing ArgLLM-empowered agents for binary tasks. ArgLLM-App supports visualisation of the produced explanations and interaction with human users, allowing them to identify and contest any mistakes in the system's reasoning. It is highly modular and enables drawing information from trusted external sources. ArgLLM-App is publicly available at https://argllm.app, with a video demonstration at https://youtu.be/vzwlGOr0sPM.",
+    "published": "2026-02-27T16:52:27Z",
+    "authors": [
+      "Adam Dejl",
+      "Deniz Gorur",
+      "Francesca Toni"
+    ],
+    "link": "https://arxiv.org/abs/2602.24172v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24152v1",
+    "title": "Advanced Scheduling Strategies for Distributed Quantum Computing Jobs",
+    "summary": "Scaling the number of qubits available across multiple quantum devices is an active area of research within distributed quantum computing (DQC). This includes quantum circuit compilation and execution management on multiple quantum devices in the network. The latter aspect is very challenging because, while reducing the makespan of job batches remains a relevant objective, novel quantum-specific constraints must be considered, including QPU utilization, non-local gate density, and the latency associated with queued DQC jobs. In this work, a range of scheduling strategies is proposed, simulated, and evaluated, including heuristics that prioritize resource maximization for QPU utilization, node selection based on heterogeneous network connectivity, asynchronous node release upon job completion, and a scheduling strategy based on reinforcement learning with proximal policy optimization. These approaches are benchmarked against traditional FIFO and LIST schedulers under varying DQC job types and network conditions for the allocation of DQC jobs to devices within a network.",
+    "published": "2026-02-27T16:35:32Z",
+    "authors": [
+      "Gongyu Ni",
+      "Davide Ferrari",
+      "Lester Ho",
+      "Michele Amoretti"
+    ],
+    "link": "https://arxiv.org/abs/2602.24152v1",
+    "categories": [
+      "quant-ph",
+      "cs.DC",
+      "cs.PF"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24144v1",
+    "title": "Fixed Anchors Are Not Enough: Dynamic Retrieval and Persistent Homology for Dataset Distillation",
+    "summary": "Decoupled dataset distillation (DD) compresses large corpora into a few synthetic images by matching a frozen teacher's statistics. However, current residual-matching pipelines rely on static real patches, creating a fit-complexity gap and a pull-to-anchor effect that reduce intra-class diversity and hurt generalization. To address these issues, we introduce RETA -- a Retrieval and Topology Alignment framework for decoupled DD. First, Dynamic Retrieval Connection (DRC) selects a real patch from a prebuilt pool by minimizing a fit-complexity score in teacher feature space; the chosen patch is injected via a residual connection to tighten feature fit while controlling injected complexity. Second, Persistent Topology Alignment (PTA) regularizes synthesis with persistent homology: we build a mutual k-NN feature graph, compute persistence images of components and loops, and penalize topology discrepancies between real and synthetic sets, mitigating pull-to-anchor effect. Across CIFAR-100, Tiny-ImageNet, ImageNet-1K, and multiple ImageNet subsets, RETA consistently outperforms various baselines under comparable time and memory, especially reaching 64.3% top-1 accuracy on ImageNet-1K with ResNet-18 at 50 images per class, +3.1% over the best prior.",
+    "published": "2026-02-27T16:21:07Z",
+    "authors": [
+      "Muquan Li",
+      "Hang Gou",
+      "Yingyi Ma",
+      "Rongzheng Wang",
+      "Ke Qin",
+      "Tao He"
+    ],
+    "link": "https://arxiv.org/abs/2602.24144v1",
+    "categories": [
+      "cs.CV"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24140v1",
+    "title": "A 200 dB Dynamic Range Radiation-Hard Delta-Sigma Current Digitizer for Beam Loss Monitoring",
+    "summary": "This paper presents a radiation-hardened current-mode delta-sigma ADC fabricated in a standard 130~nm CMOS technology and qualified for total ionizing doses up to 100~Mrad. The converter is designed for beam loss monitoring applications in high-energy physics, where it must handle input currents spanning nine decades, from 1~mA down to 1~pA, while providing a fast 10~\\textmu s response time for machine protection. To meet these conflicting requirements, the architecture exploits the inherent trade-off between resolution and acquisition time: a first-order modulator sampled at 20~MHz delivers 11-bit effective resolution within the critical 10~\\textmu s window for the mA current range. Extended integration times of up to 100~s enable the sub-picoampere resolution required for beam alignment and background monitoring and provides an operational dynamic range exceeding 200~dB. The chip integrates two independent channels, consumes 25~mW from a 1.2~V supply, and includes radiation-hardening techniques such as triple-redundant digital logic and SEU-tolerant comparator banks. Post-irradiation measurements up to 100~Mrad show no performance degradation, and the uncalibrated integral nonlinearity remains within [+0.2\\%, --0.3\\%] of full scale over the 1~mA to 5~\\textmu A range. The converter's flexibility and radiation tolerance make it suitable not only for the HL-LHC beam loss monitoring upgrade but also for other precision current measurement applications in harsh environments.",
+    "published": "2026-02-27T16:16:49Z",
+    "authors": [
+      "Luca Giangrande"
+    ],
+    "link": "https://arxiv.org/abs/2602.24140v1",
+    "categories": [
+      "physics.ins-det",
+      "eess.SY",
+      "hep-ex",
+      "nucl-ex"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24139v1",
+    "title": "Gestational Stage Prediction from Cervical Tissue Analysis Using Imaging Mueller Polarimetry Data",
+    "summary": "Preterm birth is associated with premature cervical remodeling, yet current clinical assessments cannot detect the underlying microstructural changes in collagen organization. We apply imaging Mueller polarimetry to murine cervical tissue at three gestational stages (early, mid, late) and develop classification methods to predict gestational stage from polarimetric maps. Using Lu-Chipman decomposition, we extract orientation and azimuth local variability maps that capture collagen fiber alignment and disorder. We evaluate two approaches under 20-fold leave-one-out cross-validation: an analytical threshold classifier on mean azimuth local variability, and a lightweight CNN ensemble (approximately 76k parameters) operating on spatially resolved maps. The ensemble achieves 70..0% sample-level accuracy, outperforming the analytical baseline (55.0%), with strong performance on early (71.0%) and late (86.0%) gestation. Spatial prediction maps confirm that classification accuracy is highest in the stroma, where collagen remodeling is most prominent. These results demonstrate that Mueller polarimetry combined with deep learning models can detect gestational collagen remodeling noninvasively, offering a potential pathway toward objective cervical assessment for preterm birth risk.",
+    "published": "2026-02-27T16:16:11Z",
+    "authors": [
+      "Sooyong Chae",
+      "Ajmal Ajmal",
+      "Junzhu Pei",
+      "Amanda Sanchez",
+      "Tananant Boonya-ananta",
+      "Andres Rodriguez",
+      "Tatiana Novikova",
+      "Jessica C. Ramella-Roman"
+    ],
+    "link": "https://arxiv.org/abs/2602.24139v1",
+    "categories": [
+      "physics.med-ph",
+      "physics.optics"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24134v1",
+    "title": "AgenticOCR: Parsing Only What You Need for Efficient Retrieval-Augmented Generation",
+    "summary": "The expansion of retrieval-augmented generation (RAG) into multimodal domains has intensified the challenge for processing complex visual documents, such as financial reports. While page-level chunking and retrieval is a natural starting point, it creates a critical bottleneck: delivering entire pages to the generator introduces excessive extraneous context. This not only overloads the generator's attention mechanism but also dilutes the most salient evidence. Moreover, compressing these information-rich pages into a limited visual token budget further increases the risk of hallucinations. To address this, we introduce AgenticOCR, a dynamic parsing paradigm that transforms optical character recognition (OCR) from a static, full-text process into a query-driven, on-demand extraction system. By autonomously analyzing document layout in a \"thinking with images\" manner, AgenticOCR identifies and selectively recognizes regions of interest. This approach performs on-demand decompression of visual tokens precisely where needed, effectively decoupling retrieval granularity from rigid page-level chunking. AgenticOCR has the potential to serve as the \"third building block\" of the visual document RAG stack, operating alongside and enhancing standard Embedding and Reranking modules. Experimental results demonstrate that AgenticOCR improves both the efficiency and accuracy of visual RAG systems, achieving expert-level performance in long document understanding. Code and models are available at https://github.com/OpenDataLab/AgenticOCR.",
+    "published": "2026-02-27T16:09:38Z",
+    "authors": [
+      "Zhengren Wang",
+      "Dongsheng Ma",
+      "Huaping Zhong",
+      "Jiayu Li",
+      "Wentao Zhang",
+      "Bin Wang",
+      "Conghui He"
+    ],
+    "link": "https://arxiv.org/abs/2602.24134v1",
+    "categories": [
+      "cs.CV",
+      "cs.CL"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24130v1",
+    "title": "\"Make It Sound Like a Lawyer Wrote It\": Scenarios of Potential Impacts of Generative AI for Legal Conflict Resolution",
+    "summary": "Generative AI (GenAI) tools are transforming critical societal domains, including the legal sector. While these tools create opportunities such as increased efficiency and potential improvements in access to justice, they also present new challenges, such as the risk of inaccurate legal advice and questions about the legitimacy of legal decisions. However, the full impact remains to be seen and ultimately depends on the way GenAI tools are implemented and used by both, legal professionals and citizens. This makes anticipating and managing the positive and negative impacts of GenAI use in the legal domain challenging but also important to guide the digital transformation of the legal sector into a societally desirable direction. In this paper, we set out to explore the spectrum of possible impacts of GenAI in the legal domain, examining how this technology is anticipated being used and the potential implications this might have for the legal sector and society. Using a scenario writing method, we surveyed participants in the EU and US including both citizens and legal professionals about the potential impact of generative AI on legal conflict resolution. Respondents were tasked with writing a narrative drawing on their experience or expertise about a future in which AI is used throughout the legal process. We qualitatively analysed the prevalence of risk and benefit themes, as well as the types of anticipated legal tasks. We then compared these findings based on expertise status (legal experts versus citizens) and regional regulatory background (the EU with the EU AI Act versus the US with an industry self-regulatory approach). Finally, we describe the emerging trade-offs that will affect decision-makers in the legal sector.",
+    "published": "2026-02-27T16:07:39Z",
+    "authors": [
+      "Kimon Kieslich",
+      "Natali Helberger",
+      "Nicholas Diakopoulos"
+    ],
+    "link": "https://arxiv.org/abs/2602.24130v1",
+    "categories": [
+      "cs.CY"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24127v1",
+    "title": "Advancing Evidence Generation in Biomedical Research Using Natural Hermite and Propensity Score Indices: Applications to External Control Arms",
+    "summary": "When it is not feasible to conduct randomized controlled trials (RCTs), the use of external control arms based on real-world data (RWD) may be a viable option. However, challenges arising from data heterogeneity must be addressed to ensure the reliability of trial results. We consider the use of Natural Hermite and propensity score indices to facilitate robust comparisons between RCTs and RWD studies. Illustrations are provided on the implementation and performance of the underlying algorithms using simulated data, as well as synthetic data from a clinical trial and RWD.",
+    "published": "2026-02-27T16:03:47Z",
+    "authors": [
+      "Javier Cabrera",
+      "Berhanu Alemayehu",
+      "Demissie Alemayehu",
+      "Sofia Weigle"
+    ],
+    "link": "https://arxiv.org/abs/2602.24127v1",
+    "categories": [
+      "stat.AP"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24119v1",
+    "title": "Terminology Rarity Predicts Catastrophic Failure in LLM Translation of Low-Resource Ancient Languages: Evidence from Ancient Greek",
+    "summary": "This study presents the first systematic, reference-free human evaluation of large language model (LLM) machine translation (MT) for Ancient Greek (AG) technical prose. We evaluate translations by three commercial LLMs (Claude, Gemini, ChatGPT) of twenty paragraph-length passages from two works by the Greek physician Galen of Pergamum (ca. 129-216 CE): On Mixtures, which has two published English translations, and On the Composition of Drugs according to Kinds, which has never been fully translated into English. We assess translation quality using both standard automated evaluation metrics (BLEU, chrF++, METEOR, ROUGE-L, BERTScore, COMET, BLEURT) and expert human evaluation via a modified Multidimensional Quality Metrics (MQM) framework applied to all 60 translations by a team of domain specialists. On the previously translated expository text, LLMs achieved high translation quality (mean MQM score 95.2/100), with performance approaching expert level. On the untranslated pharmacological text, aggregate quality was lower (79.9/100) but with high variance driven by two passages presenting extreme terminological density; excluding these, scores converged to within 4 points of the translated text. Terminology rarity, operationalized via corpus frequency in the literary Diorisis Ancient Greek Corpus, emerged as a strong predictor of translation failure (r = -.97 for passage-level quality on the untranslated text). Automated metrics showed moderate correlation with human judgment overall on the text with a wide quality spread (Composition), but no metric discriminated among high-quality translations. We discuss implications for the use of LLMs in Classical scholarship and for the design of automated evaluation pipelines for low-resource ancient languages.",
+    "published": "2026-02-27T15:57:15Z",
+    "authors": [
+      "James L. Zainaldin",
+      "Cameron Pattison",
+      "Manuela Marai",
+      "Jacob Wu",
+      "Mark J. Schiefsky"
+    ],
+    "link": "https://arxiv.org/abs/2602.24119v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24115v1",
+    "title": "Agentic AI-RAN: Enabling Intent-Driven, Explainable and Self-Evolving Open RAN Intelligence",
+    "summary": "Open RAN (O-RAN) exposes rich control and telemetry interfaces across the Non-RT RIC, Near-RT RIC, and distributed units, but also makes it harder to operate multi-tenant, multi-objective RANs in a safe and auditable manner. In parallel, agentic AI systems with explicit planning, tool use, memory, and self-management offer a natural way to structure long-lived control loops. This article surveys how such agentic controllers can be brought into O-RAN: we review the O-RAN architecture, contrast agentic controllers with conventional ML/RL xApps, and organise the task landscape around three clusters: network slice life-cycle, radio resource management (RRM) closed loops, and cross-cutting security, privacy, and compliance. We then introduce a small set of agentic primitives (Plan-Act-Observe-Reflect, skills as tool use, memory and evidence, and self-management gates) and show, in a multi-cell O-RAN simulation, how they improve slice life-cycle and RRM performance compared to conventional baselines and ablations that remove individual primitives. Security, privacy, and compliance are discussed as architectural constraints and open challenges for standards-aligned deployments. This framework achieves an average 8.83\\% reduction in resource usage across three classic network slices.",
+    "published": "2026-02-27T15:55:34Z",
+    "authors": [
+      "Zhizhou He",
+      "Yang Luo",
+      "Xinkai Liu",
+      "Mahdi Boloursaz Mashhadi",
+      "Mohammad Shojafar",
+      "Merouane Debbah",
+      "Rahim Tafazolli"
+    ],
+    "link": "https://arxiv.org/abs/2602.24115v1",
+    "categories": [
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24110v1",
+    "title": "Recycling Failures: Salvaging Exploration in RLVR via Fine-Grained Off-Policy Guidance",
+    "summary": "Reinforcement Learning from Verifiable Rewards (RLVR) has emerged as a powerful paradigm for enhancing the complex reasoning capabilities of Large Reasoning Models. However, standard outcome-based supervision suffers from a critical limitation that penalizes trajectories that are largely correct but fail due to several missteps as heavily as completely erroneous ones. This coarse feedback signal causes the model to discard valuable largely correct rollouts, leading to a degradation in rollout diversity that prematurely narrows the exploration space. Process Reward Models have demonstrated efficacy in providing reliable step-wise verification for test-time scaling, naively integrating these signals into RLVR as dense rewards proves ineffective.Prior methods attempt to introduce off-policy guided whole-trajectory replacement that often outside the policy model's distribution, but still fail to utilize the largely correct rollouts generated by the model itself and thus do not effectively mitigate the narrowing of the exploration space. To address these issues, we propose SCOPE (Step-wise Correction for On-Policy Exploration), a novel framework that utilizes Process Reward Models to pinpoint the first erroneous step in suboptimal rollouts and applies fine-grained, step-wise off-policy rectification. By applying precise refinement on partially correct rollout, our method effectively salvages partially correct trajectories and increases diversity score by 13.5%, thereby sustaining a broad exploration space. Extensive experiments demonstrate that our approach establishes new state-of-the-art results, achieving an average accuracy of 46.6% on math reasoning and exhibiting robust generalization with 53.4% accuracy on out-of-distribution reasoning tasks.",
+    "published": "2026-02-27T15:49:23Z",
+    "authors": [
+      "Yanwei Ren",
+      "Haotian Zhang",
+      "Likang Xiao",
+      "Xikai Zhang",
+      "Jiaxing Huang",
+      "Jiayan Qiu",
+      "Baosheng Yu",
+      "Quan Chen",
+      "Liu Liu"
+    ],
+    "link": "https://arxiv.org/abs/2602.24110v1",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24109v1",
+    "title": "ARGUS: Seeing the Influence of Narrative Features on Persuasion in Argumentative Texts",
+    "summary": "Can narratives make arguments more persuasive? And to this end, which narrative features matter most? Although stories are often seen as powerful tools for persuasion, their specific role in online, unstructured argumentation remains underexplored. To address this gap, we present ARGUS, a framework for studying the impact of narration on persuasion in argumentative discourse. ARGUS introduces a new ChangeMyView corpus annotated for story presence and six key narrative features, integrating insights from two established theoretical frameworks that capture both textual narrative features and their effects on recipients. Leveraging both encoder-based classifiers and zero-shot large language models (LLMs), ARGUS identifies stories and narrative features and applies them at scale to examine how different narrative dimensions influence persuasion success in online argumentation.",
+    "published": "2026-02-27T15:47:57Z",
+    "authors": [
+      "Sara Nabhani",
+      "Federico Pianzola",
+      "Khalid Al-Khatib",
+      "Malvina Nissim"
+    ],
+    "link": "https://arxiv.org/abs/2602.24109v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24097v1",
+    "title": "Bi-level RL-Heuristic Optimization for Real-world Winter Road Maintenance",
+    "summary": "Winter road maintenance is critical for ensuring public safety and reducing environmental impacts, yet existing methods struggle to manage large-scale routing problems effectively and mostly reply on human decision. This study presents a novel, scalable bi-level optimization framework, validated on real operational data on UK strategic road networks (M25, M6, A1), including interconnected local road networks in surrounding areas for vehicle traversing, as part of the highway operator's efforts to solve existing planning challenges. At the upper level, a reinforcement learning (RL) agent strategically partitions the road network into manageable clusters and optimally allocates resources from multiple depots. At the lower level, a multi-objective vehicle routing problem (VRP) is solved within each cluster, minimizing the maximum vehicle travel time and total carbon emissions. Unlike existing approaches, our method handles large-scale, real-world networks efficiently, explicitly incorporating vehicle-specific constraints, depot capacities, and road segment requirements. Results demonstrate significant improvements, including balanced workloads, reduced maximum travel times below the targeted two-hour threshold, lower emissions, and substantial cost savings. This study illustrates how advanced AI-driven bi-level optimization can directly enhance operational decision-making in real-world transportation and logistics.",
+    "published": "2026-02-27T15:37:35Z",
+    "authors": [
+      "Yue Xie",
+      "Zizhen Xu",
+      "William Beazley",
+      "Fumiya Iida"
+    ],
+    "link": "https://arxiv.org/abs/2602.24097v1",
+    "categories": [
+      "cs.AI"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24086v1",
+    "title": "The Subjectivity of Monoculture",
+    "summary": "Machine learning models -- including large language models (LLMs) -- are often said to exhibit monoculture, where outputs agree strikingly often. But what does it actually mean for models to agree too much? We argue that this question is inherently subjective, relying on two key decisions.\n  First, the analyst must specify a baseline null model for what \"independence\" should look like. This choice is inherently subjective, and as we show, different null models result in dramatically different inferences about excess agreement. Second, we show that inferences depend on the population of models and items under consideration. Models that seem highly correlated in one context may appear independent when evaluated on a different set of questions, or against a different set of peers. Experiments on two large-scale benchmarks validate our theoretical findings. For example, we find drastically different inferences when using a null model with item difficulty compared to previous works that do not. Together, our results reframe monoculture evaluation not as an absolute property of model behavior, but as a context-dependent inference problem.",
+    "published": "2026-02-27T15:23:14Z",
+    "authors": [
+      "Nathanael Jo",
+      "Nikhil Garg",
+      "Manish Raghavan"
+    ],
+    "link": "https://arxiv.org/abs/2602.24086v1",
+    "categories": [
+      "cs.CY",
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24082v1",
+    "title": "Preference Packing: Efficient Preference Optimization for Large Language Models",
+    "summary": "Resource-efficient training optimization techniques are becoming increasingly important as the size of large language models (LLMs) continues to grow. In particular, batch packing is commonly used in pre-training and supervised fine-tuning to achieve resource-efficient training. We propose preference packing, a method to enhance resource efficiency in training techniques that use data with different responses for the same input prompt, such as reward models or Direct Preference Optimization (DPO). Preference packing improves resource efficiency by reducing the attention operations for duplicate input prompts and decreasing KV cache memory usage. We conducted experiments on text-only datasets and image-included datasets and achieved at least 37% reduction in training time. Notably, this method can be applied alongside existing optimization techniques such as batch sorting, resulting in a 3.22x speedup.",
+    "published": "2026-02-27T15:19:57Z",
+    "authors": [
+      "Jaekyung Cho"
+    ],
+    "link": "https://arxiv.org/abs/2602.24082v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24068v1",
+    "title": "A Novel Hierarchical Multi-Agent System for Payments Using LLMs",
+    "summary": "Large language model (LLM) agents, such as OpenAI's Operator and Claude's Computer Use, can automate workflows but unable to handle payment tasks. Existing agentic solutions have gained significant attention; however, even the latest approaches face challenges in implementing end-to-end agentic payment workflows. To address this gap, this research proposes the Hierarchical Multi-Agent System for Payments (HMASP), which provides an end-to-end agentic method for completing payment workflows. The proposed HMASP leverages either open-weight or proprietary LLMs and employs a modular architecture consisting of the Conversational Payment Agent (CPA - first agent level), Supervisor agents (second agent level), Routing agents (third agent level), and the Process summary agent (fourth agent level). The CPA serves as the central entry point, handling all external requests and coordinating subsequent tasks across hierarchical levels. HMASP incorporates architectural patterns that enable modular task execution across agents and levels for payment operations, including shared state variables, decoupled message states, and structured handoff protocols that facilitate coordination across agents and workflows. Experimental results demonstrate the feasibility of the proposed HMASP. To our knowledge, HMASP is the first LLM-based multi-agent system to implement end-to-end agentic payment workflows. This work lays a foundation for extending agentic capabilities into the payment domain.",
+    "published": "2026-02-27T14:58:13Z",
+    "authors": [
+      "Joon Kiat Chua",
+      "Donghao Huang",
+      "Zhaoxia Wang"
+    ],
+    "link": "https://arxiv.org/abs/2602.24068v1",
+    "categories": [
+      "cs.MA",
+      "cs.CL"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.23899v1",
+    "title": "Experience-Guided Self-Adaptive Cascaded Agents for Breast Cancer Screening and Diagnosis with Reduced Biopsy Referrals",
+    "summary": "We propose an experience-guided cascaded multi-agent framework for Breast Ultrasound Screening and Diagnosis, called BUSD-Agent, that aims to reduce diagnostic escalation and unnecessary biopsy referrals. Our framework models screening and diagnosis as a two-stage, selective decision-making process. A lightweight `screening clinic' agent, restricted to classification models as tools, selectively filters out benign and normal cases from further diagnostic escalation when malignancy risk and uncertainty are estimated as low. Cases that have higher risks are escalated to the `diagnostic clinic' agent, which integrates richer perception and radiological description tools to make a secondary decision on biopsy referral. To improve agent performance, past records of pathology-confirmed outcomes along with image embeddings, model predictions, and historical agent actions are stored in a memory bank as structured decision trajectories. For each new case, BUSD-Agent retrieves similar past cases based on image, model response and confidence similarity to condition the agent's current decision policy. This enables retrieval-conditioned in-context adaptation that dynamically adjusts model trust and escalation thresholds from prior experiences without parameter updates. Evaluation across 10 breast ultrasound datasets shows that the proposed experience-guided workflow reduces diagnostic escalation in BUSD-Agent from 84.95% to 58.72% and overall biopsy referrals from 59.50% to 37.08%, compared to the same architecture without trajectory conditioning, while improving average screening specificity by 68.48% and diagnostic specificity by 6.33%.",
+    "published": "2026-02-27T10:48:14Z",
+    "authors": [
+      "Pramit Saha",
+      "Mohammad Alsharid",
+      "Joshua Strong",
+      "J. Alison Noble"
+    ],
+    "link": "https://arxiv.org/abs/2602.23899v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.23845v1",
+    "title": "CLFEC: A New Task for Unified Linguistic and Factual Error Correction in paragraph-level Chinese Professional Writing",
+    "summary": "Chinese text correction has traditionally focused on spelling and grammar, while factual error correction is usually treated separately. However, in paragraph-level Chinese professional writing, linguistic (word/grammar/punctuation) and factual errors frequently co-occur and interact, making unified correction both necessary and challenging. This paper introduces CLFEC (Chinese Linguistic & Factual Error Correction), a new task for joint linguistic and factual correction. We construct a mixed, multi-domain Chinese professional writing dataset spanning current affairs, finance, law, and medicine. We then conduct a systematic study of LLM-based correction paradigms, from prompting to retrieval-augmented generation (RAG) and agentic workflows. The analysis reveals practical challenges, including limited generalization of specialized correction models, the need for evidence grounding for factual repair, the difficulty of mixed-error paragraphs, and over-correction on clean inputs. Results further show that handling linguistic and factual Error within the same context outperform decoupled processes, and that agentic workflows can be effective with suitable backbone models. Overall, our dataset and empirical findings provide guidance for building reliable, fully automatic proofreading systems in industrial settings.",
+    "published": "2026-02-27T09:36:05Z",
+    "authors": [
+      "Jian Kai",
+      "Zidong Zhang",
+      "Jiwen Chen",
+      "Zhengxiang Wu",
+      "Songtao Sun",
+      "Fuyang Li",
+      "Yang Cao",
+      "Qiang Liu"
+    ],
+    "link": "https://arxiv.org/abs/2602.23845v1",
+    "categories": [
+      "cs.CL"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.23766v1",
+    "title": "UniFAR: A Unified Facet-Aware Retrieval Framework for Scientific Documents",
+    "summary": "Existing scientific document retrieval (SDR) methods primarily rely on document-centric representations learned from inter-document relationships for document-document (doc-doc) retrieval. However, the rise of LLMs and RAG has shifted SDR toward question-driven retrieval, where documents are retrieved in response to natural-language questions (q-doc). This change has led to systematic mismatches between document-centric models and question-driven retrieval, including (1) input granularity (long documents vs. short questions), (2) semantic focus (scientific discourse structure vs. specific question intent), and (3) training signals (citation-based similarity vs. question-oriented relevance). To this end, we propose UniFAR, a Unified Facet-Aware Retrieval framework to jointly support doc-doc and q-doc SDR within a single architecture. UniFAR reconciles granularity differences through adaptive multi-granularity aggregation, aligns document structure with question intent via learnable facet anchors, and unifies doc-doc and q-doc supervision through joint training. Experimental results show that UniFAR consistently outperforms prior methods across multiple retrieval tasks and base models, confirming its effectiveness and generality.",
+    "published": "2026-02-27T07:44:02Z",
+    "authors": [
+      "Zheng Dou",
+      "Zhao Zhang",
+      "Deqing Wang",
+      "Yikun Ban",
+      "Fuzhen Zhuang"
+    ],
+    "link": "https://arxiv.org/abs/2602.23766v1",
+    "categories": [
+      "cs.IR"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.23674v1",
+    "title": "Cosmic Muon Explorer: A Portable Detector for Cosmic Muon Flux Measurements and Outreach",
+    "summary": "In this paper, we present development of a portable cosmic muon tracker tailored for both on-site measurements of cosmic muon flux as well as for outreach activities. The tracker comprises of two 70 mm x 70 mm plastic scintillators, wavelength shifting (WLS) fibers, and Hamamatsu made Silicon Photomultipliers (SiPM) S13360-2050VE. The detector uses plastic scintillator panels optically coupled to WLS fibers, which transmit scintillation light to the SiPMs. SiPM signals are routed to an electronics board equipped with op-amp amplifiers and a peak-hold circuit connected to an ESP32 microcontroller module. When muons traverse through both scintillators the light emitted is collected by the SiPMs, and thus generating signals proportional to the incident light intensity. These signals are then amplified and the pulse peak is held for 500 us. A high speed discriminator is used to generate trigger logic signals. The peak analog voltage is digitized using the onboard ADC of the ESP32 when a coincident trigger occurs. The SiPMs are powered by a High Voltage bias supply module while an onboard BMP180 module measures temperature and pressure. For real-time event tagging, a GPS module is interfaced with the ESP-32. Housed within an acrylic box measuring 100 mm x 100 mm x 100 mm the detector can be powered using a 5V 1A USB power bank. An open source mobile application was used for real-time monitoring. This versatile and cost-effective portable detector facilitates cosmic muon research in various experimental settings. Its portability and low power requirements enable on-site measurements in environments such as tunnels, caves as well as high altitudes.",
+    "published": "2026-02-27T04:42:55Z",
+    "authors": [
+      "Yuvaraj Elangovan",
+      "Shashwat Kakkad",
+      "B. Satyanarayana"
+    ],
+    "link": "https://arxiv.org/abs/2602.23674v1",
+    "categories": [
+      "physics.ins-det"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.23659v1",
+    "title": "Central Bank Digital Currencies: Where is the Privacy, Technology, and Anonymity?",
+    "summary": "In an age of financial system digitisation and the increasing adoption of digital currencies, Central Bank Digital Currencies (CBDCs) have emerged as a focal point for technological innovation. Privacy compliance has become a key factor in the successful design of CBDCs, extending beyond technical requirements to influence legal requirements, user trust, and security considerations. Implementing Privacy-Enhancing Technologies (PETs) in CBDCs requires an interdisciplinary approach, however, the lack of a common understanding of privacy and the essential technological characteristics restricts progress. This work investigates: (1) How privacy can be defined within the framework of CBDCs and what implications does this definition have for CBDCs design? and (2) Which PETs can be employed to enhance privacy in CBDC design? We propose a comprehensive definition for privacy that is mapped to the cryptographic landscape for feature implementation. The research is validated against case studies from 20 current CBDCs. The study shows that comprehensive privacy can be designed in the proposal stage, but that privacy does not reach the launched version of the CBDC.",
+    "published": "2026-02-27T03:56:40Z",
+    "authors": [
+      "Jeff Nijsse",
+      "Andrea Pinto"
+    ],
+    "link": "https://arxiv.org/abs/2602.23659v1",
+    "categories": [
+      "cs.CR"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.23599v1",
+    "title": "Normalisation and Initialisation Strategies for Graph Neural Networks in Blockchain Anomaly Detection",
+    "summary": "Graph neural networks (GNNs) offer a principled approach to financial fraud detection by jointly learning from node features and transaction graph topology. However, their effectiveness on real-world anti-money laundering (AML) benchmarks depends critically on training practices such as specifically weight initialisation and normalisation that remain underexplored. We present a systematic ablation of initialisation and normalisation strategies across three GNN architectures (GCN, GAT, and GraphSAGE) on the Elliptic Bitcoin dataset. Our experiments reveal that initialisation and normalisation are architecture-dependent: GraphSAGE achieves the strongest performance with Xavier initialisation alone, GAT benefits most from combining GraphNorm with Xavier initialisation, while GCN shows limited sensitivity to these modifications. These findings offer practical, architecture-specific guidance for deploying GNNs in AML pipelines for datasets with severe class imbalance. We release a reproducible experimental framework with temporal data splits, seeded runs, and full ablation results.",
+    "published": "2026-02-27T02:09:25Z",
+    "authors": [
+      "Dang Sy Duy",
+      "Nguyen Duy Chien",
+      "Kapil Dev",
+      "Jeff Nijsse"
+    ],
+    "link": "https://arxiv.org/abs/2602.23599v1",
+    "categories": [
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.23465v1",
+    "title": "Gendered Digital Financing Adoption and Women's Financial Inclusion in Pakistan",
+    "summary": "Financial inclusion is a longstanding concern across underdeveloped communities, particularly for women. However, there are limited data-driven measures to first quantitatively identify such concerns and second to inform policies. In this work, we examine the digital money service adoption and women's financial inclusion in the context of Pakistan. We use the nationally representative Global Findex data from the World Bank to analyze how mobile money usage, when moderated by phone ownership, internet access, and education, affects women's access to formal financial services. Our findings show that women who adopt mobile money services have significantly higher odds of accessing formal financial systems. Findings also reveal nuanced insights: internet access does not significantly impact inclusion, highlighting the influence of socio-cultural constraints. Despite the limitations of using cross-sectional data and the absence of qualitative dimensions, our study contributes empirical evidence on gendered digital finance adoption. The findings have important implications for policy, including the need for women-centric fintech design and digital literacy reforms to bridge the gender gap in financial inclusion.",
+    "published": "2026-02-26T19:45:19Z",
+    "authors": [
+      "Abdul Wadood Asim",
+      "Khansa Zafar",
+      "Muhammad Raees"
+    ],
+    "link": "https://arxiv.org/abs/2602.23465v1",
+    "categories": [
+      "cs.CY"
+    ]
+  }
+]
