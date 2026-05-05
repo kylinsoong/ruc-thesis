@@ -1,0 +1,3 @@
+model_type,dataset,accuracy,precision,recall,f1,auc_roc,auc_pr,train_samples,test_samples
+deepfm,german_credit,0.7750,0.6364,0.5833,0.6087,0.7907,0.6506,800,200
+deepfm,german_credit,0.7750,0.6364,0.5833,0.6087,0.7907,0.6506,800,200

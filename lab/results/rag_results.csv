@@ -1,0 +1,2 @@
+model_type,dataset,accuracy,precision,recall,f1,auc_roc,auc_pr,train_samples,test_samples
+llm_rag,german_credit,0.7400,0.0000,0.0000,0.0000,0.5000,0.2600,800,100

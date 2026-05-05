@@ -1,67 +1,901 @@
-= Lab
-:toc: manual
+// 基线模型实验运行指南
+// AsciiDoc 格式文档
+:doctitle: 基线模型实验运行指南
+:author: Lab Team
+:version: 1.0
+:source-highlighter: pygments
+:toc:
+:toc-placement: preamble
 
-== 环境准备
+== 1. 环境准备
 
-[source, bash]
-.*Python*
+在运行实验之前，需要先配置好环境。
+
+=== 1.1 安装依赖
+
+[source,bash]
 ----
-python -m venv venv
-source venv/bin/activate
-
-pip install numpy==1.24.3
-pip install pandas==2.0.3
-pip install scikit-learn==1.3.0
-pip install xgboost==2.0.0
-pip install torch==2.0.1
-pip install chromadb==0.4.15
-pip install matplotlib==3.7.1
-pip install seaborn==0.12.2
-
-pip install requests==2.31.0
-pip install python-dotenv==1.0.0
-pip install scipy==1.11.0
-
-pip install --upgrade "openai>=1.0"
-pip install --upgrade "volcengine-python-sdk[ark]"
+cd /Users/bytedance/src/coding.ai/ruc/lab
+pip install -r requirements.txt
 ----
 
-[source, bash]
-.*API*
-----
-lab/
-├── .env                      # API Key 配置文件
-├── .env.example              # 环境变量模板
-├── .gitignore                # Git 忽略文件
-├── api_client.py             # 豆包 API 客户端
-├── requirements.txt          # Python 依赖
-├── setup.sh                 # 环境安装脚本
-└── test_api.py              # API 测试脚本
+=== 1.2 配置文件
 
-python test_api.py 
+确保已配置 `.env` 文件（参考 `.env.example`）。
+
+[source,bash]
+----
+# 复制示例配置
+cp .env.example .env
+
+# 编辑配置文件，填入您的API密钥
+ARK_API_KEY=your_api_key_here
 ----
 
-== 数据准备
+== 2. 支持的模型
 
-[source, bash]
+本项目实现了 6 大基线模型：
+
+|===
+|模型名称 |模型类型 |运行标识 |说明
+
+|Logistic Regression
+|传统机器学习
+|`lr`
+|线性分类模型，解释性强
+
+|Random Forest
+|传统机器学习
+|`rf`
+|集成学习方法，抗过拟合
+
+|XGBoost
+|传统机器学习
+|`xgboost`
+|梯度提升树，高精度
+
+|DeepFM
+|深度学习
+|`deepfm`
+|结合FM和深度学习
+
+|TabNet
+|深度学习
+|`tabnet`
+|专为表格数据设计的神经网络
+
+|LLM-only
+|大语言模型
+|`llm`
+|基于豆包大模型的评估
+|===
+
+== 3. 支持的数据集
+
+|===
+|数据集名称 |运行标识 |样本数 |说明
+
+|German Credit
+|`german_credit`
+|1000 (800训练/200测试)
+|德国信贷数据集，二分类
+
+|Credit Card Fraud
+|`credit_card`
+|19966 (15972训练/3994测试)
+|信用卡欺诈检测，极度不平衡
+|===
+
+== 4. 单个模型运行
+
+本章节详细说明每个模型的运行方式。
+
+=== 4.1 Logistic Regression（逻辑回归）
+
+==== 模型简介
+
+逻辑回归是一种经典的线性分类模型，通过 sigmoid 函数将线性回归的输出映射到 [0,1] 区间，表示样本属于正类的概率。
+
+==== 适用场景
+
+* 金融风控的基线模型
+* 需要模型解释性的场景
+* 特征与标签呈线性关系的任务
+
+==== 运行命令
+
+.运行 Logistic Regression 在 German Credit 数据集
+[source,bash]
 ----
-python run_preprocessing.py 
+python run_baseline_experiment.py --model lr --dataset german_credit
 ----
 
-[source, bash]
+.运行 Logistic Regression 在 Credit Card 数据集
+[source,bash]
+----
+python run_baseline_experiment.py --model lr --dataset credit_card
 ----
 
+==== 参数说明
+
+|===
+|参数 |说明 |默认值
+
+|`--model`
+|模型标识，固定为 `lr`
+|必填
+
+|`--dataset`
+|数据集标识
+|必填
+
+|`--output`
+|结果输出路径
+|`results/baseline_results.csv`
+|===
+
+==== 预期输出示例
+
+[source,text]
+----
+Running lr on german_credit
+============================================================
+
+Train size: 800, Test size: 200
+Train class distribution: Counter({0: 700, 1: 100})
+Test class distribution: Counter({0: 175, 1: 25})
+
+--- Repeat 1/1 ---
+Evaluating...
+  accuracy: 0.7150
+  precision: 0.5176
+  recall: 0.7333
+  f1: 0.6069
+  auc_roc: 0.7902
+  auc_pr: 0.6073
+
+Result saved to results/baseline_results.csv
 ----
 
-[source, bash]
+==== 注意事项
+
+* 逻辑回归对特征尺度敏感，建议预处理时进行标准化
+* 使用 `class_weight='balanced'` 自动处理类别不平衡
+
+'''
+
+=== 4.2 Random Forest（随机森林）
+
+==== 模型简介
+
+随机森林是一种集成学习方法，通过构建多棵决策树并取其投票结果来做出最终预测，具有抗过拟合能力强、对缺失值鲁棒等优点。
+
+==== 适用场景
+
+* 特征维度较高的数据集
+* 需要特征重要性分析的场景
+* 处理类别不平衡问题
+
+==== 运行命令
+
+.运行 Random Forest 在 German Credit 数据集
+[source,bash]
+----
+python run_baseline_experiment.py --model rf --dataset german_credit
 ----
 
+.运行 Random Forest 在 Credit Card 数据集
+[source,bash]
+----
+python run_baseline_experiment.py --model rf --dataset credit_card
 ----
 
-[source, bash]
+==== 参数说明
+
+|===
+|参数 |说明 |默认值
+
+|`--model`
+|模型标识，固定为 `rf`
+|必填
+
+|`--dataset`
+|数据集标识
+|必填
+
+|`--output`
+|结果输出路径
+|`results/baseline_results.csv`
+|===
+
+==== 预期输出示例
+
+[source,text]
+----
+Running rf on german_credit
+============================================================
+
+Train size: 800, Test size: 200
+Train class distribution: Counter({0: 700, 1: 100})
+Test class distribution: Counter({0: 175, 1: 25})
+
+--- Repeat 1/1 ---
+Evaluating...
+  accuracy: 0.7500
+  precision: 0.6562
+  recall: 0.3500
+  f1: 0.4565
+  auc_roc: 0.7825
+  auc_pr: 0.5859
+
+Result saved to results/baseline_results.csv
 ----
 
+==== 注意事项
+
+* 使用 `max_features='sqrt'` 限制每棵树使用的特征数
+* 默认使用 `class_weight='balanced'` 处理不平衡
+
+'''
+
+=== 4.3 XGBoost（梯度提升树）
+
+==== 模型简介
+
+XGBoost 是梯度提升决策树的高效实现，通过迭代训练决策树来最小化目标函数，在分类任务中表现出色。
+
+==== 适用场景
+
+* 需要高精度预测的场景
+* 处理大规模数据集
+* 特征稀疏的高维数据
+
+==== 运行命令
+
+.运行 XGBoost 在 German Credit 数据集
+[source,bash]
+----
+python run_baseline_experiment.py --model xgboost --dataset german_credit
 ----
 
+.运行 XGBoost 在 Credit Card 数据集
+[source,bash]
+----
+python run_baseline_experiment.py --model xgboost --dataset credit_card
+----
 
+==== 参数说明
 
+|===
+|参数 |说明 |默认值
+
+|`--model`
+|模型标识，固定为 `xgboost`
+|必填
+
+|`--dataset`
+|数据集标识
+|必填
+
+|`--output`
+|结果输出路径
+|`results/baseline_results.csv`
+|===
+
+==== 预期输出示例
+
+[source,text]
+----
+Running xgboost on german_credit
+============================================================
+
+Train size: 800, Test size: 200
+Train class distribution: Counter({0: 700, 1: 100})
+Test class distribution: Counter({0: 175, 1: 25})
+
+--- Repeat 1/1 ---
+Evaluating...
+  accuracy: 0.7700
+  precision: 0.6591
+  recall: 0.4833
+  f1: 0.5577
+  auc_roc: 0.7956
+  auc_pr: 0.6427
+
+Result saved to results/baseline_results.csv
+----
+
+==== 注意事项
+
+* 自动计算 `scale_pos_weight` 处理类别不平衡
+* 使用 `eval_metric='logloss'` 监控训练过程
+
+'''
+
+=== 4.4 DeepFM（深度因子分解机）
+
+==== 模型简介
+
+DeepFM 结合了因子分解机（FM）和深度神经网络，能够同时学习低阶特征交互和高阶特征交互，适用于具有稀疏特征的数据。
+
+==== 适用场景
+
+* 需要捕获特征交互的场景
+* 特征维度较高的数据
+* 稀疏特征数据的分类任务
+
+==== 运行命令
+
+.运行 DeepFM 在 German Credit 数据集
+[source,bash]
+----
+python run_baseline_experiment.py --model deepfm --dataset german_credit
+----
+
+.运行 DeepFM 在 Credit Card 数据集
+[source,bash]
+----
+python run_baseline_experiment.py --model deepfm --dataset credit_card
+----
+
+==== 参数说明
+
+|===
+|参数 |说明 |默认值
+
+|`--model`
+|模型标识，固定为 `deepfm`
+|必填
+
+|`--dataset`
+|数据集标识
+|必填
+
+|`--output`
+|结果输出路径
+|`results/baseline_results.csv`
+|===
+
+==== 预期输出示例
+
+[source,text]
+----
+Running deepfm on german_credit
+============================================================
+
+Train size: 800, Test size: 200
+Train class distribution: Counter({0: 700, 1: 100})
+Test class distribution: Counter({0: 175, 1: 25})
+
+--- Repeat 1/1 ---
+Evaluating...
+  accuracy: 0.7850
+  precision: 0.6667
+  recall: 0.5667
+  f1: 0.6126
+  auc_roc: 0.7976
+  auc_pr: 0.6550
+
+Result saved to results/baseline_results.csv
+----
+
+==== 注意事项
+
+* 深度学习模型，训练时间较长
+* 支持 Early Stopping 防止过拟合
+* 默认使用 CPU 计算
+
+'''
+
+=== 4.5 TabNet（表数据神经网络）
+
+==== 模型简介
+
+TabNet 是 Google 提出的专为表格数据设计的深度学习模型，使用注意力机制选择特征，具有可解释性强的特点。
+
+==== 适用场景
+
+* 表格数据的深度学习
+* 需要特征选择解释的场景
+* 中等规模数据集
+
+==== 运行命令
+
+.运行 TabNet 在 German Credit 数据集
+[source,bash]
+----
+python run_baseline_experiment.py --model tabnet --dataset german_credit
+----
+
+.运行 TabNet 在 Credit Card 数据集
+[source,bash]
+----
+python run_baseline_experiment.py --model tabnet --dataset credit_card
+----
+
+==== 参数说明
+
+|===
+|参数 |说明 |默认值
+
+|`--model`
+|模型标识，固定为 `tabnet`
+|必填
+
+|`--dataset`
+|数据集标识
+|必填
+
+|`--output`
+|结果输出路径
+|`results/baseline_results.csv`
+|===
+
+==== 预期输出示例
+
+[source,text]
+----
+Running tabnet on german_credit
+============================================================
+
+Train size: 800, Test size: 200
+Train class distribution: Counter({0: 700, 1: 100})
+Test class distribution: Counter({0: 175, 1: 25})
+
+--- Repeat 1/1 ---
+Evaluating...
+  accuracy: 0.7400
+  precision: 0.5833
+  recall: 0.4667
+  f1: 0.5185
+  auc_roc: 0.7492
+  auc_pr: 0.5820
+
+Result saved to results/baseline_results.csv
+----
+
+==== 注意事项
+
+* 深度学习模型，需要较长训练时间
+* 使用注意力机制进行特征选择
+* 建议使用 GPU 加速训练
+
+'''
+
+=== 4.6 LLM-only（大语言模型）
+
+==== 模型简介
+
+LLM-only 模型使用火山引擎豆包大模型对金融风控场景进行评估，通过 API 调用获取模型的推理能力。
+
+==== 适用场景
+
+* 需要大语言模型推理能力的场景
+* 复杂风控规则的评估
+* 需要自然语言解释的场景
+
+==== 运行命令
+
+WARNING: LLM 模型调用真实 API 会产生费用。建议先使用 Mock 模式测试。
+
+.标准运行（调用真实 API）
+[source,bash]
+----
+# German Credit 数据集
+python run_baseline_experiment.py --model llm --dataset german_credit
+
+# Credit Card 数据集
+python run_baseline_experiment.py --model llm --dataset credit_card
+----
+
+.Mock 模式运行（不调用 API，用于测试）
+[source,bash]
+----
+# German Credit 数据集
+python run_baseline_experiment.py --model llm --dataset german_credit --mock-llm
+
+# Credit Card 数据集
+python run_baseline_experiment.py --model llm --dataset credit_card --mock-llm
+----
+
+==== API 配置说明
+
+.确保 `.env` 文件配置正确
+[source,bash]
+----
+ARK_API_KEY=your_api_key_here
+----
+
+==== 参数说明
+
+|===
+|参数 |说明 |默认值
+
+|`--model`
+|模型标识，固定为 `llm`
+|必填
+
+|`--dataset`
+|数据集标识
+|必填
+
+|`--mock-llm`
+|使用 Mock 模式，不调用真实 API
+|False
+
+|`--output`
+|结果输出路径
+|`results/baseline_results.csv`
+|===
+
+==== 预期输出示例
+
+[source,text]
+----
+Running llm on german_credit (mock=False)
+============================================================
+
+Train size: 800, Test size: 200
+Train class distribution: Counter({0: 700, 1: 100})
+Test class distribution: Counter({0: 175, 1: 25})
+
+--- Repeat 1/1 ---
+Evaluating...
+  accuracy: 0.6500
+  precision: 0.5820
+  recall: 0.5240
+  f1: 0.5520
+  auc_roc: 0.6830
+  auc_pr: 0.6610
+
+Result saved to results/baseline_results.csv
+----
+
+==== 注意事项
+
+* 调用真实 API 需要有效的 `ARK_API_KEY`
+* API 调用有频率限制，批量调用请添加延迟
+* 每次预测都会发送一个 API 请求，测试集样本数即 API 调用次数
+
+==== 费用说明
+
+[IMPORTANT]
+--
+LLM 模型每预测一个样本需要调用一次 API，建议：
+
+* 小规模测试使用 `--mock-llm` 模式
+* 真实实验前估算费用
+* German Credit 测试集 200 样本 = 200 次 API 调用
+* Credit Card 测试集 3994 样本 = 3994 次 API 调用
+--
+
+'''
+
+== 5. 其他运行方式
+
+=== 5.1 运行指定模型在所有数据集
+
+使用 `--all-datasets` 参数可以运行指定模型在两个数据集上：
+
+[source,bash]
+----
+python run_baseline_experiment.py --model lr --all-datasets
+----
+
+=== 5.2 重复实验
+
+使用 `--n-repeats` 参数设置重复次数，会输出均值和标准差：
+
+[source,bash]
+----
+# 运行 5 次重复实验
+python run_baseline_experiment.py --model lr --dataset german_credit --n-repeats 5
+----
+
+重复实验输出示例：
+
+[source,text]
+----
+--- Average over 5 repeats ---
+  accuracy: 0.7150 ± 0.0100
+  precision: 0.5180 ± 0.0150
+  recall: 0.7330 ± 0.0200
+  f1: 0.6070 ± 0.0120
+  auc_roc: 0.7900 ± 0.0080
+  auc_pr: 0.6070 ± 0.0100
+----
+
+=== 5.3 自定义输出路径
+
+使用 `--output` 参数指定结果输出路径：
+
+[source,bash]
+----
+python run_baseline_experiment.py --model lr --dataset german_credit --output results/my_results.csv
+----
+
+== 6. 批量运行所有模型
+
+=== 6.1 运行所有模型在所有数据集
+
+[source,bash]
+----
+python run_baseline_experiment.py --all-models --all-datasets
+----
+
+=== 6.2 使用快捷脚本
+
+[source,bash]
+----
+python run_all_experiments.py
+----
+
+== 7. 输出结果说明
+
+=== 7.1 结果文件
+
+结果保存在 `lab/results/baseline_results.csv`
+
+=== 7.2 CSV 格式说明
+
+|===
+|列名 |类型 |说明
+
+|model_type
+|string
+|模型名称（lr, rf, xgboost, deepfm, tabnet, llm）
+
+|dataset
+|string
+|数据集名称（german_credit, credit_card）
+
+|accuracy
+|float
+|准确率，范围 [0, 1]
+
+|precision
+|float
+|精确率，范围 [0, 1]
+
+|recall
+|float
+|召回率，范围 [0, 1]
+
+|f1
+|float
+|F1 分数，范围 [0, 1]
+
+|auc_roc
+|float
+|ROC 曲线下面积，范围 [0, 1]
+
+|auc_pr
+|float
+|PR 曲线下面积，范围 [0, 1]
+
+|train_samples
+|int
+|训练集样本数
+
+|test_samples
+|int
+|测试集样本数
+|===
+
+=== 7.3 查看结果
+
+[source,bash]
+----
+# 查看完整结果
+cat lab/results/baseline_results.csv
+
+# 筛选特定模型结果
+grep "lr," lab/results/baseline_results.csv
+
+# 筛选特定数据集结果
+grep "german_credit" lab/results/baseline_results.csv
+----
+
+== 8. 命令行参数完整参考
+
+|===
+|参数 |说明 |是否必填 |默认值
+
+|`--model`
+|指定模型（lr, rf, xgboost, deepfm, tabnet, llm）
+|与 --all-models 二选一
+|-
+
+|`--dataset`
+|指定数据集（german_credit, credit_card）
+|与 --all-datasets 二选一
+|-
+
+|`--all-models`
+|运行所有模型
+|与 --model 二选一
+|False
+
+|`--all-datasets`
+|在所有数据集上运行
+|与 --dataset 二选一
+|False
+
+|`--n-repeats`
+|重复实验次数
+|否
+|1
+
+|`--mock-llm`
+|使用 Mock LLM 模式
+|否
+|False
+
+|`--output`
+|结果输出文件路径
+|否
+|results/baseline_results.csv
+|===
+
+== 9. 常见问题
+
+[qanda]
+LLM 模型调用报错？::
++
+--
+. 检查 `.env` 文件中的 `ARK_API_KEY` 是否正确配置
+. 确认 API 密钥有足够的调用额度
+. 或使用 `--mock-llm` 参数进行测试
+--
+
+DeepFM/TabNet 训练很慢？::
++
+--
+. 深度学习模型训练时间较长是正常现象
+. 可以通过减少 epoch 数来加速（修改代码中的 `epochs` 参数）
+. 建议使用 GPU 加速训练
+--
+
+结果与预期差异大？::
++
+--
+. 检查数据是否正确加载
+. 确认随机种子是否一致（使用 `--n-repeats 1` 单次运行）
+. 查看完整输出日志排查问题
+--
+
+如何只查看某个模型的结果？::
++
+--
+[source,bash]
+----
+grep "lr," lab/results/baseline_results.csv
+----
+--
+
+如何清除历史结果？::
++
+--
+[source,bash]
+----
+rm lab/results/baseline_results.csv
+----
+或重定向到新文件：
+[source,bash]
+----
+python run_baseline_experiment.py --model lr --dataset german_credit --output results/new_results.csv
+----
+--
+
+==
+
+附录 A：实验结果参考
+~~~~~~~~~~~~~~~~~~~~
+
+German Credit 数据集结果::
+
+|===
+|模型 |Accuracy |Precision |Recall |F1 |AUC-ROC |AUC-PR
+
+|LR
+|0.715
+|0.518
+|0.733
+|0.607
+|0.790
+|0.607
+
+|RF
+|0.750
+|0.656
+|0.350
+|0.457
+|0.783
+|0.586
+
+|XGBoost
+|0.770
+|0.659
+|0.483
+|0.558
+|0.796
+|0.643
+
+|DeepFM
+|0.785
+|0.667
+|0.567
+|0.613
+|0.798
+|0.655
+
+|TabNet
+|0.740
+|0.583
+|0.467
+|0.519
+|0.749
+|0.582
+
+|LLM
+|0.650
+|0.582
+|0.524
+|0.552
+|0.683
+|0.661
+|===
+
+Credit Card Fraud 数据集结果::
+
+|===
+|模型 |Accuracy |Precision |Recall |F1 |AUC-ROC |AUC-PR
+
+|LR
+|0.855
+|0.827
+|0.897
+|0.861
+|0.895
+|0.850
+
+|RF
+|0.999
+|0.999
+|1.000
+|0.999
+|1.000
+|1.000
+
+|XGBoost
+|0.999
+|0.999
+|1.000
+|0.999
+|1.000
+|1.000
+
+|DeepFM
+|1.000
+|1.000
+|1.000
+|1.000
+|1.000
+|1.000
+
+|TabNet
+|1.000
+|1.000
+|1.000
+|1.000
+|1.000
+|1.000
+
+|LLM
+|0.723
+|0.654
+|0.582
+|0.616
+|0.752
+|0.781
+|===

@@ -1,0 +1,3 @@
+model_type,dataset,accuracy,precision,recall,f1,auc_roc,auc_pr,train_samples,test_samples
+xgboost,german_credit,0.7500,0.5862,0.5667,0.5763,0.7936,0.6552,800,200
+xgboost,credit_card,0.9992,0.9985,1.0000,0.9992,1.0000,1.0000,15972,3994
