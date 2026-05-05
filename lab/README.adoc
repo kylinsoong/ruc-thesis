@@ -41,9 +41,27 @@ lab/
 python test_api.py 
 ----
 
+== 数据准备
+
+[source, bash]
+----
+python run_preprocessing.py 
+----
 
 [source, bash]
 ----
 
 ----
+
+[source, bash]
+----
+
+----
+
+[source, bash]
+----
+
+----
+
+
 
