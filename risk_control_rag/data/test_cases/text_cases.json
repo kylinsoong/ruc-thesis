@@ -1,0 +1,572 @@
+[
+  {
+    "case_id": "TC001",
+    "customer_id": "CUST001",
+    "loan_purpose_text": "申请个人经营贷款用于扩大餐饮店规模，计划新增两家分店，目前主店经营状况良好，月营业额约15万元，有稳定的客户群体。贷款将用于支付新店面租金、装修和设备采购。",
+    "customer_appeal": "本人经营餐饮店已有5年，积累了丰富的行业经验和稳定的客源。新店选址已完成，预计开业后月营业额可达30万元。希望银行能够批准贷款，支持小微企业发展。",
+    "transaction_remark": "日常经营收入稳定，每月按时支付供应商货款，无拖欠记录。个人征信良好，无逾期记录。",
+    "structured_data": {
+      "age": 38,
+      "employment": "A74",
+      "credit_amount": 200000,
+      "duration": 36,
+      "credit_history": "A32",
+      "purpose": "A49",
+      "checking_status": "A13",
+      "savings_status": "A64"
+    },
+    "risk_level": "low",
+    "risk_score": 25
+  },
+  {
+    "case_id": "TC002",
+    "customer_id": "CUST002",
+    "loan_purpose_text": "急需资金周转，声称用于装修房屋，但提供的装修合同存在多处疑点，装修公司无法核实，合同金额与市场行情严重不符。",
+    "customer_appeal": "本人因房屋老旧需要重新装修，申请贷款20万元。装修公司已选定，合同已签订，希望尽快放款。",
+    "transaction_remark": "近期有多笔大额转账记录，资金流向不明。账户频繁出现整数金额的转入转出，疑似民间借贷或赌博资金。",
+    "structured_data": {
+      "age": 32,
+      "employment": "A72",
+      "credit_amount": 200000,
+      "duration": 24,
+      "credit_history": "A30",
+      "purpose": "A42",
+      "checking_status": "A11",
+      "savings_status": "A61"
+    },
+    "risk_level": "high",
+    "risk_score": 85
+  },
+  {
+    "case_id": "TC003",
+    "customer_id": "CUST003",
+    "loan_purpose_text": "申请购车贷款购买家用轿车，用于日常通勤。已选定车型，首付30%，剩余部分申请银行贷款。",
+    "customer_appeal": "本人工作稳定，月收入8000元，配偶也有稳定工作。购车主要是为了方便接送孩子上学，改善家庭生活质量。承诺按时还款。",
+    "transaction_remark": "工资按时发放，每月有固定存款习惯。近期无大额异常支出，信用卡使用正常，按时还款。",
+    "structured_data": {
+      "age": 35,
+      "employment": "A73",
+      "credit_amount": 120000,
+      "duration": 36,
+      "credit_history": "A31",
+      "purpose": "A40",
+      "checking_status": "A12",
+      "savings_status": "A63"
+    },
+    "risk_level": "low",
+    "risk_score": 30
+  },
+  {
+    "case_id": "TC004",
+    "customer_id": "CUST004",
+    "loan_purpose_text": "申请教育贷款用于子女出国留学，已获得国外大学录取通知书，需要支付第一年学费和生活费。",
+    "customer_appeal": "孩子成绩优异，获得国外知名大学录取。作为父母，希望支持孩子的教育发展。家庭收入稳定，有能力偿还贷款。",
+    "transaction_remark": "家庭月收入约2万元，有一定的储蓄基础。近期为留学准备，支出有所增加，但仍在可控范围内。",
+    "structured_data": {
+      "age": 45,
+      "employment": "A75",
+      "credit_amount": 300000,
+      "duration": 60,
+      "credit_history": "A32",
+      "purpose": "A46",
+      "checking_status": "A13",
+      "savings_status": "A64"
+    },
+    "risk_level": "low",
+    "risk_score": 35
+  },
+  {
+    "case_id": "TC005",
+    "customer_id": "CUST005",
+    "loan_purpose_text": "申请消费贷款用于购买高端电子产品和奢侈品，贷款用途描述模糊，无法提供具体购买清单。",
+    "customer_appeal": "本人有稳定工作，希望申请贷款购买一些生活用品。承诺按时还款，请银行批准。",
+    "transaction_remark": "近期消费支出异常增加，频繁在高端商场和奢侈品店消费。信用卡已接近额度上限，存在套现嫌疑。",
+    "structured_data": {
+      "age": 28,
+      "employment": "A72",
+      "credit_amount": 150000,
+      "duration": 24,
+      "credit_history": "A32",
+      "purpose": "A410",
+      "checking_status": "A12",
+      "savings_status": "A61"
+    },
+    "risk_level": "medium",
+    "risk_score": 55
+  },
+  {
+    "case_id": "TC006",
+    "customer_id": "CUST006",
+    "loan_purpose_text": "申请经营贷款用于农产品收购，本人为农产品批发商，需要资金收购当季农产品。有稳定的销售渠道和客户群体。",
+    "customer_appeal": "从事农产品批发10年，与多家超市和餐饮企业有长期合作关系。当季是收购旺季，需要资金周转。预计3个月内可回款。",
+    "transaction_remark": "经营账户流水稳定，季节性波动明显。与供应商和客户往来正常，无拖欠记录。",
+    "structured_data": {
+      "age": 42,
+      "employment": "A74",
+      "credit_amount": 500000,
+      "duration": 12,
+      "credit_history": "A31",
+      "purpose": "A49",
+      "checking_status": "A13",
+      "savings_status": "A64"
+    },
+    "risk_level": "low",
+    "risk_score": 28
+  },
+  {
+    "case_id": "TC007",
+    "customer_id": "CUST007",
+    "loan_purpose_text": "声称申请房屋装修贷款，但提供的房产证明存在伪造嫌疑，房产地址与实际不符，房主姓名与申请人不一致。",
+    "customer_appeal": "本人名下有一套房产需要装修，申请贷款15万元。装修公司已联系好，希望尽快放款开始施工。",
+    "transaction_remark": "账户近期有多笔可疑转账，资金来源不明。与多个高风险账户有资金往来，疑似参与非法活动。",
+    "structured_data": {
+      "age": 36,
+      "employment": "A71",
+      "credit_amount": 150000,
+      "duration": 24,
+      "credit_history": "A33",
+      "purpose": "A42",
+      "checking_status": "A14",
+      "savings_status": "A65"
+    },
+    "risk_level": "high",
+    "risk_score": 90
+  },
+  {
+    "case_id": "TC008",
+    "customer_id": "CUST008",
+    "loan_purpose_text": "申请医疗贷款用于家人重大疾病治疗，已提供医院诊断证明和治疗费用清单。家庭经济压力大，急需资金支持。",
+    "customer_appeal": "家人突发重病，需要立即手术治疗。医疗费用较高，家庭积蓄不足，希望银行能够给予帮助，渡过难关。",
+    "transaction_remark": "家庭收入稳定，但近期医疗支出大幅增加。有一定储蓄，但不足以支付全部医疗费用。过往信用记录良好。",
+    "structured_data": {
+      "age": 40,
+      "employment": "A73",
+      "credit_amount": 180000,
+      "duration": 36,
+      "credit_history": "A32",
+      "purpose": "A410",
+      "checking_status": "A12",
+      "savings_status": "A62"
+    },
+    "risk_level": "medium",
+    "risk_score": 45
+  },
+  {
+    "case_id": "TC009",
+    "customer_id": "CUST009",
+    "loan_purpose_text": "申请创业贷款开设小型超市，已完成市场调研和选址，预计开业后月营业额可达8万元。有详细的商业计划书。",
+    "customer_appeal": "本人有零售行业工作经验，对当地市场非常熟悉。选址在人流量较大的社区，已签订租赁合同。希望银行支持创业梦想。",
+    "transaction_remark": "个人储蓄账户有一定存款，近期支出主要为创业准备费用。无不良信用记录，家庭支持力度大。",
+    "structured_data": {
+      "age": 33,
+      "employment": "A73",
+      "credit_amount": 250000,
+      "duration": 48,
+      "credit_history": "A31",
+      "purpose": "A49",
+      "checking_status": "A12",
+      "savings_status": "A63"
+    },
+    "risk_level": "medium",
+    "risk_score": 40
+  },
+  {
+    "case_id": "TC010",
+    "customer_id": "CUST010",
+    "loan_purpose_text": "申请多笔小额贷款，声称用于日常消费，但在短时间内向多家机构申请贷款，存在多头借贷嫌疑。",
+    "customer_appeal": "本人需要资金周转，希望申请贷款5万元。承诺按时还款，请尽快审批。",
+    "transaction_remark": "近期征信查询次数异常增多，已在其他平台申请多笔贷款。负债率较高，还款压力较大。",
+    "structured_data": {
+      "age": 29,
+      "employment": "A72",
+      "credit_amount": 50000,
+      "duration": 12,
+      "credit_history": "A32",
+      "purpose": "A410",
+      "checking_status": "A11",
+      "savings_status": "A61"
+    },
+    "risk_level": "high",
+    "risk_score": 75
+  },
+  {
+    "case_id": "TC011",
+    "customer_id": "CUST011",
+    "loan_purpose_text": "申请住房贷款购买首套房，已选定房源，首付已筹集完毕。房屋位于城市核心区域，保值增值潜力大。",
+    "customer_appeal": "本人和配偶都有稳定工作，月收入合计约2.5万元。购房是为了改善居住条件，给孩子更好的成长环境。承诺按时还款。",
+    "transaction_remark": "家庭收入稳定，有一定的储蓄积累。近期无大额异常支出，信用记录良好。首付资金来源清晰。",
+    "structured_data": {
+      "age": 32,
+      "employment": "A73",
+      "credit_amount": 800000,
+      "duration": 240,
+      "credit_history": "A32",
+      "purpose": "A42",
+      "checking_status": "A13",
+      "savings_status": "A64"
+    },
+    "risk_level": "low",
+    "risk_score": 20
+  },
+  {
+    "case_id": "TC012",
+    "customer_id": "CUST012",
+    "loan_purpose_text": "申请贷款用于投资股票市场，声称有内幕消息可以获取高额回报。贷款用途不符合银行规定。",
+    "customer_appeal": "本人有多年股票投资经验，目前有很好的投资机会。希望申请贷款扩大投资规模，预计可以获得高额回报。",
+    "transaction_remark": "账户资金流动频繁，大量资金进出股市。投资收益不稳定，存在较大亏损风险。",
+    "structured_data": {
+      "age": 38,
+      "employment": "A73",
+      "credit_amount": 300000,
+      "duration": 24,
+      "credit_history": "A32",
+      "purpose": "A410",
+      "checking_status": "A12",
+      "savings_status": "A63"
+    },
+    "risk_level": "high",
+    "risk_score": 80
+  },
+  {
+    "case_id": "TC013",
+    "customer_id": "CUST013",
+    "loan_purpose_text": "申请汽车贷款购买商用货车，用于物流运输业务。已有稳定的货源和运输线路，预计月收入可覆盖还款。",
+    "customer_appeal": "本人从事物流运输行业5年，有稳定的客户资源。购买新车可以扩大业务规模，提高收入。希望银行支持。",
+    "transaction_remark": "经营账户流水稳定，收入来源清晰。近期业务量有所增长，需要扩大运力。信用记录良好。",
+    "structured_data": {
+      "age": 36,
+      "employment": "A74",
+      "credit_amount": 180000,
+      "duration": 36,
+      "credit_history": "A31",
+      "purpose": "A41",
+      "checking_status": "A12",
+      "savings_status": "A63"
+    },
+    "risk_level": "low",
+    "risk_score": 32
+  },
+  {
+    "case_id": "TC014",
+    "customer_id": "CUST014",
+    "loan_purpose_text": "申请贷款用途描述前后矛盾，先说是装修，后说是经营，再说是还债。无法提供任何证明材料。",
+    "customer_appeal": "本人需要资金周转，具体用途不方便透露。希望银行能够理解并批准贷款。",
+    "transaction_remark": "账户资金流动混乱，有多笔来源不明的资金转入。与多个高风险账户有往来，疑似洗钱或非法集资。",
+    "structured_data": {
+      "age": 41,
+      "employment": "A71",
+      "credit_amount": 100000,
+      "duration": 12,
+      "credit_history": "A34",
+      "purpose": "A410",
+      "checking_status": "A14",
+      "savings_status": "A65"
+    },
+    "risk_level": "high",
+    "risk_score": 95
+  },
+  {
+    "case_id": "TC015",
+    "customer_id": "CUST015",
+    "loan_purpose_text": "申请旅游贷款用于家庭出国旅游，计划带孩子开阔眼界。已规划好行程，需要支付团费和相关费用。",
+    "customer_appeal": "家庭收入稳定，平时有储蓄习惯。希望带孩子出国旅游增长见识，承诺按时还款。",
+    "transaction_remark": "家庭账户流水正常，有一定的储蓄积累。近期无异常支出，信用记录良好。",
+    "structured_data": {
+      "age": 37,
+      "employment": "A73",
+      "credit_amount": 80000,
+      "duration": 24,
+      "credit_history": "A32",
+      "purpose": "A47",
+      "checking_status": "A12",
+      "savings_status": "A63"
+    },
+    "risk_level": "low",
+    "risk_score": 22
+  },
+  {
+    "case_id": "TC016",
+    "customer_id": "CUST016",
+    "loan_purpose_text": "申请经营贷款用于扩大服装店经营规模，计划增加品牌代理和线上销售渠道。有详细的扩张计划。",
+    "customer_appeal": "服装店经营3年，已有稳定客源。希望扩大经营，引入更多品牌。预计月营业额可翻倍。",
+    "transaction_remark": "店铺经营状况良好，月营业额稳定增长。有固定的供应商和客户群体，无拖欠记录。",
+    "structured_data": {
+      "age": 34,
+      "employment": "A74",
+      "credit_amount": 200000,
+      "duration": 36,
+      "credit_history": "A31",
+      "purpose": "A49",
+      "checking_status": "A13",
+      "savings_status": "A64"
+    },
+    "risk_level": "low",
+    "risk_score": 28
+  },
+  {
+    "case_id": "TC017",
+    "customer_id": "CUST017",
+    "loan_purpose_text": "申请贷款用于偿还其他高利贷，陷入债务陷阱，急需资金周转。贷款用途存在风险传导。",
+    "customer_appeal": "本人因生意失败欠下债务，希望申请银行贷款偿还高利贷，重新开始。承诺努力工作还款。",
+    "transaction_remark": "账户资金流动异常，有多笔大额资金转出。负债率极高，已无力偿还现有债务。",
+    "structured_data": {
+      "age": 39,
+      "employment": "A71",
+      "credit_amount": 150000,
+      "duration": 24,
+      "credit_history": "A33",
+      "purpose": "A410",
+      "checking_status": "A11",
+      "savings_status": "A61"
+    },
+    "risk_level": "high",
+    "risk_score": 88
+  },
+  {
+    "case_id": "TC018",
+    "customer_id": "CUST018",
+    "loan_purpose_text": "申请教育贷款用于职业培训，计划考取专业资格证书，提升职业竞争力。已报名培训课程。",
+    "customer_appeal": "本人希望在职业发展上有所突破，考取资格证书可以增加收入。培训课程费用较高，需要贷款支持。",
+    "transaction_remark": "个人收入稳定，有上进心。近期支出主要为培训费用，无异常消费。信用记录良好。",
+    "structured_data": {
+      "age": 30,
+      "employment": "A73",
+      "credit_amount": 50000,
+      "duration": 24,
+      "credit_history": "A32",
+      "purpose": "A48",
+      "checking_status": "A12",
+      "savings_status": "A62"
+    },
+    "risk_level": "low",
+    "risk_score": 25
+  },
+  {
+    "case_id": "TC019",
+    "customer_id": "CUST019",
+    "loan_purpose_text": "申请贷款用于购买二手车，车辆来源可疑，无法提供完整的车辆手续和过户记录。价格明显低于市场价。",
+    "customer_appeal": "本人需要一辆代步车，朋友介绍了一辆便宜的二手车。希望申请贷款购买。",
+    "transaction_remark": "账户近期有多笔可疑交易，与多个不明身份账户有资金往来。疑似参与非法交易。",
+    "structured_data": {
+      "age": 27,
+      "employment": "A72",
+      "credit_amount": 60000,
+      "duration": 24,
+      "credit_history": "A30",
+      "purpose": "A41",
+      "checking_status": "A14",
+      "savings_status": "A61"
+    },
+    "risk_level": "high",
+    "risk_score": 82
+  },
+  {
+    "case_id": "TC020",
+    "customer_id": "CUST020",
+    "loan_purpose_text": "申请农业贷款用于购买农业机械和种子化肥，本人为种粮大户，承包土地200亩。有稳定的销售渠道。",
+    "customer_appeal": "从事粮食种植多年，经验丰富。今年计划扩大种植规模，需要购买农机和农资。预计秋收后可偿还贷款。",
+    "transaction_remark": "农业收入稳定，有政府补贴支持。与粮食收购企业有长期合作关系，回款有保障。",
+    "structured_data": {
+      "age": 48,
+      "employment": "A75",
+      "credit_amount": 150000,
+      "duration": 12,
+      "credit_history": "A31",
+      "purpose": "A49",
+      "checking_status": "A13",
+      "savings_status": "A64"
+    },
+    "risk_level": "low",
+    "risk_score": 26
+  },
+  {
+    "case_id": "TC021",
+    "customer_id": "CUST021",
+    "loan_purpose_text": "申请贷款用于网络投资，声称参与某网络平台的理财产品，回报率高达30%。疑似网络诈骗。",
+    "customer_appeal": "朋友介绍了一个很好的投资平台，收益很高。希望申请贷款参与投资，快速致富。",
+    "transaction_remark": "账户近期有大额资金转出至不明账户，疑似被骗。已有多笔类似转账记录。",
+    "structured_data": {
+      "age": 35,
+      "employment": "A73",
+      "credit_amount": 100000,
+      "duration": 12,
+      "credit_history": "A32",
+      "purpose": "A410",
+      "checking_status": "A12",
+      "savings_status": "A62"
+    },
+    "risk_level": "high",
+    "risk_score": 78
+  },
+  {
+    "case_id": "TC022",
+    "customer_id": "CUST022",
+    "loan_purpose_text": "申请装修贷款用于新房装修，已提供装修合同和报价单。装修公司资质齐全，合同条款清晰。",
+    "customer_appeal": "刚购买新房，需要装修入住。已选定装修公司，签订了装修合同。希望银行批准贷款。",
+    "transaction_remark": "家庭收入稳定，有一定的储蓄。近期购房支出较大，但仍在可控范围内。信用记录良好。",
+    "structured_data": {
+      "age": 31,
+      "employment": "A73",
+      "credit_amount": 120000,
+      "duration": 36,
+      "credit_history": "A32",
+      "purpose": "A42",
+      "checking_status": "A12",
+      "savings_status": "A63"
+    },
+    "risk_level": "low",
+    "risk_score": 24
+  },
+  {
+    "case_id": "TC023",
+    "customer_id": "CUST023",
+    "loan_purpose_text": "申请贷款用于支付婚礼费用，计划年底结婚。双方家庭都有稳定收入，可以共同承担还款责任。",
+    "customer_appeal": "本人即将结婚，需要筹备婚礼。双方父母愿意提供支持，家庭经济条件较好。承诺按时还款。",
+    "transaction_remark": "家庭账户流水正常，有一定的储蓄积累。近期支出主要为婚礼筹备费用，无异常消费。",
+    "structured_data": {
+      "age": 28,
+      "employment": "A73",
+      "credit_amount": 100000,
+      "duration": 24,
+      "credit_history": "A31",
+      "purpose": "A410",
+      "checking_status": "A12",
+      "savings_status": "A63"
+    },
+    "risk_level": "low",
+    "risk_score": 28
+  },
+  {
+    "case_id": "TC024",
+    "customer_id": "CUST024",
+    "loan_purpose_text": "申请贷款用于购买奢侈品和高端消费品，消费观念超前，收入水平无法支撑高额消费。负债率持续上升。",
+    "customer_appeal": "本人追求高品质生活，希望购买一些奢侈品。虽然收入不高，但可以分期还款。",
+    "transaction_remark": "信用卡使用频繁，已接近额度上限。近期有多笔分期付款，还款压力较大。",
+    "structured_data": {
+      "age": 26,
+      "employment": "A72",
+      "credit_amount": 80000,
+      "duration": 24,
+      "credit_history": "A32",
+      "purpose": "A410",
+      "checking_status": "A11",
+      "savings_status": "A61"
+    },
+    "risk_level": "medium",
+    "risk_score": 60
+  },
+  {
+    "case_id": "TC025",
+    "customer_id": "CUST025",
+    "loan_purpose_text": "申请经营贷款用于开设餐饮店，已完成市场调研和选址。有餐饮行业从业经验，商业计划详细可行。",
+    "customer_appeal": "本人在餐饮行业工作8年，积累了丰富经验。计划开设特色餐饮店，选址已完成，预计开业后生意兴隆。",
+    "transaction_remark": "个人有一定储蓄，近期支出主要为创业准备费用。无不良信用记录，家庭支持力度大。",
+    "structured_data": {
+      "age": 35,
+      "employment": "A74",
+      "credit_amount": 300000,
+      "duration": 48,
+      "credit_history": "A31",
+      "purpose": "A49",
+      "checking_status": "A13",
+      "savings_status": "A64"
+    },
+    "risk_level": "medium",
+    "risk_score": 38
+  },
+  {
+    "case_id": "TC026",
+    "customer_id": "CUST026",
+    "loan_purpose_text": "申请贷款用于购买保险理财产品，声称可以避税和资产保值。贷款用途不符合实际需求。",
+    "customer_appeal": "本人希望购买保险理财产品，实现资产保值增值。听说可以避税，希望银行批准贷款。",
+    "transaction_remark": "账户资金流动正常，但近期有大额资金转出至保险公司。投资理财意识较强，但贷款用途存疑。",
+    "structured_data": {
+      "age": 42,
+      "employment": "A75",
+      "credit_amount": 200000,
+      "duration": 36,
+      "credit_history": "A32",
+      "purpose": "A410",
+      "checking_status": "A13",
+      "savings_status": "A64"
+    },
+    "risk_level": "medium",
+    "risk_score": 50
+  },
+  {
+    "case_id": "TC027",
+    "customer_id": "CUST027",
+    "loan_purpose_text": "申请贷款用于支付孩子私立学校学费，希望孩子接受更好的教育。家庭收入可以覆盖学费和还款。",
+    "customer_appeal": "希望孩子能上私立学校，接受更好的教育。家庭收入稳定，可以承担相关费用。",
+    "transaction_remark": "家庭账户流水正常，有一定的储蓄。近期教育支出增加，但仍在预算范围内。信用记录良好。",
+    "structured_data": {
+      "age": 38,
+      "employment": "A74",
+      "credit_amount": 100000,
+      "duration": 24,
+      "credit_history": "A31",
+      "purpose": "A46",
+      "checking_status": "A12",
+      "savings_status": "A63"
+    },
+    "risk_level": "low",
+    "risk_score": 30
+  },
+  {
+    "case_id": "TC028",
+    "customer_id": "CUST028",
+    "loan_purpose_text": "申请贷款用于网络赌博，声称可以稳赚不赔。贷款用途违法，存在严重道德风险。",
+    "customer_appeal": "本人发现了一个稳赚的网络博彩平台，希望申请贷款参与，快速致富。",
+    "transaction_remark": "账户近期有大量资金转出至不明账户，疑似参与网络赌博。资金损失严重，已无力偿还其他债务。",
+    "structured_data": {
+      "age": 33,
+      "employment": "A72",
+      "credit_amount": 50000,
+      "duration": 12,
+      "credit_history": "A33",
+      "purpose": "A410",
+      "checking_status": "A11",
+      "savings_status": "A61"
+    },
+    "risk_level": "high",
+    "risk_score": 98
+  },
+  {
+    "case_id": "TC029",
+    "customer_id": "CUST029",
+    "loan_purpose_text": "申请贷款用于购买家电家具，刚搬入新居，需要购置生活必需品。有稳定的收入来源。",
+    "customer_appeal": "本人刚搬入新居，需要购买家电和家具。收入稳定，可以分期还款。希望银行批准。",
+    "transaction_remark": "个人账户流水正常，有一定的储蓄。近期支出主要为家居购置，无异常消费。信用记录良好。",
+    "structured_data": {
+      "age": 29,
+      "employment": "A73",
+      "credit_amount": 60000,
+      "duration": 24,
+      "credit_history": "A32",
+      "purpose": "A42",
+      "checking_status": "A12",
+      "savings_status": "A62"
+    },
+    "risk_level": "low",
+    "risk_score": 22
+  },
+  {
+    "case_id": "TC030",
+    "customer_id": "CUST030",
+    "loan_purpose_text": "申请贷款用于偿还信用卡欠款，因过度消费导致信用卡透支，希望通过贷款整合债务。存在以贷养贷风险。",
+    "customer_appeal": "本人信用卡欠款较多，希望申请贷款一次性还清，然后分期偿还银行贷款。承诺控制消费。",
+    "transaction_remark": "信用卡使用过度，已接近额度上限。近期有多笔分期和最低还款，负债率较高。",
+    "structured_data": {
+      "age": 31,
+      "employment": "A72",
+      "credit_amount": 80000,
+      "duration": 24,
+      "credit_history": "A33",
+      "purpose": "A410",
+      "checking_status": "A11",
+      "savings_status": "A61"
+    },
+    "risk_level": "medium",
+    "risk_score": 65
+  }
+]

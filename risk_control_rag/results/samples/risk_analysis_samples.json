@@ -1,0 +1,3852 @@
+[
+  {
+    "sample_id": "SAMPLE_0037",
+    "customer_data": {
+      "sample_id": "SAMPLE_0037",
+      "age": 47,
+      "gender": "女",
+      "employment_years": 1,
+      "monthly_income": 7799,
+      "existing_debt": 267821,
+      "credit_history": "A34",
+      "purpose": "A45",
+      "credit_amount": 281650,
+      "duration": 45,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 1
+    },
+    "risk_level": "高风险",
+    "risk_score": 85,
+    "risk_factors": [
+      {
+        "name": "多头借贷",
+        "description": "同时在3家以上机构申请贷款",
+        "weight": "高"
+      },
+      {
+        "name": "收入负债比过高",
+        "description": "月还款额占收入比例超过70%",
+        "weight": "高"
+      },
+      {
+        "name": "信用记录不良",
+        "description": "存在多次逾期和违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "无稳定收入来源",
+        "description": "近半年无固定收入证明",
+        "weight": "高"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有第三方担保",
+        "description": "提供担保公司担保",
+        "risk_mitigation": "部分风险缓释"
+      }
+    ],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "多头借贷监控",
+      "收入来源核实",
+      "担保公司资质评估"
+    ],
+    "risk_mitigation_measures": [
+      "要求追加抵押物",
+      "降低贷款额度",
+      "加强贷后检查频率"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0037\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 多头借贷** (权重: 高)\n   同时在3家以上机构申请贷款\n\n**2. 收入负债比过高** (权重: 高)\n   月还款额占收入比例超过70%\n\n**3. 信用记录不良** (权重: 高)\n   存在多次逾期和违约记录\n\n**4. 无稳定收入来源** (权重: 高)\n   近半年无固定收入证明\n\n### 三、有利因素分析\n\n**1. 有第三方担保**\n   提供担保公司担保\n   *风险缓释作用: 部分风险缓释*\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC038",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176216"
+  },
+  {
+    "sample_id": "SAMPLE_0009",
+    "customer_data": {
+      "sample_id": "SAMPLE_0009",
+      "age": 39,
+      "gender": "男",
+      "employment_years": 9,
+      "monthly_income": 20951,
+      "existing_debt": 46147,
+      "credit_history": "A31",
+      "purpose": "A40",
+      "credit_amount": 118106,
+      "duration": 22,
+      "checking_status": "A13",
+      "savings_status": "A65",
+      "housing": "A151",
+      "property_magnitude": 4
+    },
+    "risk_level": "低风险",
+    "risk_score": 15,
+    "risk_factors": [
+      {
+        "name": "贷款金额适中",
+        "description": "贷款金额占收入比例合理，还款压力可控",
+        "weight": "低"
+      },
+      {
+        "name": "贷款期限较长",
+        "description": "贷款期限较长，月供压力分散",
+        "weight": "低"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "信用记录良好",
+        "description": "客户信用历史清白，无逾期记录",
+        "risk_mitigation": "降低违约风险"
+      },
+      {
+        "name": "收入稳定",
+        "description": "工作年限长，收入来源稳定",
+        "risk_mitigation": "保障还款能力"
+      },
+      {
+        "name": "资产充足",
+        "description": "名下有房产和车辆等资产",
+        "risk_mitigation": "提供担保保障"
+      }
+    ],
+    "approval_suggestion": "批准",
+    "credit_limit_suggestion": "建议授信额度: 118106元 (100%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入变化跟踪",
+      "信用记录更新"
+    ],
+    "risk_mitigation_measures": [
+      "定期回访",
+      "设置还款提醒"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0009\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**低风险**。\n\n### 二、风险因素分析\n\n**1. 贷款金额适中** (权重: 低)\n   贷款金额占收入比例合理，还款压力可控\n\n**2. 贷款期限较长** (权重: 低)\n   贷款期限较长，月供压力分散\n\n### 三、有利因素分析\n\n**1. 信用记录良好**\n   客户信用历史清白，无逾期记录\n   *风险缓释作用: 降低违约风险*\n\n**2. 收入稳定**\n   工作年限长，收入来源稳定\n   *风险缓释作用: 保障还款能力*\n\n**3. 资产充足**\n   名下有房产和车辆等资产\n   *风险缓释作用: 提供担保保障*\n\n### 四、决策建议\n**审批建议**: 批准\n\n**授信额度建议**: 可给予较高授信额度，建议额度为申请金额的100%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC010",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175831"
+  },
+  {
+    "sample_id": "SAMPLE_0022",
+    "customer_data": {
+      "sample_id": "SAMPLE_0022",
+      "age": 34,
+      "gender": "女",
+      "employment_years": 2,
+      "monthly_income": 10313,
+      "existing_debt": 86933,
+      "credit_history": "A32",
+      "purpose": "A43",
+      "credit_amount": 114141,
+      "duration": 34,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 2
+    },
+    "risk_level": "中风险",
+    "risk_score": 34,
+    "risk_factors": [
+      {
+        "name": "信用记录有瑕疵",
+        "description": "存在1-2次短期逾期记录",
+        "weight": "中"
+      },
+      {
+        "name": "收入波动较大",
+        "description": "近半年收入波动幅度超过30%",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "逾期已还清",
+        "description": "历史逾期款项已全部结清",
+        "risk_mitigation": "降低历史风险"
+      },
+      {
+        "name": "有抵押物",
+        "description": "提供房产作为抵押",
+        "risk_mitigation": "提供风险缓释"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 85605元 (75%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入稳定性跟踪",
+      "抵押物价值评估"
+    ],
+    "risk_mitigation_measures": [
+      "适当提高首付比例",
+      "缩短贷款期限",
+      "要求购买保险"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0022\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 信用记录有瑕疵** (权重: 中)\n   存在1-2次短期逾期记录\n\n**2. 收入波动较大** (权重: 中)\n   近半年收入波动幅度超过30%\n\n### 三、有利因素分析\n\n**1. 逾期已还清**\n   历史逾期款项已全部结清\n   *风险缓释作用: 降低历史风险*\n\n**2. 有抵押物**\n   提供房产作为抵押\n   *风险缓释作用: 提供风险缓释*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC023",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175992"
+  },
+  {
+    "sample_id": "SAMPLE_0019",
+    "customer_data": {
+      "sample_id": "SAMPLE_0019",
+      "age": 47,
+      "gender": "男",
+      "employment_years": 3,
+      "monthly_income": 9922,
+      "existing_debt": 139202,
+      "credit_history": "A32",
+      "purpose": "A46",
+      "credit_amount": 238567,
+      "duration": 29,
+      "checking_status": "A12",
+      "savings_status": "A62",
+      "housing": "A153",
+      "property_magnitude": 1
+    },
+    "risk_level": "中风险",
+    "risk_score": 48,
+    "risk_factors": [
+      {
+        "name": "负债率偏高",
+        "description": "现有负债占收入比例超过50%",
+        "weight": "中"
+      },
+      {
+        "name": "工作年限较短",
+        "description": "当前工作不满2年，职业稳定性待观察",
+        "weight": "中"
+      },
+      {
+        "name": "贷款金额较大",
+        "description": "申请贷款金额接近收入上限",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有担保人",
+        "description": "提供有稳定收入的担保人",
+        "risk_mitigation": "分散风险"
+      },
+      {
+        "name": "学历较高",
+        "description": "本科及以上学历，就业竞争力强",
+        "risk_mitigation": "提升还款能力预期"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 178925元 (75%申请金额)",
+    "monitoring_indicators": [
+      "负债率动态监控",
+      "就业状态跟踪",
+      "担保人资质复核"
+    ],
+    "risk_mitigation_measures": [
+      "要求定期提供收入证明",
+      "设置预警阈值",
+      "加强贷后管理"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0019\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 负债率偏高** (权重: 中)\n   现有负债占收入比例超过50%\n\n**2. 工作年限较短** (权重: 中)\n   当前工作不满2年，职业稳定性待观察\n\n**3. 贷款金额较大** (权重: 中)\n   申请贷款金额接近收入上限\n\n### 三、有利因素分析\n\n**1. 有担保人**\n   提供有稳定收入的担保人\n   *风险缓释作用: 分散风险*\n\n**2. 学历较高**\n   本科及以上学历，就业竞争力强\n   *风险缓释作用: 提升还款能力预期*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC020",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175957"
+  },
+  {
+    "sample_id": "SAMPLE_0013",
+    "customer_data": {
+      "sample_id": "SAMPLE_0013",
+      "age": 45,
+      "gender": "女",
+      "employment_years": 4,
+      "monthly_income": 13958,
+      "existing_debt": 119461,
+      "credit_history": "A33",
+      "purpose": "A46",
+      "credit_amount": 111195,
+      "duration": 43,
+      "checking_status": "A13",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 2
+    },
+    "risk_level": "中风险",
+    "risk_score": 58,
+    "risk_factors": [
+      {
+        "name": "负债率偏高",
+        "description": "现有负债占收入比例超过50%",
+        "weight": "中"
+      },
+      {
+        "name": "工作年限较短",
+        "description": "当前工作不满2年，职业稳定性待观察",
+        "weight": "中"
+      },
+      {
+        "name": "贷款金额较大",
+        "description": "申请贷款金额接近收入上限",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有担保人",
+        "description": "提供有稳定收入的担保人",
+        "risk_mitigation": "分散风险"
+      },
+      {
+        "name": "学历较高",
+        "description": "本科及以上学历，就业竞争力强",
+        "risk_mitigation": "提升还款能力预期"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 83396元 (75%申请金额)",
+    "monitoring_indicators": [
+      "负债率动态监控",
+      "就业状态跟踪",
+      "担保人资质复核"
+    ],
+    "risk_mitigation_measures": [
+      "要求定期提供收入证明",
+      "设置预警阈值",
+      "加强贷后管理"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0013\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 负债率偏高** (权重: 中)\n   现有负债占收入比例超过50%\n\n**2. 工作年限较短** (权重: 中)\n   当前工作不满2年，职业稳定性待观察\n\n**3. 贷款金额较大** (权重: 中)\n   申请贷款金额接近收入上限\n\n### 三、有利因素分析\n\n**1. 有担保人**\n   提供有稳定收入的担保人\n   *风险缓释作用: 分散风险*\n\n**2. 学历较高**\n   本科及以上学历，就业竞争力强\n   *风险缓释作用: 提升还款能力预期*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC014",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175886"
+  },
+  {
+    "sample_id": "SAMPLE_0005",
+    "customer_data": {
+      "sample_id": "SAMPLE_0005",
+      "age": 28,
+      "gender": "男",
+      "employment_years": 15,
+      "monthly_income": 15410,
+      "existing_debt": 42113,
+      "credit_history": "A32",
+      "purpose": "A41",
+      "credit_amount": 86747,
+      "duration": 33,
+      "checking_status": "A14",
+      "savings_status": "A64",
+      "housing": "A151",
+      "property_magnitude": 4
+    },
+    "risk_level": "低风险",
+    "risk_score": 24,
+    "risk_factors": [
+      {
+        "name": "贷款金额适中",
+        "description": "贷款金额占收入比例合理，还款压力可控",
+        "weight": "低"
+      },
+      {
+        "name": "贷款期限较长",
+        "description": "贷款期限较长，月供压力分散",
+        "weight": "低"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "信用记录良好",
+        "description": "客户信用历史清白，无逾期记录",
+        "risk_mitigation": "降低违约风险"
+      },
+      {
+        "name": "收入稳定",
+        "description": "工作年限长，收入来源稳定",
+        "risk_mitigation": "保障还款能力"
+      },
+      {
+        "name": "资产充足",
+        "description": "名下有房产和车辆等资产",
+        "risk_mitigation": "提供担保保障"
+      }
+    ],
+    "approval_suggestion": "批准",
+    "credit_limit_suggestion": "建议授信额度: 86747元 (100%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入变化跟踪",
+      "信用记录更新"
+    ],
+    "risk_mitigation_measures": [
+      "定期回访",
+      "设置还款提醒"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0005\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**低风险**。\n\n### 二、风险因素分析\n\n**1. 贷款金额适中** (权重: 低)\n   贷款金额占收入比例合理，还款压力可控\n\n**2. 贷款期限较长** (权重: 低)\n   贷款期限较长，月供压力分散\n\n### 三、有利因素分析\n\n**1. 信用记录良好**\n   客户信用历史清白，无逾期记录\n   *风险缓释作用: 降低违约风险*\n\n**2. 收入稳定**\n   工作年限长，收入来源稳定\n   *风险缓释作用: 保障还款能力*\n\n**3. 资产充足**\n   名下有房产和车辆等资产\n   *风险缓释作用: 提供担保保障*\n\n### 四、决策建议\n**审批建议**: 批准\n\n**授信额度建议**: 可给予较高授信额度，建议额度为申请金额的100%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC006",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175772"
+  },
+  {
+    "sample_id": "SAMPLE_0048",
+    "customer_data": {
+      "sample_id": "SAMPLE_0048",
+      "age": 52,
+      "gender": "女",
+      "employment_years": 2,
+      "monthly_income": 5401,
+      "existing_debt": 287731,
+      "credit_history": "A34",
+      "purpose": "A49",
+      "credit_amount": 399526,
+      "duration": 57,
+      "checking_status": "A11",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 2
+    },
+    "risk_level": "高风险",
+    "risk_score": 95,
+    "risk_factors": [
+      {
+        "name": "存在欺诈嫌疑",
+        "description": "提供的材料存在不一致之处",
+        "weight": "高"
+      },
+      {
+        "name": "关联风险",
+        "description": "关联企业存在违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "行业风险",
+        "description": "所处行业景气度下降",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "材料真实性核查",
+      "关联方风险监控",
+      "行业动态跟踪"
+    ],
+    "risk_mitigation_measures": [
+      "启动尽职调查",
+      "要求补充材料",
+      "必要时拒绝申请"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0048\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 存在欺诈嫌疑** (权重: 高)\n   提供的材料存在不一致之处\n\n**2. 关联风险** (权重: 高)\n   关联企业存在违约记录\n\n**3. 行业风险** (权重: 中)\n   所处行业景气度下降\n\n### 三、有利因素分析\n\n暂未识别到明显有利因素。\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC049",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176340"
+  },
+  {
+    "sample_id": "SAMPLE_0038",
+    "customer_data": {
+      "sample_id": "SAMPLE_0038",
+      "age": 30,
+      "gender": "男",
+      "employment_years": 0,
+      "monthly_income": 3325,
+      "existing_debt": 141060,
+      "credit_history": "A33",
+      "purpose": "A45",
+      "credit_amount": 291587,
+      "duration": 39,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 1
+    },
+    "risk_level": "高风险",
+    "risk_score": 75,
+    "risk_factors": [
+      {
+        "name": "存在欺诈嫌疑",
+        "description": "提供的材料存在不一致之处",
+        "weight": "高"
+      },
+      {
+        "name": "关联风险",
+        "description": "关联企业存在违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "行业风险",
+        "description": "所处行业景气度下降",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "材料真实性核查",
+      "关联方风险监控",
+      "行业动态跟踪"
+    ],
+    "risk_mitigation_measures": [
+      "启动尽职调查",
+      "要求补充材料",
+      "必要时拒绝申请"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0038\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 存在欺诈嫌疑** (权重: 高)\n   提供的材料存在不一致之处\n\n**2. 关联风险** (权重: 高)\n   关联企业存在违约记录\n\n**3. 行业风险** (权重: 中)\n   所处行业景气度下降\n\n### 三、有利因素分析\n\n暂未识别到明显有利因素。\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC039",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176227"
+  },
+  {
+    "sample_id": "SAMPLE_0050",
+    "customer_data": {
+      "sample_id": "SAMPLE_0050",
+      "age": 26,
+      "gender": "女",
+      "employment_years": 1,
+      "monthly_income": 3125,
+      "existing_debt": 163130,
+      "credit_history": "A34",
+      "purpose": "A49",
+      "credit_amount": 355426,
+      "duration": 39,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 1
+    },
+    "risk_level": "高风险",
+    "risk_score": 87,
+    "risk_factors": [
+      {
+        "name": "存在欺诈嫌疑",
+        "description": "提供的材料存在不一致之处",
+        "weight": "高"
+      },
+      {
+        "name": "关联风险",
+        "description": "关联企业存在违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "行业风险",
+        "description": "所处行业景气度下降",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "材料真实性核查",
+      "关联方风险监控",
+      "行业动态跟踪"
+    ],
+    "risk_mitigation_measures": [
+      "启动尽职调查",
+      "要求补充材料",
+      "必要时拒绝申请"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0050\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 存在欺诈嫌疑** (权重: 高)\n   提供的材料存在不一致之处\n\n**2. 关联风险** (权重: 高)\n   关联企业存在违约记录\n\n**3. 行业风险** (权重: 中)\n   所处行业景气度下降\n\n### 三、有利因素分析\n\n暂未识别到明显有利因素。\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC051",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176362"
+  },
+  {
+    "sample_id": "SAMPLE_0035",
+    "customer_data": {
+      "sample_id": "SAMPLE_0035",
+      "age": 41,
+      "gender": "女",
+      "employment_years": 2,
+      "monthly_income": 3756,
+      "existing_debt": 282576,
+      "credit_history": "A33",
+      "purpose": "A44",
+      "credit_amount": 423013,
+      "duration": 53,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 1
+    },
+    "risk_level": "高风险",
+    "risk_score": 95,
+    "risk_factors": [
+      {
+        "name": "多头借贷",
+        "description": "同时在3家以上机构申请贷款",
+        "weight": "高"
+      },
+      {
+        "name": "收入负债比过高",
+        "description": "月还款额占收入比例超过70%",
+        "weight": "高"
+      },
+      {
+        "name": "信用记录不良",
+        "description": "存在多次逾期和违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "无稳定收入来源",
+        "description": "近半年无固定收入证明",
+        "weight": "高"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有第三方担保",
+        "description": "提供担保公司担保",
+        "risk_mitigation": "部分风险缓释"
+      }
+    ],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "多头借贷监控",
+      "收入来源核实",
+      "担保公司资质评估"
+    ],
+    "risk_mitigation_measures": [
+      "要求追加抵押物",
+      "降低贷款额度",
+      "加强贷后检查频率"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0035\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 多头借贷** (权重: 高)\n   同时在3家以上机构申请贷款\n\n**2. 收入负债比过高** (权重: 高)\n   月还款额占收入比例超过70%\n\n**3. 信用记录不良** (权重: 高)\n   存在多次逾期和违约记录\n\n**4. 无稳定收入来源** (权重: 高)\n   近半年无固定收入证明\n\n### 三、有利因素分析\n\n**1. 有第三方担保**\n   提供担保公司担保\n   *风险缓释作用: 部分风险缓释*\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC036",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176191"
+  },
+  {
+    "sample_id": "SAMPLE_0036",
+    "customer_data": {
+      "sample_id": "SAMPLE_0036",
+      "age": 27,
+      "gender": "男",
+      "employment_years": 2,
+      "monthly_income": 7760,
+      "existing_debt": 149713,
+      "credit_history": "A34",
+      "purpose": "A44",
+      "credit_amount": 480555,
+      "duration": 47,
+      "checking_status": "A11",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 2
+    },
+    "risk_level": "高风险",
+    "risk_score": 86,
+    "risk_factors": [
+      {
+        "name": "存在欺诈嫌疑",
+        "description": "提供的材料存在不一致之处",
+        "weight": "高"
+      },
+      {
+        "name": "关联风险",
+        "description": "关联企业存在违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "行业风险",
+        "description": "所处行业景气度下降",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "材料真实性核查",
+      "关联方风险监控",
+      "行业动态跟踪"
+    ],
+    "risk_mitigation_measures": [
+      "启动尽职调查",
+      "要求补充材料",
+      "必要时拒绝申请"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0036\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 存在欺诈嫌疑** (权重: 高)\n   提供的材料存在不一致之处\n\n**2. 关联风险** (权重: 高)\n   关联企业存在违约记录\n\n**3. 行业风险** (权重: 中)\n   所处行业景气度下降\n\n### 三、有利因素分析\n\n暂未识别到明显有利因素。\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC037",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176201"
+  },
+  {
+    "sample_id": "SAMPLE_0023",
+    "customer_data": {
+      "sample_id": "SAMPLE_0023",
+      "age": 53,
+      "gender": "女",
+      "employment_years": 5,
+      "monthly_income": 9205,
+      "existing_debt": 64034,
+      "credit_history": "A32",
+      "purpose": "A46",
+      "credit_amount": 112088,
+      "duration": 43,
+      "checking_status": "A12",
+      "savings_status": "A62",
+      "housing": "A151",
+      "property_magnitude": 2
+    },
+    "risk_level": "中风险",
+    "risk_score": 35,
+    "risk_factors": [
+      {
+        "name": "负债率偏高",
+        "description": "现有负债占收入比例超过50%",
+        "weight": "中"
+      },
+      {
+        "name": "工作年限较短",
+        "description": "当前工作不满2年，职业稳定性待观察",
+        "weight": "中"
+      },
+      {
+        "name": "贷款金额较大",
+        "description": "申请贷款金额接近收入上限",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有担保人",
+        "description": "提供有稳定收入的担保人",
+        "risk_mitigation": "分散风险"
+      },
+      {
+        "name": "学历较高",
+        "description": "本科及以上学历，就业竞争力强",
+        "risk_mitigation": "提升还款能力预期"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 84066元 (75%申请金额)",
+    "monitoring_indicators": [
+      "负债率动态监控",
+      "就业状态跟踪",
+      "担保人资质复核"
+    ],
+    "risk_mitigation_measures": [
+      "要求定期提供收入证明",
+      "设置预警阈值",
+      "加强贷后管理"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0023\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 负债率偏高** (权重: 中)\n   现有负债占收入比例超过50%\n\n**2. 工作年限较短** (权重: 中)\n   当前工作不满2年，职业稳定性待观察\n\n**3. 贷款金额较大** (权重: 中)\n   申请贷款金额接近收入上限\n\n### 三、有利因素分析\n\n**1. 有担保人**\n   提供有稳定收入的担保人\n   *风险缓释作用: 分散风险*\n\n**2. 学历较高**\n   本科及以上学历，就业竞争力强\n   *风险缓释作用: 提升还款能力预期*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC024",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176004"
+  },
+  {
+    "sample_id": "SAMPLE_0012",
+    "customer_data": {
+      "sample_id": "SAMPLE_0012",
+      "age": 53,
+      "gender": "男",
+      "employment_years": 2,
+      "monthly_income": 11861,
+      "existing_debt": 117161,
+      "credit_history": "A32",
+      "purpose": "A43",
+      "credit_amount": 222697,
+      "duration": 48,
+      "checking_status": "A12",
+      "savings_status": "A62",
+      "housing": "A153",
+      "property_magnitude": 3
+    },
+    "risk_level": "中风险",
+    "risk_score": 31,
+    "risk_factors": [
+      {
+        "name": "信用记录有瑕疵",
+        "description": "存在1-2次短期逾期记录",
+        "weight": "中"
+      },
+      {
+        "name": "收入波动较大",
+        "description": "近半年收入波动幅度超过30%",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "逾期已还清",
+        "description": "历史逾期款项已全部结清",
+        "risk_mitigation": "降低历史风险"
+      },
+      {
+        "name": "有抵押物",
+        "description": "提供房产作为抵押",
+        "risk_mitigation": "提供风险缓释"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 167022元 (75%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入稳定性跟踪",
+      "抵押物价值评估"
+    ],
+    "risk_mitigation_measures": [
+      "适当提高首付比例",
+      "缩短贷款期限",
+      "要求购买保险"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0012\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 信用记录有瑕疵** (权重: 中)\n   存在1-2次短期逾期记录\n\n**2. 收入波动较大** (权重: 中)\n   近半年收入波动幅度超过30%\n\n### 三、有利因素分析\n\n**1. 逾期已还清**\n   历史逾期款项已全部结清\n   *风险缓释作用: 降低历史风险*\n\n**2. 有抵押物**\n   提供房产作为抵押\n   *风险缓释作用: 提供风险缓释*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC013",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175872"
+  },
+  {
+    "sample_id": "SAMPLE_0017",
+    "customer_data": {
+      "sample_id": "SAMPLE_0017",
+      "age": 51,
+      "gender": "男",
+      "employment_years": 5,
+      "monthly_income": 14845,
+      "existing_debt": 78402,
+      "credit_history": "A32",
+      "purpose": "A43",
+      "credit_amount": 163088,
+      "duration": 46,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 3
+    },
+    "risk_level": "中风险",
+    "risk_score": 64,
+    "risk_factors": [
+      {
+        "name": "负债率偏高",
+        "description": "现有负债占收入比例超过50%",
+        "weight": "中"
+      },
+      {
+        "name": "工作年限较短",
+        "description": "当前工作不满2年，职业稳定性待观察",
+        "weight": "中"
+      },
+      {
+        "name": "贷款金额较大",
+        "description": "申请贷款金额接近收入上限",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有担保人",
+        "description": "提供有稳定收入的担保人",
+        "risk_mitigation": "分散风险"
+      },
+      {
+        "name": "学历较高",
+        "description": "本科及以上学历，就业竞争力强",
+        "risk_mitigation": "提升还款能力预期"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 122316元 (75%申请金额)",
+    "monitoring_indicators": [
+      "负债率动态监控",
+      "就业状态跟踪",
+      "担保人资质复核"
+    ],
+    "risk_mitigation_measures": [
+      "要求定期提供收入证明",
+      "设置预警阈值",
+      "加强贷后管理"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0017\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 负债率偏高** (权重: 中)\n   现有负债占收入比例超过50%\n\n**2. 工作年限较短** (权重: 中)\n   当前工作不满2年，职业稳定性待观察\n\n**3. 贷款金额较大** (权重: 中)\n   申请贷款金额接近收入上限\n\n### 三、有利因素分析\n\n**1. 有担保人**\n   提供有稳定收入的担保人\n   *风险缓释作用: 分散风险*\n\n**2. 学历较高**\n   本科及以上学历，就业竞争力强\n   *风险缓释作用: 提升还款能力预期*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC018",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175934"
+  },
+  {
+    "sample_id": "SAMPLE_0015",
+    "customer_data": {
+      "sample_id": "SAMPLE_0015",
+      "age": 33,
+      "gender": "男",
+      "employment_years": 5,
+      "monthly_income": 10491,
+      "existing_debt": 104248,
+      "credit_history": "A32",
+      "purpose": "A46",
+      "credit_amount": 218968,
+      "duration": 47,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 1
+    },
+    "risk_level": "中风险",
+    "risk_score": 56,
+    "risk_factors": [
+      {
+        "name": "负债率偏高",
+        "description": "现有负债占收入比例超过50%",
+        "weight": "中"
+      },
+      {
+        "name": "工作年限较短",
+        "description": "当前工作不满2年，职业稳定性待观察",
+        "weight": "中"
+      },
+      {
+        "name": "贷款金额较大",
+        "description": "申请贷款金额接近收入上限",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有担保人",
+        "description": "提供有稳定收入的担保人",
+        "risk_mitigation": "分散风险"
+      },
+      {
+        "name": "学历较高",
+        "description": "本科及以上学历，就业竞争力强",
+        "risk_mitigation": "提升还款能力预期"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 164226元 (75%申请金额)",
+    "monitoring_indicators": [
+      "负债率动态监控",
+      "就业状态跟踪",
+      "担保人资质复核"
+    ],
+    "risk_mitigation_measures": [
+      "要求定期提供收入证明",
+      "设置预警阈值",
+      "加强贷后管理"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0015\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 负债率偏高** (权重: 中)\n   现有负债占收入比例超过50%\n\n**2. 工作年限较短** (权重: 中)\n   当前工作不满2年，职业稳定性待观察\n\n**3. 贷款金额较大** (权重: 中)\n   申请贷款金额接近收入上限\n\n### 三、有利因素分析\n\n**1. 有担保人**\n   提供有稳定收入的担保人\n   *风险缓释作用: 分散风险*\n\n**2. 学历较高**\n   本科及以上学历，就业竞争力强\n   *风险缓释作用: 提升还款能力预期*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC016",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175910"
+  },
+  {
+    "sample_id": "SAMPLE_0042",
+    "customer_data": {
+      "sample_id": "SAMPLE_0042",
+      "age": 52,
+      "gender": "女",
+      "employment_years": 0,
+      "monthly_income": 3992,
+      "existing_debt": 206165,
+      "credit_history": "A34",
+      "purpose": "A44",
+      "credit_amount": 263989,
+      "duration": 50,
+      "checking_status": "A11",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 2
+    },
+    "risk_level": "高风险",
+    "risk_score": 85,
+    "risk_factors": [
+      {
+        "name": "存在欺诈嫌疑",
+        "description": "提供的材料存在不一致之处",
+        "weight": "高"
+      },
+      {
+        "name": "关联风险",
+        "description": "关联企业存在违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "行业风险",
+        "description": "所处行业景气度下降",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "材料真实性核查",
+      "关联方风险监控",
+      "行业动态跟踪"
+    ],
+    "risk_mitigation_measures": [
+      "启动尽职调查",
+      "要求补充材料",
+      "必要时拒绝申请"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0042\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 存在欺诈嫌疑** (权重: 高)\n   提供的材料存在不一致之处\n\n**2. 关联风险** (权重: 高)\n   关联企业存在违约记录\n\n**3. 行业风险** (权重: 中)\n   所处行业景气度下降\n\n### 三、有利因素分析\n\n暂未识别到明显有利因素。\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC043",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176273"
+  },
+  {
+    "sample_id": "SAMPLE_0025",
+    "customer_data": {
+      "sample_id": "SAMPLE_0025",
+      "age": 55,
+      "gender": "女",
+      "employment_years": 5,
+      "monthly_income": 13370,
+      "existing_debt": 90341,
+      "credit_history": "A32",
+      "purpose": "A46",
+      "credit_amount": 122791,
+      "duration": 39,
+      "checking_status": "A13",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 1
+    },
+    "risk_level": "中风险",
+    "risk_score": 53,
+    "risk_factors": [
+      {
+        "name": "负债率偏高",
+        "description": "现有负债占收入比例超过50%",
+        "weight": "中"
+      },
+      {
+        "name": "工作年限较短",
+        "description": "当前工作不满2年，职业稳定性待观察",
+        "weight": "中"
+      },
+      {
+        "name": "贷款金额较大",
+        "description": "申请贷款金额接近收入上限",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有担保人",
+        "description": "提供有稳定收入的担保人",
+        "risk_mitigation": "分散风险"
+      },
+      {
+        "name": "学历较高",
+        "description": "本科及以上学历，就业竞争力强",
+        "risk_mitigation": "提升还款能力预期"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 92093元 (75%申请金额)",
+    "monitoring_indicators": [
+      "负债率动态监控",
+      "就业状态跟踪",
+      "担保人资质复核"
+    ],
+    "risk_mitigation_measures": [
+      "要求定期提供收入证明",
+      "设置预警阈值",
+      "加强贷后管理"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0025\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 负债率偏高** (权重: 中)\n   现有负债占收入比例超过50%\n\n**2. 工作年限较短** (权重: 中)\n   当前工作不满2年，职业稳定性待观察\n\n**3. 贷款金额较大** (权重: 中)\n   申请贷款金额接近收入上限\n\n### 三、有利因素分析\n\n**1. 有担保人**\n   提供有稳定收入的担保人\n   *风险缓释作用: 分散风险*\n\n**2. 学历较高**\n   本科及以上学历，就业竞争力强\n   *风险缓释作用: 提升还款能力预期*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC026",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176071"
+  },
+  {
+    "sample_id": "SAMPLE_0047",
+    "customer_data": {
+      "sample_id": "SAMPLE_0047",
+      "age": 37,
+      "gender": "女",
+      "employment_years": 1,
+      "monthly_income": 6736,
+      "existing_debt": 201304,
+      "credit_history": "A33",
+      "purpose": "A45",
+      "credit_amount": 356790,
+      "duration": 43,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 2
+    },
+    "risk_level": "高风险",
+    "risk_score": 76,
+    "risk_factors": [
+      {
+        "name": "多头借贷",
+        "description": "同时在3家以上机构申请贷款",
+        "weight": "高"
+      },
+      {
+        "name": "收入负债比过高",
+        "description": "月还款额占收入比例超过70%",
+        "weight": "高"
+      },
+      {
+        "name": "信用记录不良",
+        "description": "存在多次逾期和违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "无稳定收入来源",
+        "description": "近半年无固定收入证明",
+        "weight": "高"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有第三方担保",
+        "description": "提供担保公司担保",
+        "risk_mitigation": "部分风险缓释"
+      }
+    ],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "多头借贷监控",
+      "收入来源核实",
+      "担保公司资质评估"
+    ],
+    "risk_mitigation_measures": [
+      "要求追加抵押物",
+      "降低贷款额度",
+      "加强贷后检查频率"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0047\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 多头借贷** (权重: 高)\n   同时在3家以上机构申请贷款\n\n**2. 收入负债比过高** (权重: 高)\n   月还款额占收入比例超过70%\n\n**3. 信用记录不良** (权重: 高)\n   存在多次逾期和违约记录\n\n**4. 无稳定收入来源** (权重: 高)\n   近半年无固定收入证明\n\n### 三、有利因素分析\n\n**1. 有第三方担保**\n   提供担保公司担保\n   *风险缓释作用: 部分风险缓释*\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC048",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176329"
+  },
+  {
+    "sample_id": "SAMPLE_0043",
+    "customer_data": {
+      "sample_id": "SAMPLE_0043",
+      "age": 49,
+      "gender": "男",
+      "employment_years": 1,
+      "monthly_income": 4251,
+      "existing_debt": 165961,
+      "credit_history": "A33",
+      "purpose": "A45",
+      "credit_amount": 264521,
+      "duration": 46,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 1
+    },
+    "risk_level": "高风险",
+    "risk_score": 81,
+    "risk_factors": [
+      {
+        "name": "多头借贷",
+        "description": "同时在3家以上机构申请贷款",
+        "weight": "高"
+      },
+      {
+        "name": "收入负债比过高",
+        "description": "月还款额占收入比例超过70%",
+        "weight": "高"
+      },
+      {
+        "name": "信用记录不良",
+        "description": "存在多次逾期和违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "无稳定收入来源",
+        "description": "近半年无固定收入证明",
+        "weight": "高"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有第三方担保",
+        "description": "提供担保公司担保",
+        "risk_mitigation": "部分风险缓释"
+      }
+    ],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "多头借贷监控",
+      "收入来源核实",
+      "担保公司资质评估"
+    ],
+    "risk_mitigation_measures": [
+      "要求追加抵押物",
+      "降低贷款额度",
+      "加强贷后检查频率"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0043\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 多头借贷** (权重: 高)\n   同时在3家以上机构申请贷款\n\n**2. 收入负债比过高** (权重: 高)\n   月还款额占收入比例超过70%\n\n**3. 信用记录不良** (权重: 高)\n   存在多次逾期和违约记录\n\n**4. 无稳定收入来源** (权重: 高)\n   近半年无固定收入证明\n\n### 三、有利因素分析\n\n**1. 有第三方担保**\n   提供担保公司担保\n   *风险缓释作用: 部分风险缓释*\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC044",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176285"
+  },
+  {
+    "sample_id": "SAMPLE_0002",
+    "customer_data": {
+      "sample_id": "SAMPLE_0002",
+      "age": 55,
+      "gender": "男",
+      "employment_years": 9,
+      "monthly_income": 26874,
+      "existing_debt": 1270,
+      "credit_history": "A32",
+      "purpose": "A40",
+      "credit_amount": 92217,
+      "duration": 13,
+      "checking_status": "A14",
+      "savings_status": "A63",
+      "housing": "A151",
+      "property_magnitude": 2
+    },
+    "risk_level": "低风险",
+    "risk_score": 20,
+    "risk_factors": [
+      {
+        "name": "首次贷款客户",
+        "description": "客户为首次申请贷款，缺乏历史参考",
+        "weight": "低"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "职业前景良好",
+        "description": "从事行业前景广阔，职业发展空间大",
+        "risk_mitigation": "预期收入增长"
+      },
+      {
+        "name": "负债率低",
+        "description": "现有负债占收入比例低于30%",
+        "risk_mitigation": "还款能力充足"
+      },
+      {
+        "name": "年龄优势",
+        "description": "客户年龄适中，处于职业上升期",
+        "risk_mitigation": "长期客户价值"
+      }
+    ],
+    "approval_suggestion": "批准",
+    "credit_limit_suggestion": "建议授信额度: 92217元 (100%申请金额)",
+    "monitoring_indicators": [
+      "职业状态跟踪",
+      "负债率监控"
+    ],
+    "risk_mitigation_measures": [
+      "建立客户档案",
+      "定期信用评估"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0002\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**低风险**。\n\n### 二、风险因素分析\n\n**1. 首次贷款客户** (权重: 低)\n   客户为首次申请贷款，缺乏历史参考\n\n### 三、有利因素分析\n\n**1. 职业前景良好**\n   从事行业前景广阔，职业发展空间大\n   *风险缓释作用: 预期收入增长*\n\n**2. 负债率低**\n   现有负债占收入比例低于30%\n   *风险缓释作用: 还款能力充足*\n\n**3. 年龄优势**\n   客户年龄适中，处于职业上升期\n   *风险缓释作用: 长期客户价值*\n\n### 四、决策建议\n**审批建议**: 批准\n\n**授信额度建议**: 可给予较高授信额度，建议额度为申请金额的100%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC003",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175727"
+  },
+  {
+    "sample_id": "SAMPLE_0028",
+    "customer_data": {
+      "sample_id": "SAMPLE_0028",
+      "age": 35,
+      "gender": "女",
+      "employment_years": 1,
+      "monthly_income": 10678,
+      "existing_debt": 117136,
+      "credit_history": "A33",
+      "purpose": "A43",
+      "credit_amount": 226972,
+      "duration": 33,
+      "checking_status": "A13",
+      "savings_status": "A62",
+      "housing": "A151",
+      "property_magnitude": 2
+    },
+    "risk_level": "中风险",
+    "risk_score": 62,
+    "risk_factors": [
+      {
+        "name": "信用记录有瑕疵",
+        "description": "存在1-2次短期逾期记录",
+        "weight": "中"
+      },
+      {
+        "name": "收入波动较大",
+        "description": "近半年收入波动幅度超过30%",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "逾期已还清",
+        "description": "历史逾期款项已全部结清",
+        "risk_mitigation": "降低历史风险"
+      },
+      {
+        "name": "有抵押物",
+        "description": "提供房产作为抵押",
+        "risk_mitigation": "提供风险缓释"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 170229元 (75%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入稳定性跟踪",
+      "抵押物价值评估"
+    ],
+    "risk_mitigation_measures": [
+      "适当提高首付比例",
+      "缩短贷款期限",
+      "要求购买保险"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0028\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 信用记录有瑕疵** (权重: 中)\n   存在1-2次短期逾期记录\n\n**2. 收入波动较大** (权重: 中)\n   近半年收入波动幅度超过30%\n\n### 三、有利因素分析\n\n**1. 逾期已还清**\n   历史逾期款项已全部结清\n   *风险缓释作用: 降低历史风险*\n\n**2. 有抵押物**\n   提供房产作为抵押\n   *风险缓释作用: 提供风险缓释*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC029",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176107"
+  },
+  {
+    "sample_id": "SAMPLE_0049",
+    "customer_data": {
+      "sample_id": "SAMPLE_0049",
+      "age": 46,
+      "gender": "女",
+      "employment_years": 1,
+      "monthly_income": 7746,
+      "existing_debt": 261823,
+      "credit_history": "A33",
+      "purpose": "A44",
+      "credit_amount": 366649,
+      "duration": 56,
+      "checking_status": "A11",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 1
+    },
+    "risk_level": "高风险",
+    "risk_score": 87,
+    "risk_factors": [
+      {
+        "name": "多头借贷",
+        "description": "同时在3家以上机构申请贷款",
+        "weight": "高"
+      },
+      {
+        "name": "收入负债比过高",
+        "description": "月还款额占收入比例超过70%",
+        "weight": "高"
+      },
+      {
+        "name": "信用记录不良",
+        "description": "存在多次逾期和违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "无稳定收入来源",
+        "description": "近半年无固定收入证明",
+        "weight": "高"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有第三方担保",
+        "description": "提供担保公司担保",
+        "risk_mitigation": "部分风险缓释"
+      }
+    ],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "多头借贷监控",
+      "收入来源核实",
+      "担保公司资质评估"
+    ],
+    "risk_mitigation_measures": [
+      "要求追加抵押物",
+      "降低贷款额度",
+      "加强贷后检查频率"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0049\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 多头借贷** (权重: 高)\n   同时在3家以上机构申请贷款\n\n**2. 收入负债比过高** (权重: 高)\n   月还款额占收入比例超过70%\n\n**3. 信用记录不良** (权重: 高)\n   存在多次逾期和违约记录\n\n**4. 无稳定收入来源** (权重: 高)\n   近半年无固定收入证明\n\n### 三、有利因素分析\n\n**1. 有第三方担保**\n   提供担保公司担保\n   *风险缓释作用: 部分风险缓释*\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC050",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176351"
+  },
+  {
+    "sample_id": "SAMPLE_0033",
+    "customer_data": {
+      "sample_id": "SAMPLE_0033",
+      "age": 42,
+      "gender": "女",
+      "employment_years": 2,
+      "monthly_income": 7964,
+      "existing_debt": 234424,
+      "credit_history": "A34",
+      "purpose": "A49",
+      "credit_amount": 481257,
+      "duration": 36,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 1
+    },
+    "risk_level": "高风险",
+    "risk_score": 75,
+    "risk_factors": [
+      {
+        "name": "多头借贷",
+        "description": "同时在3家以上机构申请贷款",
+        "weight": "高"
+      },
+      {
+        "name": "收入负债比过高",
+        "description": "月还款额占收入比例超过70%",
+        "weight": "高"
+      },
+      {
+        "name": "信用记录不良",
+        "description": "存在多次逾期和违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "无稳定收入来源",
+        "description": "近半年无固定收入证明",
+        "weight": "高"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有第三方担保",
+        "description": "提供担保公司担保",
+        "risk_mitigation": "部分风险缓释"
+      }
+    ],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "多头借贷监控",
+      "收入来源核实",
+      "担保公司资质评估"
+    ],
+    "risk_mitigation_measures": [
+      "要求追加抵押物",
+      "降低贷款额度",
+      "加强贷后检查频率"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0033\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 多头借贷** (权重: 高)\n   同时在3家以上机构申请贷款\n\n**2. 收入负债比过高** (权重: 高)\n   月还款额占收入比例超过70%\n\n**3. 信用记录不良** (权重: 高)\n   存在多次逾期和违约记录\n\n**4. 无稳定收入来源** (权重: 高)\n   近半年无固定收入证明\n\n### 三、有利因素分析\n\n**1. 有第三方担保**\n   提供担保公司担保\n   *风险缓释作用: 部分风险缓释*\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC034",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176168"
+  },
+  {
+    "sample_id": "SAMPLE_0031",
+    "customer_data": {
+      "sample_id": "SAMPLE_0031",
+      "age": 29,
+      "gender": "女",
+      "employment_years": 1,
+      "monthly_income": 3131,
+      "existing_debt": 159444,
+      "credit_history": "A34",
+      "purpose": "A45",
+      "credit_amount": 476340,
+      "duration": 36,
+      "checking_status": "A11",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 2
+    },
+    "risk_level": "高风险",
+    "risk_score": 76,
+    "risk_factors": [
+      {
+        "name": "多头借贷",
+        "description": "同时在3家以上机构申请贷款",
+        "weight": "高"
+      },
+      {
+        "name": "收入负债比过高",
+        "description": "月还款额占收入比例超过70%",
+        "weight": "高"
+      },
+      {
+        "name": "信用记录不良",
+        "description": "存在多次逾期和违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "无稳定收入来源",
+        "description": "近半年无固定收入证明",
+        "weight": "高"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有第三方担保",
+        "description": "提供担保公司担保",
+        "risk_mitigation": "部分风险缓释"
+      }
+    ],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "多头借贷监控",
+      "收入来源核实",
+      "担保公司资质评估"
+    ],
+    "risk_mitigation_measures": [
+      "要求追加抵押物",
+      "降低贷款额度",
+      "加强贷后检查频率"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0031\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 多头借贷** (权重: 高)\n   同时在3家以上机构申请贷款\n\n**2. 收入负债比过高** (权重: 高)\n   月还款额占收入比例超过70%\n\n**3. 信用记录不良** (权重: 高)\n   存在多次逾期和违约记录\n\n**4. 无稳定收入来源** (权重: 高)\n   近半年无固定收入证明\n\n### 三、有利因素分析\n\n**1. 有第三方担保**\n   提供担保公司担保\n   *风险缓释作用: 部分风险缓释*\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC032",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176145"
+  },
+  {
+    "sample_id": "SAMPLE_0045",
+    "customer_data": {
+      "sample_id": "SAMPLE_0045",
+      "age": 48,
+      "gender": "女",
+      "employment_years": 2,
+      "monthly_income": 7963,
+      "existing_debt": 168248,
+      "credit_history": "A34",
+      "purpose": "A44",
+      "credit_amount": 493148,
+      "duration": 60,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 1
+    },
+    "risk_level": "高风险",
+    "risk_score": 76,
+    "risk_factors": [
+      {
+        "name": "多头借贷",
+        "description": "同时在3家以上机构申请贷款",
+        "weight": "高"
+      },
+      {
+        "name": "收入负债比过高",
+        "description": "月还款额占收入比例超过70%",
+        "weight": "高"
+      },
+      {
+        "name": "信用记录不良",
+        "description": "存在多次逾期和违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "无稳定收入来源",
+        "description": "近半年无固定收入证明",
+        "weight": "高"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有第三方担保",
+        "description": "提供担保公司担保",
+        "risk_mitigation": "部分风险缓释"
+      }
+    ],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "多头借贷监控",
+      "收入来源核实",
+      "担保公司资质评估"
+    ],
+    "risk_mitigation_measures": [
+      "要求追加抵押物",
+      "降低贷款额度",
+      "加强贷后检查频率"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0045\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 多头借贷** (权重: 高)\n   同时在3家以上机构申请贷款\n\n**2. 收入负债比过高** (权重: 高)\n   月还款额占收入比例超过70%\n\n**3. 信用记录不良** (权重: 高)\n   存在多次逾期和违约记录\n\n**4. 无稳定收入来源** (权重: 高)\n   近半年无固定收入证明\n\n### 三、有利因素分析\n\n**1. 有第三方担保**\n   提供担保公司担保\n   *风险缓释作用: 部分风险缓释*\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC046",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176307"
+  },
+  {
+    "sample_id": "SAMPLE_0008",
+    "customer_data": {
+      "sample_id": "SAMPLE_0008",
+      "age": 48,
+      "gender": "男",
+      "employment_years": 10,
+      "monthly_income": 29207,
+      "existing_debt": 36284,
+      "credit_history": "A32",
+      "purpose": "A40",
+      "credit_amount": 142444,
+      "duration": 32,
+      "checking_status": "A13",
+      "savings_status": "A63",
+      "housing": "A152",
+      "property_magnitude": 4
+    },
+    "risk_level": "低风险",
+    "risk_score": 25,
+    "risk_factors": [
+      {
+        "name": "首次贷款客户",
+        "description": "客户为首次申请贷款，缺乏历史参考",
+        "weight": "低"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "职业前景良好",
+        "description": "从事行业前景广阔，职业发展空间大",
+        "risk_mitigation": "预期收入增长"
+      },
+      {
+        "name": "负债率低",
+        "description": "现有负债占收入比例低于30%",
+        "risk_mitigation": "还款能力充足"
+      },
+      {
+        "name": "年龄优势",
+        "description": "客户年龄适中，处于职业上升期",
+        "risk_mitigation": "长期客户价值"
+      }
+    ],
+    "approval_suggestion": "批准",
+    "credit_limit_suggestion": "建议授信额度: 142444元 (100%申请金额)",
+    "monitoring_indicators": [
+      "职业状态跟踪",
+      "负债率监控"
+    ],
+    "risk_mitigation_measures": [
+      "建立客户档案",
+      "定期信用评估"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0008\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**低风险**。\n\n### 二、风险因素分析\n\n**1. 首次贷款客户** (权重: 低)\n   客户为首次申请贷款，缺乏历史参考\n\n### 三、有利因素分析\n\n**1. 职业前景良好**\n   从事行业前景广阔，职业发展空间大\n   *风险缓释作用: 预期收入增长*\n\n**2. 负债率低**\n   现有负债占收入比例低于30%\n   *风险缓释作用: 还款能力充足*\n\n**3. 年龄优势**\n   客户年龄适中，处于职业上升期\n   *风险缓释作用: 长期客户价值*\n\n### 四、决策建议\n**审批建议**: 批准\n\n**授信额度建议**: 可给予较高授信额度，建议额度为申请金额的100%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC009",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175817"
+  },
+  {
+    "sample_id": "SAMPLE_0014",
+    "customer_data": {
+      "sample_id": "SAMPLE_0014",
+      "age": 37,
+      "gender": "男",
+      "employment_years": 2,
+      "monthly_income": 12451,
+      "existing_debt": 80739,
+      "credit_history": "A33",
+      "purpose": "A46",
+      "credit_amount": 191801,
+      "duration": 27,
+      "checking_status": "A13",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 2
+    },
+    "risk_level": "中风险",
+    "risk_score": 68,
+    "risk_factors": [
+      {
+        "name": "信用记录有瑕疵",
+        "description": "存在1-2次短期逾期记录",
+        "weight": "中"
+      },
+      {
+        "name": "收入波动较大",
+        "description": "近半年收入波动幅度超过30%",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "逾期已还清",
+        "description": "历史逾期款项已全部结清",
+        "risk_mitigation": "降低历史风险"
+      },
+      {
+        "name": "有抵押物",
+        "description": "提供房产作为抵押",
+        "risk_mitigation": "提供风险缓释"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 143850元 (75%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入稳定性跟踪",
+      "抵押物价值评估"
+    ],
+    "risk_mitigation_measures": [
+      "适当提高首付比例",
+      "缩短贷款期限",
+      "要求购买保险"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0014\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 信用记录有瑕疵** (权重: 中)\n   存在1-2次短期逾期记录\n\n**2. 收入波动较大** (权重: 中)\n   近半年收入波动幅度超过30%\n\n### 三、有利因素分析\n\n**1. 逾期已还清**\n   历史逾期款项已全部结清\n   *风险缓释作用: 降低历史风险*\n\n**2. 有抵押物**\n   提供房产作为抵押\n   *风险缓释作用: 提供风险缓释*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC015",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175898"
+  },
+  {
+    "sample_id": "SAMPLE_0010",
+    "customer_data": {
+      "sample_id": "SAMPLE_0010",
+      "age": 33,
+      "gender": "男",
+      "employment_years": 15,
+      "monthly_income": 27646,
+      "existing_debt": 5114,
+      "credit_history": "A32",
+      "purpose": "A42",
+      "credit_amount": 97127,
+      "duration": 18,
+      "checking_status": "A14",
+      "savings_status": "A65",
+      "housing": "A151",
+      "property_magnitude": 4
+    },
+    "risk_level": "低风险",
+    "risk_score": 22,
+    "risk_factors": [
+      {
+        "name": "首次贷款客户",
+        "description": "客户为首次申请贷款，缺乏历史参考",
+        "weight": "低"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "职业前景良好",
+        "description": "从事行业前景广阔，职业发展空间大",
+        "risk_mitigation": "预期收入增长"
+      },
+      {
+        "name": "负债率低",
+        "description": "现有负债占收入比例低于30%",
+        "risk_mitigation": "还款能力充足"
+      },
+      {
+        "name": "年龄优势",
+        "description": "客户年龄适中，处于职业上升期",
+        "risk_mitigation": "长期客户价值"
+      }
+    ],
+    "approval_suggestion": "批准",
+    "credit_limit_suggestion": "建议授信额度: 97127元 (100%申请金额)",
+    "monitoring_indicators": [
+      "职业状态跟踪",
+      "负债率监控"
+    ],
+    "risk_mitigation_measures": [
+      "建立客户档案",
+      "定期信用评估"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0010\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**低风险**。\n\n### 二、风险因素分析\n\n**1. 首次贷款客户** (权重: 低)\n   客户为首次申请贷款，缺乏历史参考\n\n### 三、有利因素分析\n\n**1. 职业前景良好**\n   从事行业前景广阔，职业发展空间大\n   *风险缓释作用: 预期收入增长*\n\n**2. 负债率低**\n   现有负债占收入比例低于30%\n   *风险缓释作用: 还款能力充足*\n\n**3. 年龄优势**\n   客户年龄适中，处于职业上升期\n   *风险缓释作用: 长期客户价值*\n\n### 四、决策建议\n**审批建议**: 批准\n\n**授信额度建议**: 可给予较高授信额度，建议额度为申请金额的100%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC011",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175844"
+  },
+  {
+    "sample_id": "SAMPLE_0030",
+    "customer_data": {
+      "sample_id": "SAMPLE_0030",
+      "age": 25,
+      "gender": "女",
+      "employment_years": 4,
+      "monthly_income": 9633,
+      "existing_debt": 89685,
+      "credit_history": "A33",
+      "purpose": "A46",
+      "credit_amount": 162335,
+      "duration": 38,
+      "checking_status": "A13",
+      "savings_status": "A62",
+      "housing": "A153",
+      "property_magnitude": 2
+    },
+    "risk_level": "中风险",
+    "risk_score": 65,
+    "risk_factors": [
+      {
+        "name": "信用记录有瑕疵",
+        "description": "存在1-2次短期逾期记录",
+        "weight": "中"
+      },
+      {
+        "name": "收入波动较大",
+        "description": "近半年收入波动幅度超过30%",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "逾期已还清",
+        "description": "历史逾期款项已全部结清",
+        "risk_mitigation": "降低历史风险"
+      },
+      {
+        "name": "有抵押物",
+        "description": "提供房产作为抵押",
+        "risk_mitigation": "提供风险缓释"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 121751元 (75%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入稳定性跟踪",
+      "抵押物价值评估"
+    ],
+    "risk_mitigation_measures": [
+      "适当提高首付比例",
+      "缩短贷款期限",
+      "要求购买保险"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0030\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 信用记录有瑕疵** (权重: 中)\n   存在1-2次短期逾期记录\n\n**2. 收入波动较大** (权重: 中)\n   近半年收入波动幅度超过30%\n\n### 三、有利因素分析\n\n**1. 逾期已还清**\n   历史逾期款项已全部结清\n   *风险缓释作用: 降低历史风险*\n\n**2. 有抵押物**\n   提供房产作为抵押\n   *风险缓释作用: 提供风险缓释*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC031",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176131"
+  },
+  {
+    "sample_id": "SAMPLE_0020",
+    "customer_data": {
+      "sample_id": "SAMPLE_0020",
+      "age": 31,
+      "gender": "男",
+      "employment_years": 1,
+      "monthly_income": 9339,
+      "existing_debt": 54818,
+      "credit_history": "A32",
+      "purpose": "A40",
+      "credit_amount": 192841,
+      "duration": 29,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 1
+    },
+    "risk_level": "中风险",
+    "risk_score": 63,
+    "risk_factors": [
+      {
+        "name": "信用记录有瑕疵",
+        "description": "存在1-2次短期逾期记录",
+        "weight": "中"
+      },
+      {
+        "name": "收入波动较大",
+        "description": "近半年收入波动幅度超过30%",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "逾期已还清",
+        "description": "历史逾期款项已全部结清",
+        "risk_mitigation": "降低历史风险"
+      },
+      {
+        "name": "有抵押物",
+        "description": "提供房产作为抵押",
+        "risk_mitigation": "提供风险缓释"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 144630元 (75%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入稳定性跟踪",
+      "抵押物价值评估"
+    ],
+    "risk_mitigation_measures": [
+      "适当提高首付比例",
+      "缩短贷款期限",
+      "要求购买保险"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0020\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 信用记录有瑕疵** (权重: 中)\n   存在1-2次短期逾期记录\n\n**2. 收入波动较大** (权重: 中)\n   近半年收入波动幅度超过30%\n\n### 三、有利因素分析\n\n**1. 逾期已还清**\n   历史逾期款项已全部结清\n   *风险缓释作用: 降低历史风险*\n\n**2. 有抵押物**\n   提供房产作为抵押\n   *风险缓释作用: 提供风险缓释*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC021",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175969"
+  },
+  {
+    "sample_id": "SAMPLE_0040",
+    "customer_data": {
+      "sample_id": "SAMPLE_0040",
+      "age": 29,
+      "gender": "男",
+      "employment_years": 2,
+      "monthly_income": 4437,
+      "existing_debt": 115377,
+      "credit_history": "A34",
+      "purpose": "A44",
+      "credit_amount": 258936,
+      "duration": 55,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 1
+    },
+    "risk_level": "高风险",
+    "risk_score": 89,
+    "risk_factors": [
+      {
+        "name": "存在欺诈嫌疑",
+        "description": "提供的材料存在不一致之处",
+        "weight": "高"
+      },
+      {
+        "name": "关联风险",
+        "description": "关联企业存在违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "行业风险",
+        "description": "所处行业景气度下降",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "材料真实性核查",
+      "关联方风险监控",
+      "行业动态跟踪"
+    ],
+    "risk_mitigation_measures": [
+      "启动尽职调查",
+      "要求补充材料",
+      "必要时拒绝申请"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0040\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 存在欺诈嫌疑** (权重: 高)\n   提供的材料存在不一致之处\n\n**2. 关联风险** (权重: 高)\n   关联企业存在违约记录\n\n**3. 行业风险** (权重: 中)\n   所处行业景气度下降\n\n### 三、有利因素分析\n\n暂未识别到明显有利因素。\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC041",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176249"
+  },
+  {
+    "sample_id": "SAMPLE_0027",
+    "customer_data": {
+      "sample_id": "SAMPLE_0027",
+      "age": 25,
+      "gender": "男",
+      "employment_years": 3,
+      "monthly_income": 13014,
+      "existing_debt": 107630,
+      "credit_history": "A32",
+      "purpose": "A40",
+      "credit_amount": 195108,
+      "duration": 45,
+      "checking_status": "A12",
+      "savings_status": "A62",
+      "housing": "A151",
+      "property_magnitude": 3
+    },
+    "risk_level": "中风险",
+    "risk_score": 44,
+    "risk_factors": [
+      {
+        "name": "负债率偏高",
+        "description": "现有负债占收入比例超过50%",
+        "weight": "中"
+      },
+      {
+        "name": "工作年限较短",
+        "description": "当前工作不满2年，职业稳定性待观察",
+        "weight": "中"
+      },
+      {
+        "name": "贷款金额较大",
+        "description": "申请贷款金额接近收入上限",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有担保人",
+        "description": "提供有稳定收入的担保人",
+        "risk_mitigation": "分散风险"
+      },
+      {
+        "name": "学历较高",
+        "description": "本科及以上学历，就业竞争力强",
+        "risk_mitigation": "提升还款能力预期"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 146331元 (75%申请金额)",
+    "monitoring_indicators": [
+      "负债率动态监控",
+      "就业状态跟踪",
+      "担保人资质复核"
+    ],
+    "risk_mitigation_measures": [
+      "要求定期提供收入证明",
+      "设置预警阈值",
+      "加强贷后管理"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0027\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 负债率偏高** (权重: 中)\n   现有负债占收入比例超过50%\n\n**2. 工作年限较短** (权重: 中)\n   当前工作不满2年，职业稳定性待观察\n\n**3. 贷款金额较大** (权重: 中)\n   申请贷款金额接近收入上限\n\n### 三、有利因素分析\n\n**1. 有担保人**\n   提供有稳定收入的担保人\n   *风险缓释作用: 分散风险*\n\n**2. 学历较高**\n   本科及以上学历，就业竞争力强\n   *风险缓释作用: 提升还款能力预期*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC028",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176095"
+  },
+  {
+    "sample_id": "SAMPLE_0024",
+    "customer_data": {
+      "sample_id": "SAMPLE_0024",
+      "age": 49,
+      "gender": "男",
+      "employment_years": 1,
+      "monthly_income": 8946,
+      "existing_debt": 55186,
+      "credit_history": "A32",
+      "purpose": "A40",
+      "credit_amount": 133929,
+      "duration": 26,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 2
+    },
+    "risk_level": "中风险",
+    "risk_score": 65,
+    "risk_factors": [
+      {
+        "name": "信用记录有瑕疵",
+        "description": "存在1-2次短期逾期记录",
+        "weight": "中"
+      },
+      {
+        "name": "收入波动较大",
+        "description": "近半年收入波动幅度超过30%",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "逾期已还清",
+        "description": "历史逾期款项已全部结清",
+        "risk_mitigation": "降低历史风险"
+      },
+      {
+        "name": "有抵押物",
+        "description": "提供房产作为抵押",
+        "risk_mitigation": "提供风险缓释"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 100446元 (75%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入稳定性跟踪",
+      "抵押物价值评估"
+    ],
+    "risk_mitigation_measures": [
+      "适当提高首付比例",
+      "缩短贷款期限",
+      "要求购买保险"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0024\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 信用记录有瑕疵** (权重: 中)\n   存在1-2次短期逾期记录\n\n**2. 收入波动较大** (权重: 中)\n   近半年收入波动幅度超过30%\n\n### 三、有利因素分析\n\n**1. 逾期已还清**\n   历史逾期款项已全部结清\n   *风险缓释作用: 降低历史风险*\n\n**2. 有抵押物**\n   提供房产作为抵押\n   *风险缓释作用: 提供风险缓释*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC025",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176015"
+  },
+  {
+    "sample_id": "SAMPLE_0039",
+    "customer_data": {
+      "sample_id": "SAMPLE_0039",
+      "age": 35,
+      "gender": "女",
+      "employment_years": 1,
+      "monthly_income": 3261,
+      "existing_debt": 258547,
+      "credit_history": "A34",
+      "purpose": "A49",
+      "credit_amount": 411785,
+      "duration": 43,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 1
+    },
+    "risk_level": "高风险",
+    "risk_score": 81,
+    "risk_factors": [
+      {
+        "name": "多头借贷",
+        "description": "同时在3家以上机构申请贷款",
+        "weight": "高"
+      },
+      {
+        "name": "收入负债比过高",
+        "description": "月还款额占收入比例超过70%",
+        "weight": "高"
+      },
+      {
+        "name": "信用记录不良",
+        "description": "存在多次逾期和违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "无稳定收入来源",
+        "description": "近半年无固定收入证明",
+        "weight": "高"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有第三方担保",
+        "description": "提供担保公司担保",
+        "risk_mitigation": "部分风险缓释"
+      }
+    ],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "多头借贷监控",
+      "收入来源核实",
+      "担保公司资质评估"
+    ],
+    "risk_mitigation_measures": [
+      "要求追加抵押物",
+      "降低贷款额度",
+      "加强贷后检查频率"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0039\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 多头借贷** (权重: 高)\n   同时在3家以上机构申请贷款\n\n**2. 收入负债比过高** (权重: 高)\n   月还款额占收入比例超过70%\n\n**3. 信用记录不良** (权重: 高)\n   存在多次逾期和违约记录\n\n**4. 无稳定收入来源** (权重: 高)\n   近半年无固定收入证明\n\n### 三、有利因素分析\n\n**1. 有第三方担保**\n   提供担保公司担保\n   *风险缓释作用: 部分风险缓释*\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC040",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176238"
+  },
+  {
+    "sample_id": "SAMPLE_0034",
+    "customer_data": {
+      "sample_id": "SAMPLE_0034",
+      "age": 34,
+      "gender": "女",
+      "employment_years": 0,
+      "monthly_income": 7696,
+      "existing_debt": 217639,
+      "credit_history": "A34",
+      "purpose": "A45",
+      "credit_amount": 208309,
+      "duration": 38,
+      "checking_status": "A11",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 2
+    },
+    "risk_level": "高风险",
+    "risk_score": 72,
+    "risk_factors": [
+      {
+        "name": "存在欺诈嫌疑",
+        "description": "提供的材料存在不一致之处",
+        "weight": "高"
+      },
+      {
+        "name": "关联风险",
+        "description": "关联企业存在违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "行业风险",
+        "description": "所处行业景气度下降",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "材料真实性核查",
+      "关联方风险监控",
+      "行业动态跟踪"
+    ],
+    "risk_mitigation_measures": [
+      "启动尽职调查",
+      "要求补充材料",
+      "必要时拒绝申请"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0034\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 存在欺诈嫌疑** (权重: 高)\n   提供的材料存在不一致之处\n\n**2. 关联风险** (权重: 高)\n   关联企业存在违约记录\n\n**3. 行业风险** (权重: 中)\n   所处行业景气度下降\n\n### 三、有利因素分析\n\n暂未识别到明显有利因素。\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC035",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176179"
+  },
+  {
+    "sample_id": "SAMPLE_0007",
+    "customer_data": {
+      "sample_id": "SAMPLE_0007",
+      "age": 37,
+      "gender": "女",
+      "employment_years": 15,
+      "monthly_income": 16832,
+      "existing_debt": 45529,
+      "credit_history": "A32",
+      "purpose": "A40",
+      "credit_amount": 111349,
+      "duration": 30,
+      "checking_status": "A14",
+      "savings_status": "A63",
+      "housing": "A152",
+      "property_magnitude": 3
+    },
+    "risk_level": "低风险",
+    "risk_score": 27,
+    "risk_factors": [
+      {
+        "name": "贷款金额适中",
+        "description": "贷款金额占收入比例合理，还款压力可控",
+        "weight": "低"
+      },
+      {
+        "name": "贷款期限较长",
+        "description": "贷款期限较长，月供压力分散",
+        "weight": "低"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "信用记录良好",
+        "description": "客户信用历史清白，无逾期记录",
+        "risk_mitigation": "降低违约风险"
+      },
+      {
+        "name": "收入稳定",
+        "description": "工作年限长，收入来源稳定",
+        "risk_mitigation": "保障还款能力"
+      },
+      {
+        "name": "资产充足",
+        "description": "名下有房产和车辆等资产",
+        "risk_mitigation": "提供担保保障"
+      }
+    ],
+    "approval_suggestion": "批准",
+    "credit_limit_suggestion": "建议授信额度: 111349元 (100%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入变化跟踪",
+      "信用记录更新"
+    ],
+    "risk_mitigation_measures": [
+      "定期回访",
+      "设置还款提醒"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0007\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**低风险**。\n\n### 二、风险因素分析\n\n**1. 贷款金额适中** (权重: 低)\n   贷款金额占收入比例合理，还款压力可控\n\n**2. 贷款期限较长** (权重: 低)\n   贷款期限较长，月供压力分散\n\n### 三、有利因素分析\n\n**1. 信用记录良好**\n   客户信用历史清白，无逾期记录\n   *风险缓释作用: 降低违约风险*\n\n**2. 收入稳定**\n   工作年限长，收入来源稳定\n   *风险缓释作用: 保障还款能力*\n\n**3. 资产充足**\n   名下有房产和车辆等资产\n   *风险缓释作用: 提供担保保障*\n\n### 四、决策建议\n**审批建议**: 批准\n\n**授信额度建议**: 可给予较高授信额度，建议额度为申请金额的100%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC008",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175798"
+  },
+  {
+    "sample_id": "SAMPLE_0032",
+    "customer_data": {
+      "sample_id": "SAMPLE_0032",
+      "age": 26,
+      "gender": "女",
+      "employment_years": 1,
+      "monthly_income": 3753,
+      "existing_debt": 221730,
+      "credit_history": "A34",
+      "purpose": "A49",
+      "credit_amount": 371993,
+      "duration": 44,
+      "checking_status": "A11",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 1
+    },
+    "risk_level": "高风险",
+    "risk_score": 88,
+    "risk_factors": [
+      {
+        "name": "存在欺诈嫌疑",
+        "description": "提供的材料存在不一致之处",
+        "weight": "高"
+      },
+      {
+        "name": "关联风险",
+        "description": "关联企业存在违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "行业风险",
+        "description": "所处行业景气度下降",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "材料真实性核查",
+      "关联方风险监控",
+      "行业动态跟踪"
+    ],
+    "risk_mitigation_measures": [
+      "启动尽职调查",
+      "要求补充材料",
+      "必要时拒绝申请"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0032\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 存在欺诈嫌疑** (权重: 高)\n   提供的材料存在不一致之处\n\n**2. 关联风险** (权重: 高)\n   关联企业存在违约记录\n\n**3. 行业风险** (权重: 中)\n   所处行业景气度下降\n\n### 三、有利因素分析\n\n暂未识别到明显有利因素。\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC033",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176156"
+  },
+  {
+    "sample_id": "SAMPLE_0006",
+    "customer_data": {
+      "sample_id": "SAMPLE_0006",
+      "age": 37,
+      "gender": "女",
+      "employment_years": 14,
+      "monthly_income": 22194,
+      "existing_debt": 397,
+      "credit_history": "A32",
+      "purpose": "A42",
+      "credit_amount": 64609,
+      "duration": 31,
+      "checking_status": "A14",
+      "savings_status": "A65",
+      "housing": "A152",
+      "property_magnitude": 2
+    },
+    "risk_level": "低风险",
+    "risk_score": 27,
+    "risk_factors": [
+      {
+        "name": "首次贷款客户",
+        "description": "客户为首次申请贷款，缺乏历史参考",
+        "weight": "低"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "职业前景良好",
+        "description": "从事行业前景广阔，职业发展空间大",
+        "risk_mitigation": "预期收入增长"
+      },
+      {
+        "name": "负债率低",
+        "description": "现有负债占收入比例低于30%",
+        "risk_mitigation": "还款能力充足"
+      },
+      {
+        "name": "年龄优势",
+        "description": "客户年龄适中，处于职业上升期",
+        "risk_mitigation": "长期客户价值"
+      }
+    ],
+    "approval_suggestion": "批准",
+    "credit_limit_suggestion": "建议授信额度: 64609元 (100%申请金额)",
+    "monitoring_indicators": [
+      "职业状态跟踪",
+      "负债率监控"
+    ],
+    "risk_mitigation_measures": [
+      "建立客户档案",
+      "定期信用评估"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0006\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**低风险**。\n\n### 二、风险因素分析\n\n**1. 首次贷款客户** (权重: 低)\n   客户为首次申请贷款，缺乏历史参考\n\n### 三、有利因素分析\n\n**1. 职业前景良好**\n   从事行业前景广阔，职业发展空间大\n   *风险缓释作用: 预期收入增长*\n\n**2. 负债率低**\n   现有负债占收入比例低于30%\n   *风险缓释作用: 还款能力充足*\n\n**3. 年龄优势**\n   客户年龄适中，处于职业上升期\n   *风险缓释作用: 长期客户价值*\n\n### 四、决策建议\n**审批建议**: 批准\n\n**授信额度建议**: 可给予较高授信额度，建议额度为申请金额的100%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC007",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175785"
+  },
+  {
+    "sample_id": "SAMPLE_0046",
+    "customer_data": {
+      "sample_id": "SAMPLE_0046",
+      "age": 31,
+      "gender": "女",
+      "employment_years": 1,
+      "monthly_income": 3933,
+      "existing_debt": 108450,
+      "credit_history": "A34",
+      "purpose": "A49",
+      "credit_amount": 456990,
+      "duration": 38,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 2
+    },
+    "risk_level": "高风险",
+    "risk_score": 90,
+    "risk_factors": [
+      {
+        "name": "存在欺诈嫌疑",
+        "description": "提供的材料存在不一致之处",
+        "weight": "高"
+      },
+      {
+        "name": "关联风险",
+        "description": "关联企业存在违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "行业风险",
+        "description": "所处行业景气度下降",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "材料真实性核查",
+      "关联方风险监控",
+      "行业动态跟踪"
+    ],
+    "risk_mitigation_measures": [
+      "启动尽职调查",
+      "要求补充材料",
+      "必要时拒绝申请"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0046\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 存在欺诈嫌疑** (权重: 高)\n   提供的材料存在不一致之处\n\n**2. 关联风险** (权重: 高)\n   关联企业存在违约记录\n\n**3. 行业风险** (权重: 中)\n   所处行业景气度下降\n\n### 三、有利因素分析\n\n暂未识别到明显有利因素。\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC047",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176318"
+  },
+  {
+    "sample_id": "SAMPLE_0041",
+    "customer_data": {
+      "sample_id": "SAMPLE_0041",
+      "age": 35,
+      "gender": "男",
+      "employment_years": 0,
+      "monthly_income": 7784,
+      "existing_debt": 103312,
+      "credit_history": "A33",
+      "purpose": "A49",
+      "credit_amount": 449069,
+      "duration": 51,
+      "checking_status": "A11",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 2
+    },
+    "risk_level": "高风险",
+    "risk_score": 82,
+    "risk_factors": [
+      {
+        "name": "多头借贷",
+        "description": "同时在3家以上机构申请贷款",
+        "weight": "高"
+      },
+      {
+        "name": "收入负债比过高",
+        "description": "月还款额占收入比例超过70%",
+        "weight": "高"
+      },
+      {
+        "name": "信用记录不良",
+        "description": "存在多次逾期和违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "无稳定收入来源",
+        "description": "近半年无固定收入证明",
+        "weight": "高"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有第三方担保",
+        "description": "提供担保公司担保",
+        "risk_mitigation": "部分风险缓释"
+      }
+    ],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "多头借贷监控",
+      "收入来源核实",
+      "担保公司资质评估"
+    ],
+    "risk_mitigation_measures": [
+      "要求追加抵押物",
+      "降低贷款额度",
+      "加强贷后检查频率"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0041\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 多头借贷** (权重: 高)\n   同时在3家以上机构申请贷款\n\n**2. 收入负债比过高** (权重: 高)\n   月还款额占收入比例超过70%\n\n**3. 信用记录不良** (权重: 高)\n   存在多次逾期和违约记录\n\n**4. 无稳定收入来源** (权重: 高)\n   近半年无固定收入证明\n\n### 三、有利因素分析\n\n**1. 有第三方担保**\n   提供担保公司担保\n   *风险缓释作用: 部分风险缓释*\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC042",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176262"
+  },
+  {
+    "sample_id": "SAMPLE_0021",
+    "customer_data": {
+      "sample_id": "SAMPLE_0021",
+      "age": 37,
+      "gender": "女",
+      "employment_years": 3,
+      "monthly_income": 9084,
+      "existing_debt": 57675,
+      "credit_history": "A32",
+      "purpose": "A43",
+      "credit_amount": 137267,
+      "duration": 48,
+      "checking_status": "A13",
+      "savings_status": "A61",
+      "housing": "A151",
+      "property_magnitude": 3
+    },
+    "risk_level": "中风险",
+    "risk_score": 66,
+    "risk_factors": [
+      {
+        "name": "负债率偏高",
+        "description": "现有负债占收入比例超过50%",
+        "weight": "中"
+      },
+      {
+        "name": "工作年限较短",
+        "description": "当前工作不满2年，职业稳定性待观察",
+        "weight": "中"
+      },
+      {
+        "name": "贷款金额较大",
+        "description": "申请贷款金额接近收入上限",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有担保人",
+        "description": "提供有稳定收入的担保人",
+        "risk_mitigation": "分散风险"
+      },
+      {
+        "name": "学历较高",
+        "description": "本科及以上学历，就业竞争力强",
+        "risk_mitigation": "提升还款能力预期"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 102950元 (75%申请金额)",
+    "monitoring_indicators": [
+      "负债率动态监控",
+      "就业状态跟踪",
+      "担保人资质复核"
+    ],
+    "risk_mitigation_measures": [
+      "要求定期提供收入证明",
+      "设置预警阈值",
+      "加强贷后管理"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0021\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 负债率偏高** (权重: 中)\n   现有负债占收入比例超过50%\n\n**2. 工作年限较短** (权重: 中)\n   当前工作不满2年，职业稳定性待观察\n\n**3. 贷款金额较大** (权重: 中)\n   申请贷款金额接近收入上限\n\n### 三、有利因素分析\n\n**1. 有担保人**\n   提供有稳定收入的担保人\n   *风险缓释作用: 分散风险*\n\n**2. 学历较高**\n   本科及以上学历，就业竞争力强\n   *风险缓释作用: 提升还款能力预期*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC022",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175981"
+  },
+  {
+    "sample_id": "SAMPLE_0001",
+    "customer_data": {
+      "sample_id": "SAMPLE_0001",
+      "age": 51,
+      "gender": "女",
+      "employment_years": 6,
+      "monthly_income": 15090,
+      "existing_debt": 25307,
+      "credit_history": "A31",
+      "purpose": "A40",
+      "credit_amount": 114885,
+      "duration": 13,
+      "checking_status": "A14",
+      "savings_status": "A63",
+      "housing": "A151",
+      "property_magnitude": 3
+    },
+    "risk_level": "低风险",
+    "risk_score": 23,
+    "risk_factors": [
+      {
+        "name": "贷款金额适中",
+        "description": "贷款金额占收入比例合理，还款压力可控",
+        "weight": "低"
+      },
+      {
+        "name": "贷款期限较长",
+        "description": "贷款期限较长，月供压力分散",
+        "weight": "低"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "信用记录良好",
+        "description": "客户信用历史清白，无逾期记录",
+        "risk_mitigation": "降低违约风险"
+      },
+      {
+        "name": "收入稳定",
+        "description": "工作年限长，收入来源稳定",
+        "risk_mitigation": "保障还款能力"
+      },
+      {
+        "name": "资产充足",
+        "description": "名下有房产和车辆等资产",
+        "risk_mitigation": "提供担保保障"
+      }
+    ],
+    "approval_suggestion": "批准",
+    "credit_limit_suggestion": "建议授信额度: 114885元 (100%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入变化跟踪",
+      "信用记录更新"
+    ],
+    "risk_mitigation_measures": [
+      "定期回访",
+      "设置还款提醒"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0001\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**低风险**。\n\n### 二、风险因素分析\n\n**1. 贷款金额适中** (权重: 低)\n   贷款金额占收入比例合理，还款压力可控\n\n**2. 贷款期限较长** (权重: 低)\n   贷款期限较长，月供压力分散\n\n### 三、有利因素分析\n\n**1. 信用记录良好**\n   客户信用历史清白，无逾期记录\n   *风险缓释作用: 降低违约风险*\n\n**2. 收入稳定**\n   工作年限长，收入来源稳定\n   *风险缓释作用: 保障还款能力*\n\n**3. 资产充足**\n   名下有房产和车辆等资产\n   *风险缓释作用: 提供担保保障*\n\n### 四、决策建议\n**审批建议**: 批准\n\n**授信额度建议**: 可给予较高授信额度，建议额度为申请金额的100%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC002",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175700"
+  },
+  {
+    "sample_id": "SAMPLE_0026",
+    "customer_data": {
+      "sample_id": "SAMPLE_0026",
+      "age": 34,
+      "gender": "男",
+      "employment_years": 3,
+      "monthly_income": 14049,
+      "existing_debt": 80702,
+      "credit_history": "A32",
+      "purpose": "A46",
+      "credit_amount": 204644,
+      "duration": 43,
+      "checking_status": "A13",
+      "savings_status": "A62",
+      "housing": "A153",
+      "property_magnitude": 1
+    },
+    "risk_level": "中风险",
+    "risk_score": 47,
+    "risk_factors": [
+      {
+        "name": "信用记录有瑕疵",
+        "description": "存在1-2次短期逾期记录",
+        "weight": "中"
+      },
+      {
+        "name": "收入波动较大",
+        "description": "近半年收入波动幅度超过30%",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "逾期已还清",
+        "description": "历史逾期款项已全部结清",
+        "risk_mitigation": "降低历史风险"
+      },
+      {
+        "name": "有抵押物",
+        "description": "提供房产作为抵押",
+        "risk_mitigation": "提供风险缓释"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 153483元 (75%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入稳定性跟踪",
+      "抵押物价值评估"
+    ],
+    "risk_mitigation_measures": [
+      "适当提高首付比例",
+      "缩短贷款期限",
+      "要求购买保险"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0026\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 信用记录有瑕疵** (权重: 中)\n   存在1-2次短期逾期记录\n\n**2. 收入波动较大** (权重: 中)\n   近半年收入波动幅度超过30%\n\n### 三、有利因素分析\n\n**1. 逾期已还清**\n   历史逾期款项已全部结清\n   *风险缓释作用: 降低历史风险*\n\n**2. 有抵押物**\n   提供房产作为抵押\n   *风险缓释作用: 提供风险缓释*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC027",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176084"
+  },
+  {
+    "sample_id": "SAMPLE_0004",
+    "customer_data": {
+      "sample_id": "SAMPLE_0004",
+      "age": 44,
+      "gender": "女",
+      "employment_years": 15,
+      "monthly_income": 20876,
+      "existing_debt": 44435,
+      "credit_history": "A31",
+      "purpose": "A42",
+      "credit_amount": 137959,
+      "duration": 21,
+      "checking_status": "A14",
+      "savings_status": "A63",
+      "housing": "A152",
+      "property_magnitude": 3
+    },
+    "risk_level": "低风险",
+    "risk_score": 22,
+    "risk_factors": [
+      {
+        "name": "首次贷款客户",
+        "description": "客户为首次申请贷款，缺乏历史参考",
+        "weight": "低"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "职业前景良好",
+        "description": "从事行业前景广阔，职业发展空间大",
+        "risk_mitigation": "预期收入增长"
+      },
+      {
+        "name": "负债率低",
+        "description": "现有负债占收入比例低于30%",
+        "risk_mitigation": "还款能力充足"
+      },
+      {
+        "name": "年龄优势",
+        "description": "客户年龄适中，处于职业上升期",
+        "risk_mitigation": "长期客户价值"
+      }
+    ],
+    "approval_suggestion": "批准",
+    "credit_limit_suggestion": "建议授信额度: 137959元 (100%申请金额)",
+    "monitoring_indicators": [
+      "职业状态跟踪",
+      "负债率监控"
+    ],
+    "risk_mitigation_measures": [
+      "建立客户档案",
+      "定期信用评估"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0004\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**低风险**。\n\n### 二、风险因素分析\n\n**1. 首次贷款客户** (权重: 低)\n   客户为首次申请贷款，缺乏历史参考\n\n### 三、有利因素分析\n\n**1. 职业前景良好**\n   从事行业前景广阔，职业发展空间大\n   *风险缓释作用: 预期收入增长*\n\n**2. 负债率低**\n   现有负债占收入比例低于30%\n   *风险缓释作用: 还款能力充足*\n\n**3. 年龄优势**\n   客户年龄适中，处于职业上升期\n   *风险缓释作用: 长期客户价值*\n\n### 四、决策建议\n**审批建议**: 批准\n\n**授信额度建议**: 可给予较高授信额度，建议额度为申请金额的100%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC005",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175759"
+  },
+  {
+    "sample_id": "SAMPLE_0029",
+    "customer_data": {
+      "sample_id": "SAMPLE_0029",
+      "age": 35,
+      "gender": "男",
+      "employment_years": 3,
+      "monthly_income": 13074,
+      "existing_debt": 104436,
+      "credit_history": "A33",
+      "purpose": "A43",
+      "credit_amount": 253499,
+      "duration": 28,
+      "checking_status": "A13",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 2
+    },
+    "risk_level": "中风险",
+    "risk_score": 47,
+    "risk_factors": [
+      {
+        "name": "负债率偏高",
+        "description": "现有负债占收入比例超过50%",
+        "weight": "中"
+      },
+      {
+        "name": "工作年限较短",
+        "description": "当前工作不满2年，职业稳定性待观察",
+        "weight": "中"
+      },
+      {
+        "name": "贷款金额较大",
+        "description": "申请贷款金额接近收入上限",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有担保人",
+        "description": "提供有稳定收入的担保人",
+        "risk_mitigation": "分散风险"
+      },
+      {
+        "name": "学历较高",
+        "description": "本科及以上学历，就业竞争力强",
+        "risk_mitigation": "提升还款能力预期"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 190124元 (75%申请金额)",
+    "monitoring_indicators": [
+      "负债率动态监控",
+      "就业状态跟踪",
+      "担保人资质复核"
+    ],
+    "risk_mitigation_measures": [
+      "要求定期提供收入证明",
+      "设置预警阈值",
+      "加强贷后管理"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0029\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 负债率偏高** (权重: 中)\n   现有负债占收入比例超过50%\n\n**2. 工作年限较短** (权重: 中)\n   当前工作不满2年，职业稳定性待观察\n\n**3. 贷款金额较大** (权重: 中)\n   申请贷款金额接近收入上限\n\n### 三、有利因素分析\n\n**1. 有担保人**\n   提供有稳定收入的担保人\n   *风险缓释作用: 分散风险*\n\n**2. 学历较高**\n   本科及以上学历，就业竞争力强\n   *风险缓释作用: 提升还款能力预期*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC030",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176119"
+  },
+  {
+    "sample_id": "SAMPLE_0016",
+    "customer_data": {
+      "sample_id": "SAMPLE_0016",
+      "age": 36,
+      "gender": "女",
+      "employment_years": 2,
+      "monthly_income": 10040,
+      "existing_debt": 104870,
+      "credit_history": "A32",
+      "purpose": "A43",
+      "credit_amount": 210662,
+      "duration": 46,
+      "checking_status": "A13",
+      "savings_status": "A62",
+      "housing": "A151",
+      "property_magnitude": 1
+    },
+    "risk_level": "中风险",
+    "risk_score": 48,
+    "risk_factors": [
+      {
+        "name": "信用记录有瑕疵",
+        "description": "存在1-2次短期逾期记录",
+        "weight": "中"
+      },
+      {
+        "name": "收入波动较大",
+        "description": "近半年收入波动幅度超过30%",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "逾期已还清",
+        "description": "历史逾期款项已全部结清",
+        "risk_mitigation": "降低历史风险"
+      },
+      {
+        "name": "有抵押物",
+        "description": "提供房产作为抵押",
+        "risk_mitigation": "提供风险缓释"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 157996元 (75%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入稳定性跟踪",
+      "抵押物价值评估"
+    ],
+    "risk_mitigation_measures": [
+      "适当提高首付比例",
+      "缩短贷款期限",
+      "要求购买保险"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0016\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 信用记录有瑕疵** (权重: 中)\n   存在1-2次短期逾期记录\n\n**2. 收入波动较大** (权重: 中)\n   近半年收入波动幅度超过30%\n\n### 三、有利因素分析\n\n**1. 逾期已还清**\n   历史逾期款项已全部结清\n   *风险缓释作用: 降低历史风险*\n\n**2. 有抵押物**\n   提供房产作为抵押\n   *风险缓释作用: 提供风险缓释*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC017",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175922"
+  },
+  {
+    "sample_id": "SAMPLE_0044",
+    "customer_data": {
+      "sample_id": "SAMPLE_0044",
+      "age": 50,
+      "gender": "女",
+      "employment_years": 0,
+      "monthly_income": 4659,
+      "existing_debt": 178997,
+      "credit_history": "A33",
+      "purpose": "A49",
+      "credit_amount": 255679,
+      "duration": 55,
+      "checking_status": "A12",
+      "savings_status": "A61",
+      "housing": "A153",
+      "property_magnitude": 1
+    },
+    "risk_level": "高风险",
+    "risk_score": 87,
+    "risk_factors": [
+      {
+        "name": "存在欺诈嫌疑",
+        "description": "提供的材料存在不一致之处",
+        "weight": "高"
+      },
+      {
+        "name": "关联风险",
+        "description": "关联企业存在违约记录",
+        "weight": "高"
+      },
+      {
+        "name": "行业风险",
+        "description": "所处行业景气度下降",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [],
+    "approval_suggestion": "拒绝",
+    "credit_limit_suggestion": "不建议授信",
+    "monitoring_indicators": [
+      "材料真实性核查",
+      "关联方风险监控",
+      "行业动态跟踪"
+    ],
+    "risk_mitigation_measures": [
+      "启动尽职调查",
+      "要求补充材料",
+      "必要时拒绝申请"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0044\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**高风险**。\n\n### 二、风险因素分析\n\n**1. 存在欺诈嫌疑** (权重: 高)\n   提供的材料存在不一致之处\n\n**2. 关联风险** (权重: 高)\n   关联企业存在违约记录\n\n**3. 行业风险** (权重: 中)\n   所处行业景气度下降\n\n### 三、有利因素分析\n\n暂未识别到明显有利因素。\n\n### 四、决策建议\n**审批建议**: 拒绝\n\n**授信额度建议**: 建议严格控制授信额度或拒绝申请。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC045",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.176295"
+  },
+  {
+    "sample_id": "SAMPLE_0011",
+    "customer_data": {
+      "sample_id": "SAMPLE_0011",
+      "age": 47,
+      "gender": "男",
+      "employment_years": 4,
+      "monthly_income": 14675,
+      "existing_debt": 93318,
+      "credit_history": "A33",
+      "purpose": "A46",
+      "credit_amount": 162306,
+      "duration": 28,
+      "checking_status": "A13",
+      "savings_status": "A62",
+      "housing": "A151",
+      "property_magnitude": 3
+    },
+    "risk_level": "中风险",
+    "risk_score": 62,
+    "risk_factors": [
+      {
+        "name": "负债率偏高",
+        "description": "现有负债占收入比例超过50%",
+        "weight": "中"
+      },
+      {
+        "name": "工作年限较短",
+        "description": "当前工作不满2年，职业稳定性待观察",
+        "weight": "中"
+      },
+      {
+        "name": "贷款金额较大",
+        "description": "申请贷款金额接近收入上限",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "有担保人",
+        "description": "提供有稳定收入的担保人",
+        "risk_mitigation": "分散风险"
+      },
+      {
+        "name": "学历较高",
+        "description": "本科及以上学历，就业竞争力强",
+        "risk_mitigation": "提升还款能力预期"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 121729元 (75%申请金额)",
+    "monitoring_indicators": [
+      "负债率动态监控",
+      "就业状态跟踪",
+      "担保人资质复核"
+    ],
+    "risk_mitigation_measures": [
+      "要求定期提供收入证明",
+      "设置预警阈值",
+      "加强贷后管理"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0011\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 负债率偏高** (权重: 中)\n   现有负债占收入比例超过50%\n\n**2. 工作年限较短** (权重: 中)\n   当前工作不满2年，职业稳定性待观察\n\n**3. 贷款金额较大** (权重: 中)\n   申请贷款金额接近收入上限\n\n### 三、有利因素分析\n\n**1. 有担保人**\n   提供有稳定收入的担保人\n   *风险缓释作用: 分散风险*\n\n**2. 学历较高**\n   本科及以上学历，就业竞争力强\n   *风险缓释作用: 提升还款能力预期*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC012",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175859"
+  },
+  {
+    "sample_id": "SAMPLE_0003",
+    "customer_data": {
+      "sample_id": "SAMPLE_0003",
+      "age": 29,
+      "gender": "男",
+      "employment_years": 13,
+      "monthly_income": 23609,
+      "existing_debt": 47759,
+      "credit_history": "A31",
+      "purpose": "A42",
+      "credit_amount": 83887,
+      "duration": 19,
+      "checking_status": "A14",
+      "savings_status": "A65",
+      "housing": "A152",
+      "property_magnitude": 4
+    },
+    "risk_level": "低风险",
+    "risk_score": 28,
+    "risk_factors": [
+      {
+        "name": "贷款金额适中",
+        "description": "贷款金额占收入比例合理，还款压力可控",
+        "weight": "低"
+      },
+      {
+        "name": "贷款期限较长",
+        "description": "贷款期限较长，月供压力分散",
+        "weight": "低"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "信用记录良好",
+        "description": "客户信用历史清白，无逾期记录",
+        "risk_mitigation": "降低违约风险"
+      },
+      {
+        "name": "收入稳定",
+        "description": "工作年限长，收入来源稳定",
+        "risk_mitigation": "保障还款能力"
+      },
+      {
+        "name": "资产充足",
+        "description": "名下有房产和车辆等资产",
+        "risk_mitigation": "提供担保保障"
+      }
+    ],
+    "approval_suggestion": "批准",
+    "credit_limit_suggestion": "建议授信额度: 83887元 (100%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入变化跟踪",
+      "信用记录更新"
+    ],
+    "risk_mitigation_measures": [
+      "定期回访",
+      "设置还款提醒"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0003\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**低风险**。\n\n### 二、风险因素分析\n\n**1. 贷款金额适中** (权重: 低)\n   贷款金额占收入比例合理，还款压力可控\n\n**2. 贷款期限较长** (权重: 低)\n   贷款期限较长，月供压力分散\n\n### 三、有利因素分析\n\n**1. 信用记录良好**\n   客户信用历史清白，无逾期记录\n   *风险缓释作用: 降低违约风险*\n\n**2. 收入稳定**\n   工作年限长，收入来源稳定\n   *风险缓释作用: 保障还款能力*\n\n**3. 资产充足**\n   名下有房产和车辆等资产\n   *风险缓释作用: 提供担保保障*\n\n### 四、决策建议\n**审批建议**: 批准\n\n**授信额度建议**: 可给予较高授信额度，建议额度为申请金额的100%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC004",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175744"
+  },
+  {
+    "sample_id": "SAMPLE_0018",
+    "customer_data": {
+      "sample_id": "SAMPLE_0018",
+      "age": 31,
+      "gender": "女",
+      "employment_years": 2,
+      "monthly_income": 11600,
+      "existing_debt": 137129,
+      "credit_history": "A32",
+      "purpose": "A40",
+      "credit_amount": 242653,
+      "duration": 46,
+      "checking_status": "A13",
+      "savings_status": "A62",
+      "housing": "A153",
+      "property_magnitude": 3
+    },
+    "risk_level": "中风险",
+    "risk_score": 53,
+    "risk_factors": [
+      {
+        "name": "信用记录有瑕疵",
+        "description": "存在1-2次短期逾期记录",
+        "weight": "中"
+      },
+      {
+        "name": "收入波动较大",
+        "description": "近半年收入波动幅度超过30%",
+        "weight": "中"
+      }
+    ],
+    "favorable_factors": [
+      {
+        "name": "逾期已还清",
+        "description": "历史逾期款项已全部结清",
+        "risk_mitigation": "降低历史风险"
+      },
+      {
+        "name": "有抵押物",
+        "description": "提供房产作为抵押",
+        "risk_mitigation": "提供风险缓释"
+      }
+    ],
+    "approval_suggestion": "人工复核",
+    "credit_limit_suggestion": "建议授信额度: 181989元 (75%申请金额)",
+    "monitoring_indicators": [
+      "还款行为监控",
+      "收入稳定性跟踪",
+      "抵押物价值评估"
+    ],
+    "risk_mitigation_measures": [
+      "适当提高首付比例",
+      "缩短贷款期限",
+      "要求购买保险"
+    ],
+    "explanation": "## 风险分析报告\n**客户ID**: SAMPLE_0018\n**分析时间**: 2026-03-23 11:27:43\n\n### 一、风险等级判定\n根据综合评估，该客户的风险等级为**中风险**。\n\n### 二、风险因素分析\n\n**1. 信用记录有瑕疵** (权重: 中)\n   存在1-2次短期逾期记录\n\n**2. 收入波动较大** (权重: 中)\n   近半年收入波动幅度超过30%\n\n### 三、有利因素分析\n\n**1. 逾期已还清**\n   历史逾期款项已全部结清\n   *风险缓释作用: 降低历史风险*\n\n**2. 有抵押物**\n   提供房产作为抵押\n   *风险缓释作用: 提供风险缓释*\n\n### 四、决策建议\n**审批建议**: 人工复核\n\n**授信额度建议**: 建议适度控制授信额度，可给予申请金额的70%-80%。\n\n### 五、风险监控指标\n\n### 六、风险缓释措施\n\n### 七、知识来源引用\n- [1] 风险案例: 类似客户违约案例分析\n- [2] 监管法规: 个人贷款管理暂行办法\n- [3] 行业知识: 信贷风险评估最佳实践\n",
+    "knowledge_references": [
+      {
+        "source_type": "风险案例",
+        "source_id": "RC019",
+        "relevance": 0.85
+      },
+      {
+        "source_type": "监管法规",
+        "source_id": "REG_001",
+        "relevance": 0.75
+      },
+      {
+        "source_type": "行业知识",
+        "source_id": "IND_001",
+        "relevance": 0.7
+      }
+    ],
+    "generation_timestamp": "2026-03-23T11:27:43.175946"
+  }
+]

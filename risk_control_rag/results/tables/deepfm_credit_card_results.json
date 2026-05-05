@@ -1,0 +1,34 @@
+{
+  "model_type": "deepfm",
+  "dataset": "credit_card",
+  "model_config": {
+    "embedding_dim": 16,
+    "hidden_dims": [
+      256,
+      128,
+      64
+    ],
+    "dropout_rate": 0.2,
+    "learning_rate": 0.001,
+    "batch_size": 256,
+    "epochs": 50,
+    "early_stopping_patience": 10,
+    "use_batch_norm": true,
+    "random_state": 42
+  },
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "auc": 0.9999999999999999
+  },
+  "training_time_seconds": 11.890994,
+  "data_info": {
+    "n_features": 30,
+    "n_train": 12777,
+    "n_val": 3195,
+    "n_test": 3994
+  },
+  "timestamp": "2026-03-23T10:51:14.443619"
+}

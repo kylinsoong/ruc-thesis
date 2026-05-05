@@ -1,0 +1,15 @@
+pandas
+numpy
+scikit-learn
+imbalanced-learn
+xgboost
+chromadb
+volcengine-python-sdk
+matplotlib
+seaborn
+tqdm
+python-dotenv
+tiktoken
+kaggle
+torch
+pytorch-tabnet

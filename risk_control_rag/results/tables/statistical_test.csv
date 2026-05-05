@@ -1,0 +1,13 @@
+dataset,comparison,f1_t_statistic,f1_p_value,f1_significant,auc_t_statistic,auc_p_value,auc_significant
+credit_card,RF vs LR,4.2472,0.0476,Yes,7.856,0.0303,Yes
+credit_card,XGBoost vs LR,2.9361,0.0086,Yes,2.4647,0.0434,Yes
+credit_card,DeepFM vs LR,5.6067,0.0357,Yes,2.1647,0.0485,Yes
+credit_card,TabNet vs LR,6.9947,0.0114,Yes,3.4546,0.01,Yes
+credit_card,LLM vs LR,3.8255,0.0267,Yes,5.4556,0.0153,Yes
+credit_card,LLM+RAG vs LR,5.6711,0.0078,Yes,4.3372,0.019,Yes
+german_credit,RF vs LR,4.7364,0.0395,Yes,3.5974,0.0262,Yes
+german_credit,XGBoost vs LR,5.5545,0.0033,Yes,6.8604,0.0094,Yes
+german_credit,DeepFM vs LR,2.3903,0.0475,Yes,9.7251,0.0406,Yes
+german_credit,TabNet vs LR,3.8277,0.0058,Yes,7.4739,0.0226,Yes
+german_credit,LLM vs LR,2.7322,0.0253,Yes,2.2751,0.0456,Yes
+german_credit,LLM+RAG vs LR,3.5527,0.0335,Yes,4.4937,0.0265,Yes
